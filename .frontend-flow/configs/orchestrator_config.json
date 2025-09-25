@@ -1,0 +1,216 @@
+{
+  "version": "2.0",
+  "orchestrator": {
+    "name": "agent_master_orchestrator",
+    "enabled": true,
+    "max_retries": 3,
+    "timeout_minutes": 30,
+    "parallel_execution": true,
+    "metrics_collection": true,
+    "auto_optimization": true
+  },
+  "pipelines": {
+    "component_novo": {
+      "description": "Criação de componente React completo do zero",
+      "sequence": [
+        "agent_github_flow",
+        "agent_figma_extract",
+        "agent_react_components",
+        "agent_tailwind_estilization",
+        "agent_performance",
+        "agent_accessibility",
+        "agent_security",
+        "agent_code_quality",
+        "agent_integration_tests",
+        "agent_github_pullrequest"
+      ],
+      "keywords": ["componente", "criar", "novo", "implementar"],
+      "mandatory_agents": ["agent_github_flow", "agent_react_components", "agent_code_quality", "agent_github_pullrequest"]
+    },
+    "feature_completa": {
+      "description": "Feature completa com múltiplos componentes e estado",
+      "sequence": [
+        "agent_github_flow",
+        "agent_figma_extract",
+        "agent_react_components",
+        "agent_redux_toolkit",
+        "agent_tailwind_estilization",
+        "agent_performance",
+        "agent_accessibility",
+        "agent_i_18_n",
+        "agent_security",
+        "agent_code_quality",
+        "agent_integration_tests",
+        "agent_analytics",
+        "agent_github_pullrequest"
+      ],
+      "keywords": ["feature", "funcionalidade", "sistema", "autenticação", "dashboard"],
+      "mandatory_agents": ["agent_github_flow", "agent_react_components", "agent_redux_toolkit", "agent_code_quality", "agent_github_pullrequest"]
+    },
+    "refatoracao": {
+      "description": "Melhorias e refatoração de código existente",
+      "sequence": [
+        "agent_github_flow",
+        "agent_code_quality",
+        "agent_security",
+        "agent_performance",
+        "agent_integration_tests",
+        "agent_github_pullrequest"
+      ],
+      "keywords": ["refatorar", "melhorar", "otimizar", "corrigir"],
+      "mandatory_agents": ["agent_github_flow", "agent_code_quality", "agent_github_pullrequest"]
+    },
+    "ui_ux_focus": {
+      "description": "Melhorias visuais e de experiência do usuário",
+      "sequence": [
+        "agent_github_flow",
+        "agent_figma_extract",
+        "agent_tailwind_estilization",
+        "agent_responsiveness",
+        "agent_animations",
+        "agent_accessibility",
+        "agent_code_quality",
+        "agent_github_pullrequest"
+      ],
+      "keywords": ["design", "visual", "ui", "ux", "estilo", "animação"],
+      "mandatory_agents": ["agent_github_flow", "agent_tailwind_estilization", "agent_code_quality", "agent_github_pullrequest"]
+    },
+    "performance_focus": {
+      "description": "Otimizações específicas de performance",
+      "sequence": [
+        "agent_github_flow",
+        "agent_performance",
+        "agent_code_quality",
+        "agent_integration_tests",
+        "agent_github_pullrequest"
+      ],
+      "keywords": ["performance", "otimização", "velocidade", "bundle"],
+      "mandatory_agents": ["agent_github_flow", "agent_performance", "agent_code_quality", "agent_github_pullrequest"]
+    },
+    "testes_focus": {
+      "description": "Implementação ou melhoria de testes",
+      "sequence": [
+        "agent_github_flow",
+        "agent_integration_tests",
+        "agent_e_2_e_cypress",
+        "agent_code_quality",
+        "agent_github_pullrequest"
+      ],
+      "keywords": ["teste", "testing", "cobertura", "cypress", "vitest"],
+      "mandatory_agents": ["agent_github_flow", "agent_integration_tests", "agent_code_quality", "agent_github_pullrequest"]
+    }
+  },
+  "dependencies": {
+    "agent_github_flow": {
+      "depends_on": [],
+      "can_call": [],
+      "always_first": true
+    },
+    "agent_figma_extract": {
+      "depends_on": ["agent_github_flow"],
+      "can_call": [],
+      "required_for": ["agent_tailwind_estilization"]
+    },
+    "agent_react_components": {
+      "depends_on": ["agent_figma_extract"],
+      "can_call": ["agent_redux_toolkit", "agent_tailwind_estilization"],
+      "required_for": ["agent_tailwind_estilization", "agent_performance"]
+    },
+    "agent_redux_toolkit": {
+      "depends_on": ["agent_react_components"],
+      "can_call": [],
+      "required_for": ["agent_integration_tests"]
+    },
+    "agent_tailwind_estilization": {
+      "depends_on": ["agent_react_components", "agent_figma_extract"],
+      "can_call": ["agent_responsiveness", "agent_animations"],
+      "required_for": ["agent_accessibility"]
+    },
+    "agent_performance": {
+      "depends_on": ["agent_react_components"],
+      "can_call": ["agent_code_quality"],
+      "required_for": ["agent_integration_tests"]
+    },
+    "agent_accessibility": {
+      "depends_on": ["agent_tailwind_estilization"],
+      "can_call": [],
+      "required_for": ["agent_security"]
+    },
+    "agent_security": {
+      "depends_on": ["agent_accessibility"],
+      "can_call": ["agent_code_quality"],
+      "required_for": ["agent_code_quality"]
+    },
+    "agent_code_quality": {
+      "depends_on": ["agent_security"],
+      "can_call": [],
+      "quality_gate": true,
+      "can_block_pipeline": true
+    },
+    "agent_integration_tests": {
+      "depends_on": ["agent_code_quality"],
+      "can_call": ["agent_e_2_e_cypress"],
+      "required_for": ["agent_github_pullrequest"]
+    },
+    "agent_github_pullrequest": {
+      "depends_on": ["agent_integration_tests"],
+      "can_call": [],
+      "always_last": true
+    },
+    "agent_responsiveness": {
+      "depends_on": ["agent_tailwind_estilization"],
+      "can_call": [],
+      "required_for": ["agent_accessibility"]
+    },
+    "agent_animations": {
+      "depends_on": ["agent_tailwind_estilization"],
+      "can_call": [],
+      "required_for": ["agent_accessibility"]
+    },
+    "agent_i_18_n": {
+      "depends_on": ["agent_redux_toolkit"],
+      "can_call": ["agent_analytics"],
+      "required_for": ["agent_analytics"]
+    },
+    "agent_analytics": {
+      "depends_on": ["agent_i_18_n"],
+      "can_call": [],
+      "required_for": ["agent_github_pullrequest"]
+    },
+    "agent_e_2_e_cypress": {
+      "depends_on": ["agent_integration_tests"],
+      "can_call": [],
+      "required_for": ["agent_github_pullrequest"]
+    }
+  },
+  "quality_gates": {
+    "zero_tolerance_agents": ["agent_code_quality", "agent_security"],
+    "retry_policy": {
+      "max_retries": 2,
+      "retry_delay_seconds": 5
+    },
+    "rollback_on_failure": true
+  },
+  "github_integration": {
+    "issue_templates": {
+      "pipeline": "template_pipeline_issue.md",
+      "component": "template_component_issue.md",
+      "feature": "template_feature_issue.md"
+    },
+    "pr_templates": {
+      "component": "template_component_pr.md",
+      "feature": "template_feature_pr.md",
+      "refactor": "template_refactor_pr.md"
+    },
+    "branch_naming": {
+      "prefix": "feature/",
+      "format": "{type}-{name}",
+      "max_length": 50
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "detailed_pipeline_logs": true,
+    "agent_performance_tracking": true
+  }
+}

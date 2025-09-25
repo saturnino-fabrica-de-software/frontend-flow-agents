@@ -1,0 +1,200 @@
+{
+  "version": "2.0",
+  "metrics_config": {
+    "enabled": true,
+    "collection_frequency": "real_time",
+    "retention_days": 90,
+    "auto_cleanup": true
+  },
+  "collection_targets": {
+    "agent_performance": {
+      "execution_time": true,
+      "memory_usage": true,
+      "success_rate": true,
+      "error_patterns": true,
+      "input_output_size": false
+    },
+    "pipeline_performance": {
+      "total_duration": true,
+      "bottlenecks": true,
+      "parallelization_opportunities": true,
+      "success_rate_by_type": true,
+      "cache_effectiveness": true
+    },
+    "system_metrics": {
+      "throughput": true,
+      "concurrent_pipelines": true,
+      "resource_utilization": false,
+      "auto_healing_events": true
+    }
+  },
+  "performance_baselines": {
+    "agent_github_flow": {
+      "avg_duration_seconds": 15,
+      "max_acceptable_duration": 60,
+      "expected_success_rate": 98
+    },
+    "agent_figma_extract": {
+      "avg_duration_seconds": 45,
+      "max_acceptable_duration": 180,
+      "expected_success_rate": 85,
+      "cache_hit_rate_target": 70
+    },
+    "agent_react_components": {
+      "avg_duration_seconds": 90,
+      "max_acceptable_duration": 300,
+      "expected_success_rate": 95
+    },
+    "agent_redux_toolkit": {
+      "avg_duration_seconds": 60,
+      "max_acceptable_duration": 240,
+      "expected_success_rate": 96
+    },
+    "agent_tailwind_estilization": {
+      "avg_duration_seconds": 30,
+      "max_acceptable_duration": 120,
+      "expected_success_rate": 98
+    },
+    "agent_performance": {
+      "avg_duration_seconds": 75,
+      "max_acceptable_duration": 200,
+      "expected_success_rate": 92
+    },
+    "agent_accessibility": {
+      "avg_duration_seconds": 25,
+      "max_acceptable_duration": 90,
+      "expected_success_rate": 99
+    },
+    "agent_security": {
+      "avg_duration_seconds": 120,
+      "max_acceptable_duration": 300,
+      "expected_success_rate": 90
+    },
+    "agent_code_quality": {
+      "avg_duration_seconds": 45,
+      "max_acceptable_duration": 150,
+      "expected_success_rate": 85,
+      "tolerance_policy": "zero_tolerance"
+    },
+    "agent_integration_tests": {
+      "avg_duration_seconds": 180,
+      "max_acceptable_duration": 600,
+      "expected_success_rate": 88
+    },
+    "agent_e_2_e_cypress": {
+      "avg_duration_seconds": 240,
+      "max_acceptable_duration": 900,
+      "expected_success_rate": 82
+    },
+    "agent_github_pullrequest": {
+      "avg_duration_seconds": 20,
+      "max_acceptable_duration": 90,
+      "expected_success_rate": 99
+    }
+  },
+  "pipeline_baselines": {
+    "component_novo": {
+      "total_duration_minutes": 12,
+      "max_acceptable_minutes": 25,
+      "expected_success_rate": 92,
+      "bottleneck_agent": "agent_integration_tests"
+    },
+    "feature_completa": {
+      "total_duration_minutes": 28,
+      "max_acceptable_minutes": 45,
+      "expected_success_rate": 87,
+      "bottleneck_agent": "agent_e_2_e_cypress"
+    },
+    "refatoracao": {
+      "total_duration_minutes": 8,
+      "max_acceptable_minutes": 15,
+      "expected_success_rate": 94,
+      "bottleneck_agent": "agent_security"
+    }
+  },
+  "alert_thresholds": {
+    "performance_degradation": {
+      "duration_increase_percent": 25,
+      "success_rate_drop_percent": 10,
+      "consecutive_failures": 3
+    },
+    "system_health": {
+      "pipeline_queue_size": 10,
+      "memory_usage_percent": 85,
+      "error_rate_percent": 15
+    },
+    "optimization_opportunities": {
+      "parallelization_potential_minutes": 2,
+      "cache_miss_rate_percent": 60,
+      "bottleneck_duration_percent": 40
+    }
+  },
+  "reporting": {
+    "dashboard_update_frequency": "1_minute",
+    "daily_report": {
+      "enabled": true,
+      "time": "09:00",
+      "include_trends": true,
+      "include_optimizations": true
+    },
+    "weekly_report": {
+      "enabled": true,
+      "day": "monday",
+      "time": "08:00",
+      "detailed_analysis": true,
+      "recommendations": true
+    },
+    "real_time_alerts": {
+      "enabled": true,
+      "severity_levels": ["critical", "warning", "info"],
+      "delivery_method": "dashboard"
+    }
+  },
+  "optimization_tracking": {
+    "parallel_execution_candidates": [
+      {
+        "agents": ["agent_performance", "agent_accessibility"],
+        "estimated_time_saving_minutes": 1.2,
+        "confidence": 0.85
+      },
+      {
+        "agents": ["agent_responsiveness", "agent_animations"],
+        "estimated_time_saving_minutes": 0.8,
+        "confidence": 0.92
+      },
+      {
+        "agents": ["agent_i_18_n", "agent_analytics"],
+        "estimated_time_saving_minutes": 0.6,
+        "confidence": 0.78
+      }
+    ],
+    "cache_opportunities": [
+      {
+        "agent": "agent_figma_extract",
+        "cache_duration": "24h",
+        "hit_rate_potential": 75,
+        "time_saving_minutes": 2.1
+      },
+      {
+        "agent": "agent_security",
+        "cache_duration": "until_code_change",
+        "hit_rate_potential": 60,
+        "time_saving_minutes": 1.8
+      }
+    ]
+  },
+  "historical_data": {
+    "retention_policy": {
+      "detailed_logs": "30_days",
+      "aggregated_metrics": "90_days",
+      "trend_data": "1_year"
+    },
+    "aggregation_intervals": ["1h", "1d", "1w", "1m"],
+    "metrics_to_aggregate": [
+      "avg_execution_time",
+      "success_rate",
+      "throughput",
+      "cache_hit_rate"
+    ]
+  }
+}

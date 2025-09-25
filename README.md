@@ -16,6 +16,29 @@ Frontend Flow é um sistema revolucionário de **22 agentes IA especializados** 
 - **Fallback Inteligente**: Funciona mesmo sem Claude (modo demonstração)
 - **Zero Configuração**: Integração automática e transparente
 
+### 📋 **MCPs Obrigatórios**
+Para funcionamento completo, os agentes requerem os seguintes MCPs no Claude:
+
+#### **🎨 Design & UI**
+- **`shadcn-ui`** - Componentes React (obrigatório para `agent_react_components`)
+- **`Context7`** - Padrões atualizados (obrigatório para TODOS os agentes)
+
+#### **🔧 Desenvolvimento**
+- **`Figma`** - Extração de tokens de design (`agent_figma_extract`)
+- **`GitHub`** - Automação Git/PR (`agent_github_flow`, `agent_github_pullrequest`)
+
+#### **⚡ Como Verificar MCPs**
+```bash
+# No Claude Code, verificar MCPs instalados:
+claude mcp list
+
+# MCPs essenciais para Frontend Flow:
+# ✅ shadcn-ui - Componentes UI
+# ✅ Context7 - Padrões/documentação
+# ✅ Figma - Design tokens
+# ✅ GitHub - Automação Git
+```
+
 ### 🎯 **Uma solicitação → Código completo**
 
 ```bash

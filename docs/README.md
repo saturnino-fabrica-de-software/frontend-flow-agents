@@ -125,6 +125,35 @@ npm install -g claude-code
 claude --version
 ```
 
+### 📋 **MCPs Obrigatórios**
+
+Para o funcionamento completo dos agentes, você precisa ter estes MCPs configurados no Claude:
+
+#### **🎨 MCPs Essenciais**
+| MCP | Finalidade | Agentes que Usam |
+|-----|------------|------------------|
+| **`shadcn-ui`** | Componentes React de qualidade | `agent_react_components` |
+| **`Context7`** | Padrões e boas práticas atualizadas | **TODOS os agentes** |
+| **`Figma`** | Extração de tokens de design | `agent_figma_extract` |
+| **`GitHub`** | Automação Git e Pull Requests | `agent_github_flow`, `agent_github_pullrequest` |
+
+#### **🔍 Como Verificar**
+```bash
+# No Claude Code, listar MCPs instalados
+claude mcp list
+
+# Verificar se os MCPs essenciais estão presentes
+claude mcp status shadcn-ui
+claude mcp status Context7
+claude mcp status Figma
+claude mcp status GitHub
+```
+
+#### **⚠️ Importante**
+- **Sem MCPs**: Agentes funcionam em modo simulação
+- **Com MCPs**: Agentes geram código real de produção
+- **Context7 é OBRIGATÓRIO**: Todos os agentes consultam para padrões atualizados
+
 ## 🚀 Fluxo Típico
 
 1. **Inicialização** (uma vez por projeto)

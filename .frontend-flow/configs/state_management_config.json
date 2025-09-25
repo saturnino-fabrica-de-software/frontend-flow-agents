@@ -1,0 +1,272 @@
+{
+  "version": "3.0",
+  "state_management": {
+    "enabled": true,
+    "live_updates": true,
+    "auto_backup": true,
+    "recovery_mode": true
+  },
+  "file_locations": {
+    "temp_directory": ".claude/temp/",
+    "current_state": ".claude/temp/current_pipeline_state.md",
+    "execution_context": ".claude/temp/execution_context.json",
+    "pipeline_history": ".claude/temp/pipeline_history.log",
+    "backup_directory": ".claude/temp/backups/",
+    "archive_directory": ".claude/archive/"
+  },
+  "update_triggers": {
+    "agent_start": {
+      "enabled": true,
+      "priority": "high",
+      "fields_to_update": [
+        "current_agent",
+        "current_status",
+        "current_action",
+        "progress_percentage"
+      ]
+    },
+    "agent_progress": {
+      "enabled": true,
+      "priority": "medium",
+      "frequency": "every_30_seconds",
+      "fields_to_update": [
+        "internal_progress",
+        "current_action",
+        "issues_encountered",
+        "estimated_remaining_time"
+      ]
+    },
+    "agent_complete": {
+      "enabled": true,
+      "priority": "high",
+      "fields_to_update": [
+        "completed_agents",
+        "next_agent",
+        "handoff_context",
+        "progress_percentage"
+      ]
+    },
+    "agent_error": {
+      "enabled": true,
+      "priority": "critical",
+      "immediate_backup": true,
+      "fields_to_update": [
+        "active_problems",
+        "error_details",
+        "recovery_status",
+        "next_critical_steps"
+      ]
+    },
+    "quality_gate": {
+      "enabled": true,
+      "priority": "critical",
+      "create_checkpoint": true,
+      "fields_to_update": [
+        "quality_gate_status",
+        "blocking_issues",
+        "resolution_required"
+      ]
+    }
+  },
+  "state_components": {
+    "pipeline_metadata": {
+      "pipeline_id": "auto_generated_uuid",
+      "pipeline_type": "from_classifier",
+      "start_time": "iso_timestamp",
+      "original_request": "user_input",
+      "estimated_duration": "from_metrics",
+      "complexity_level": "simple|moderate|complex"
+    },
+    "progress_tracking": {
+      "total_agents": "count_from_pipeline",
+      "agents_completed": "dynamic_count",
+      "current_agent": "active_agent_name",
+      "next_agent": "from_sequence",
+      "progress_percentage": "calculated",
+      "estimated_remaining": "calculated_from_metrics"
+    },
+    "execution_context": {
+      "branch_name": "from_github_flow",
+      "issue_id": "from_github_flow",
+      "files_created": "tracked_automatically",
+      "decisions_made": "recorded_by_agents",
+      "requirements_identified": "extracted_by_nlp"
+    },
+    "quality_metrics": {
+      "problems_encountered": "count_and_list",
+      "problems_resolved": "count_and_list",
+      "quality_gates_passed": "tracking_array",
+      "retries_needed": "count_per_agent",
+      "cache_effectiveness": "hit_rate_tracking"
+    }
+  },
+  "recovery_system": {
+    "context_preservation": {
+      "critical_decisions": "preserve_all",
+      "architectural_choices": "preserve_all",
+      "problem_solutions": "preserve_all",
+      "file_modifications": "track_all_changes",
+      "agent_configurations": "preserve_custom_settings"
+    },
+    "recovery_instructions": {
+      "auto_generate": true,
+      "include_file_paths": true,
+      "include_commands": true,
+      "include_context": true,
+      "step_by_step": true
+    },
+    "handoff_optimization": {
+      "summarize_completed_work": true,
+      "highlight_next_actions": true,
+      "preserve_critical_context": true,
+      "include_troubleshooting": true
+    }
+  },
+  "backup_strategy": {
+    "automatic_backups": {
+      "enabled": true,
+      "frequency": "every_agent_completion",
+      "retention_count": 10,
+      "compress": true
+    },
+    "checkpoint_backups": {
+      "enabled": true,
+      "triggers": [
+        "quality_gate_failure",
+        "agent_error",
+        "pipeline_halfway_point",
+        "before_critical_agents"
+      ],
+      "retain_indefinitely": true
+    },
+    "emergency_backups": {
+      "enabled": true,
+      "triggers": [
+        "system_error",
+        "unexpected_termination",
+        "conversation_compaction_detected"
+      ]
+    }
+  },
+  "cleanup_policies": {
+    "successful_completion": {
+      "archive_final_state": true,
+      "clear_temp_files": true,
+      "preserve_history": true,
+      "retention_days": 30
+    },
+    "failed_completion": {
+      "preserve_all_state": true,
+      "create_debug_snapshot": true,
+      "retain_indefinitely": true,
+      "mark_for_analysis": true
+    },
+    "abandoned_pipelines": {
+      "detect_after_hours": 24,
+      "backup_before_cleanup": true,
+      "cleanup_after_days": 7
+    }
+  },
+  "agent_integration": {
+    "mandatory_updates": {
+      "all_agents_must": [
+        "report_start",
+        "report_completion",
+        "report_errors",
+        "update_progress"
+      ]
+    },
+    "update_protocols": {
+      "start_format": "@state_manager:start|{agent_name}|{action_description}|{context}",
+      "progress_format": "@state_manager:progress|{progress_percent}|{current_action}|{issues}",
+      "complete_format": "@state_manager:complete|{results}|{handoff_context}|{next_steps}",
+      "error_format": "@state_manager:error|{error_type}|{solution_attempted}|{recovery_status}"
+    },
+    "context_sharing": {
+      "between_agents": true,
+      "preserve_decisions": true,
+      "share_learnings": true,
+      "maintain_consistency": true
+    }
+  },
+  "monitoring": {
+    "health_checks": {
+      "state_file_integrity": "every_update",
+      "backup_system_health": "hourly",
+      "recovery_system_test": "daily"
+    },
+    "performance_tracking": {
+      "state_update_time": true,
+      "file_size_monitoring": true,
+      "backup_efficiency": true
+    },
+    "alerts": {
+      "state_corruption": "immediate",
+      "backup_failure": "immediate",
+      "large_state_file": "warning",
+      "frequent_errors": "warning"
+    }
+  },
+  "templates": {
+    "component_novo": {
+      "specific_fields": [
+        "component_name",
+        "shadcn_elements_used",
+        "props_vs_context_decision",
+        "styling_approach"
+      ]
+    },
+    "feature_completa": {
+      "specific_fields": [
+        "components_created",
+        "redux_slices",
+        "api_integrations",
+        "i18n_namespaces",
+        "analytics_events"
+      ]
+    },
+    "refatoracao": {
+      "specific_fields": [
+        "files_modified",
+        "improvements_made",
+        "performance_gains",
+        "breaking_changes"
+      ]
+    }
+  },
+  "visualization": {
+    "progress_bar": {
+      "enabled": true,
+      "style": "ascii",
+      "show_percentage": true
+    },
+    "timeline": {
+      "enabled": true,
+      "show_estimates": true,
+      "highlight_current": true
+    },
+    "agent_status": {
+      "icons": {
+        "completed": "✅",
+        "current": "🔄",
+        "pending": "⏳",
+        "error": "❌",
+        "skipped": "⏭️"
+      }
+    }
+  },
+  "advanced_features": {
+    "predictive_state": {
+      "enabled": false,
+      "description": "Future: Predict next likely states based on patterns"
+    },
+    "state_diffing": {
+      "enabled": false,
+      "description": "Future: Show state changes over time"
+    },
+    "collaborative_state": {
+      "enabled": false,
+      "description": "Future: Share state across multiple Claude instances"
+    }
+  }
+}
