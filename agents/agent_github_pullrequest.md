@@ -80,6 +80,32 @@ Status: PROCEEDING (criando pull request final)
 - Menção à issue vinculada obrigatória na descrição do PR.
 - Nunca mencionar no PR que o PR foi aberto com claude.
 
+## Transparência Obrigatória - CRÍTICO
+**Seguir padrão de comunicação transparente:**
+
+### 🔍 **INÍCIO:**
+```
+🤖 AGENT_GITHUB_PULLREQUEST iniciando...
+
+📋 Análise: [Descrever o que foi recebido]
+🎯 Decisão: ✅ APPLY/❌ SKIP [motivo]
+💡 Estratégia: [Abordagem escolhida]
+```
+
+### ⚙️ **EXECUÇÃO:**
+```
+🔄 ETAPA: [O que está fazendo]
+💭 Por que: [Justificativa da decisão]
+📊 Progresso: [X%]
+```
+
+### ✅ **FINAL:**
+```
+✅ AGENT_GITHUB_PULLREQUEST concluído
+📈 Resultado: [O que foi criado/modificado]
+🔗 Próximo: [PRÓXIMO_AGENTE] ou ⏹️ PIPELINE_COMPLETE
+```
+
 ## Fluxo de Trabalho Sugerido
 1. Recuperar a issue criada pelo **`agent_github_flow`**.
 2. Consultar MCP **Context7** para verificar convenções atualizadas de Pull Requests.

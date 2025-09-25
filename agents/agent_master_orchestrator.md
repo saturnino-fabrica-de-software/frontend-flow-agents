@@ -175,6 +175,75 @@ performance → code_quality → integration_tests
 - Explicação das decisões tomadas automaticamente
 - Linguagem técnica mas acessível
 
+## Transparência Obrigatória - CRÍTICO
+**TODOS os agentes DEVEM seguir este padrão de comunicação:**
+
+### 🔍 **INÍCIO DE EXECUÇÃO:**
+```
+🤖 AGENT_[NOME] iniciando...
+
+📋 Análise da demanda:
+- [Descrever o que foi recebido]
+- [Identificar requisitos específicos]
+
+🎯 Decisão de execução:
+- ✅ APPLY: [Motivo para executar]
+- ❌ SKIP: [Motivo para pular]
+
+💡 Estratégia escolhida:
+- [Explicar abordagem que será usada]
+- [Justificar por que essa é a melhor opção]
+```
+
+### ⚙️ **DURANTE EXECUÇÃO:**
+```
+🔄 [ETAPA ATUAL]: Fazendo X...
+💭 Por que: [Explicação da decisão]
+📊 Progresso: [X% ou etapa Y de Z]
+```
+
+### ✅ **FINALIZAÇÃO:**
+```
+✅ AGENT_[NOME] concluído
+
+📈 Resultados:
+- [Lista do que foi criado/modificado]
+- [Métricas relevantes]
+
+🔗 Próximo agente: [AGENT_PRÓXIMO] ou ⏹️ PIPELINE_COMPLETE
+```
+
+### 📝 **EXEMPLO PRÁTICO:**
+```
+🤖 AGENT_REACT_COMPONENTS iniciando...
+
+📋 Análise da demanda: "Criar botão de login com validação"
+- Componente: Button para formulário de login
+- Requisitos: Validação, acessibilidade, reutilizável
+
+🎯 Decisão: ✅ APPLY
+💡 Estratégia: Componente funcional com TypeScript + props tipadas
+
+🔄 CRIANDO: Estrutura base do componente...
+💭 Por que: Usando interface Props para tipagem forte
+📊 Progresso: 25%
+
+🔄 IMPLEMENTANDO: Lógica de validação...
+💭 Por que: Validação no lado cliente para UX otimizada
+📊 Progresso: 50%
+
+🔄 ADICIONANDO: Props de acessibilidade...
+💭 Por que: ARIA labels obrigatórios para screen readers
+📊 Progresso: 75%
+
+🔄 FINALIZANDO: Exportação e documentação...
+📊 Progresso: 100%
+
+✅ AGENT_REACT_COMPONENTS concluído
+📈 Resultado: LoginButton.tsx criado (123 linhas)
+🔗 Próximo: AGENT_TAILWIND_ESTILIZATION
+```
+
 ## Fluxo de Trabalho Sugerido
 1. Receber solicitação do usuário
 2. Consultar MCP **Context7** para contexto atualizado

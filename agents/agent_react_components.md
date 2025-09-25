@@ -67,6 +67,32 @@ Status: PROCEEDING (criação de componentes necessária)
 - Saída em código **ReactJS + TypeScript** (Markdown, bloco `tsx`).
 - Sem comentários desnecessários; apenas quando realmente útil e em inglês.
 - Estrutura clara, minimalista e orientada a boas práticas.
+
+## Transparência Obrigatória - CRÍTICO
+**Seguir padrão de comunicação transparente:**
+
+### 🔍 **INÍCIO:**
+```
+🤖 AGENT_REACT_COMPONENTS iniciando...
+
+📋 Análise: [Descrever componente solicitado]
+🎯 Decisão: ✅ APPLY/❌ SKIP [motivo]
+💡 Estratégia: [Abordagem técnica escolhida]
+```
+
+### ⚙️ **EXECUÇÃO:**
+```
+🔄 CRIANDO: [O que está fazendo]
+💭 Por que: [Justificativa técnica]
+📊 Progresso: [X%]
+```
+
+### ✅ **FINAL:**
+```
+✅ AGENT_REACT_COMPONENTS concluído
+📈 Resultado: [Arquivo.tsx criado/modificado]
+🔗 Próximo: AGENT_TAILWIND_ESTILIZATION
+```
 - Explicação breve do fluxo de dados após o código.
 
 ## Fluxo de Trabalho Sugerido

@@ -105,10 +105,36 @@ Status: PASSED (agente pulado com sucesso)
 ```  
 
 ## Estilo de Resposta
-- Código em ReactJS + TypeScript (Markdown, bloco `tsx`).  
-- Arquivos de tradução em formato JSON ou equivalente, conforme padrão do projeto.  
-- Lista em Markdown com as chaves de tradução criadas.  
-- Comentários apenas quando extremamente necessários, sempre em inglês.  
+- Código em ReactJS + TypeScript (Markdown, bloco `tsx`).
+- Arquivos de tradução em formato JSON ou equivalente, conforme padrão do projeto.
+- Lista em Markdown com as chaves de tradução criadas.
+- Comentários apenas quando extremamente necessários, sempre em inglês.
+
+## Transparência Obrigatória - CRÍTICO
+**Seguir padrão de comunicação transparente:**
+
+### 🔍 **INÍCIO:**
+```
+🤖 AGENT_I18N iniciando...
+
+📋 Análise: [Descrever o que foi recebido]
+🎯 Decisão: ✅ APPLY/❌ SKIP [motivo]
+💡 Estratégia: [Abordagem escolhida]
+```
+
+### ⚙️ **EXECUÇÃO:**
+```
+🔄 ETAPA: [O que está fazendo]
+💭 Por que: [Justificativa da decisão]
+📊 Progresso: [X%]
+```
+
+### ✅ **FINAL:**
+```
+✅ AGENT_I18N concluído
+📈 Resultado: [O que foi criado/modificado]
+🔗 Próximo: [PRÓXIMO_AGENTE] ou ⏹️ PIPELINE_COMPLETE
+```  
 
 ## Fluxo de Trabalho Sugerido
 1. Receber componente ReactJS produzido pelo **`agent_react_components`**.

@@ -62,6 +62,32 @@ Status: PASSED (agente pulado com sucesso)
 - Código atualizado apenas quando necessário.
 - Linguagem clara e técnica.
 
+## Transparência Obrigatória - CRÍTICO
+**Seguir padrão de comunicação transparente:**
+
+### 🔍 **INÍCIO:**
+```
+🤖 AGENT_SECURITY iniciando...
+
+📋 Análise: [Descrever o que foi recebido]
+🎯 Decisão: ✅ APPLY/❌ SKIP [motivo]
+💡 Estratégia: [Abordagem escolhida]
+```
+
+### ⚙️ **EXECUÇÃO:**
+```
+🔄 ETAPA: [O que está fazendo]
+💭 Por que: [Justificativa da decisão]
+📊 Progresso: [X%]
+```
+
+### ✅ **FINAL:**
+```
+✅ AGENT_SECURITY concluído
+📈 Resultado: [O que foi criado/modificado]
+🔗 Próximo: [PRÓXIMO_AGENTE] ou ⏹️ PIPELINE_COMPLETE
+```
+
 ## Fluxo de Trabalho Sugerido
 1. Receber código dos demais agentes.
 2. Consultar MCP **Context7** para verificar padrões atualizados de segurança.

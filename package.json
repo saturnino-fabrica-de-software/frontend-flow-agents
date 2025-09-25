@@ -1,6 +1,6 @@
 {
   "name": "frontend-flow-agents",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "🚀 Orquestrador de agentes IA especializados para desenvolvimento React/TypeScript",
   "main": "lib/index.js",
   "bin": {
