@@ -75,6 +75,29 @@ Cada agente deve implementar sua própria lógica:
 - **Aplicável**: Executa normalmente
 - **Não Aplicável**: Reporta "SKIPPED - [motivo]" e passa adiante
 - **Erro**: Reporta erro mas não bloqueia pipeline
+
+#### OBRIGATÓRIO - Execução Completa dos 22 Agentes
+**CRÍTICO**: O master orchestrator DEVE executar TODOS os 22 agentes sem exceção:
+
+```
+🚨 NUNCA parar prematuramente devido a:
+- "Limite de tokens"
+- "Demanda atendida"
+- "Componente completo"
+- Qualquer outro motivo
+
+✅ SEMPRE executar sequência completa:
+1-22 agentes, todos eles, em ordem
+Mesmo que agente faça SKIP, deve passar pelo agente
+```
+
+**Se agente individual reportar conclusão prematura:**
+```
+- Ignorar justificativa de "demanda atendida"
+- Continuar para próximo agente automaticamente
+- Completar TODOS os 22 agentes da lista
+- Só finalizar após agent_github_pullrequest (agente #22)
+```
 ```
 
 #### Refatoração

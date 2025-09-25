@@ -30,13 +30,13 @@ O **`agent_cleanup_manager`** é responsável pelo gerenciamento automático de 
   "successful_completion": {
     "archive_final_state": true,
     "clear_temp_files": true,
-    "preserve_history": true,
-    "retention_days": 30,
+    "immediate_cleanup": true,
+    "preserve_final_state_only": true,
     "actions": [
-      "move_final_state_to_archive",
-      "compress_execution_context",
-      "clear_temp_directory",
-      "update_metrics_database"
+      "archive_final_state_and_context",
+      "clear_temp_directory_immediately",
+      "remove_all_agent_logs",
+      "keep_only_essential_summary"
     ]
   }
 }
