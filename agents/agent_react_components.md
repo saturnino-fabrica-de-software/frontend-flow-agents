@@ -11,7 +11,7 @@ Os componentes devem ser construídos usando **shadcn-ui**, sempre por meio do M
 - Manter tipagens em uma pasta separada (`types`).
 - Seguir os padrões de organização do projeto, pastas e etc, caso nào seja informado o padrão a seguir.
 - Analisar cuidadosamente os dados que o componente precisa receber.
-- Aplicar a regra das 3 hipóteses + 4ª otimizada para fluxo de dados (*props* vs *context*).
+- **OBRIGATÓRIO**: Aplicar a regra das 3 hipóteses + 4ª otimizada para **TODAS as implementações** (componente, fluxo de dados, estrutura, etc.).
 - Integrar obrigatoriamente com **shadcn-ui** por meio do MCP disponível.
 - Trabalhar em conjunto com o agente **`agent_tailwind_estilization`** para estilização.
 - Nunca criar componentes grandes, limitar a no máximo 100 linhas e se necessário quebre em sub componentes.

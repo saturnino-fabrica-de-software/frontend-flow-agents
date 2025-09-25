@@ -198,6 +198,71 @@ performance → code_quality → integration_tests
 - Explicação das decisões tomadas automaticamente
 - Linguagem técnica mas acessível
 
+## Metodologia Universal - REGRA 3+1 OBRIGATÓRIA
+
+### Aplicação da Regra das 3 Hipóteses +1 para TUDO
+**TODOS os agentes DEVEM aplicar esta metodologia para:**
+- ✅ **Bugs e correções**
+- ✅ **Features novas**
+- ✅ **Componentes**
+- ✅ **Otimizações**
+- ✅ **Refatorações**
+- ✅ **Qualquer implementação**
+
+#### Estrutura Obrigatória 3+1
+```markdown
+## 🧠 Análise das 3 Hipóteses
+
+**Hipótese 1**: [Primeira abordagem]
+- ✅ Vantagens: [pontos positivos]
+- ❌ Limitações: [falhas identificadas]
+- 🔧 Como fazer: [implementação]
+
+**Hipótese 2**: [Segunda abordagem]
+- ✅ Vantagens: [pontos positivos]
+- ❌ Limitações: [falhas identificadas]
+- 🔧 Como fazer: [implementação]
+
+**Hipótese 3**: [Terceira abordagem]
+- ✅ Vantagens: [pontos positivos]
+- ❌ Limitações: [falhas identificadas]
+- 🔧 Como fazer: [implementação]
+
+## 🔍 Análise Crítica das Falhas
+- **Padrão comum nas falhas**: [o que se repete]
+- **Maior risco identificado**: [principal problema]
+- **Oportunidade de otimização**: [onde melhorar]
+
+## ⚡ SOLUÇÃO OTIMIZADA (4ª Hipótese)
+**Abordagem escolhida**: [combinação otimizada]
+**Por que é superior**:
+- Elimina falha X das hipóteses 1, 2 e 3
+- Combina melhor de cada hipótese
+- Adiciona inovação Y para resolver problema Z
+
+**Implementação**: [código/passos da solução otimizada]
+```
+
+#### Exemplos por Tipo
+
+**Para Feature Nova**:
+- Hipótese 1: Implementação simples
+- Hipótese 2: Implementação com padrões avançados
+- Hipótese 3: Implementação híbrida
+- 4ª: Combinação otimizada baseada na análise de falhas
+
+**Para Bug**:
+- Hipótese 1: Correção direta
+- Hipótese 2: Refatoração preventiva
+- Hipótese 3: Solução alternativa
+- 4ª: Correção robusta que evita bugs similares
+
+**Para Componente**:
+- Hipótese 1: Props básicas
+- Hipótese 2: Context global
+- Hipótese 3: Híbrido props+context
+- 4ª: Solução otimizada de fluxo de dados
+
 ## Transparência Obrigatória - CRÍTICO
 **TODOS os agentes DEVEM seguir este padrão de comunicação:**
 
@@ -307,6 +372,7 @@ Conteúdo: "Agent [NOME] concluído em [timestamp] - Status: [SUCCESS/FAILED]"
 **CRÍTICO**: Esses logs são monitorados pelo sistema para atualizar o execution_context.json em tempo real!
 
 ## Critérios de Qualidade (Checklist)
+- [ ] **REGRA 3+1 UNIVERSAL**: Todos os agentes aplicaram metodologia das 3 hipóteses +1
 - [ ] MCP **Context7** consultado antes da execução
 - [ ] Demanda classificada corretamente
 - [ ] Pipeline otimizado definido
@@ -317,6 +383,8 @@ Conteúdo: "Agent [NOME] concluído em [timestamp] - Status: [SUCCESS/FAILED]"
 - [ ] PR criado com template completo
 - [ ] Logs detalhados gerados
 - [ ] Política de tolerância zero mantida
+- [ ] **Análise de falhas documentada** para cada implementação
+- [ ] **Solução otimizada justificada** em todos os agentes
 
 ## Configuração e Personalização
 - Arquivo **`orchestrator_config.json`** para configurações

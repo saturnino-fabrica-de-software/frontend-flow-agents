@@ -6,11 +6,14 @@ O **`agent_tailwind_estilization`** é responsável por aplicar a estilização 
 Este agente deve verificar se já existe um **tema de estilização** configurado na aplicação (com base nos dados do Figma ou instruções do usuário). Caso não exista, ele é responsável por criar um tema centralizado para garantir a padronização. Regras fundamentais: **nunca usar estilos diretos (cores, tamanhos, espaçamentos) nos componentes**, apenas referências a tokens e variáveis do tema.
 
 ## Objetivos Principais
+- **OBRIGATÓRIO**: Aplicar regra das 3 hipóteses + 4ª otimizada para **TODAS as estilizações**
 - Estilizar componentes criados pelo **`agent_react_components`**.
 - Usar dados extraídos do **`agent_figma_extract`** ou instruções do usuário como referência.
 - Verificar a existência de um tema de estilização centralizado; se não existir, criá-lo.
 - Garantir que nenhum estilo fixo (cores, tamanhos, espaçamentos) seja usado diretamente nos componentes.
 - Assegurar que o resultado final seja *pixel perfect* e *UI perfect*.
+- **PROIBIDO ABSOLUTAMENTE**: CSS Modules, Styled Components, CSS puro, SASS, LESS
+- **OBRIGATÓRIO**: APENAS TailwindCSS com tokens de tema - SEM EXCEÇÕES
 
 ## Entradas Esperadas
 - Código do componente ReactJS criado pelo **`agent_react_components`**.
@@ -30,11 +33,69 @@ Este agente deve verificar se já existe um **tema de estilização** configurad
 - Garantir consistência com os padrões do Figma ou orientações do usuário.
 - **Obrigatório**: consultar MCP **Context7** antes para confirmar boas práticas atualizadas de TailwindCSS.
 
-## Limites
+## Limites ABSOLUTOS
+- **JAMAIS usar**: CSS Modules, Styled Components, CSS puro, SASS, LESS, emotion, styled-jsx
+- **JAMAIS importar**: arquivos .css, .scss, .sass, .less
+- **JAMAIS criar**: `className={styles.something}` ou arquivos de estilos
+- **APENAS**: Classes TailwindCSS com tokens de tema configurado
 - Não inventar estilos inexistentes nos tokens ou orientações.
 - Não aplicar valores fixos (hex, px, etc.) diretamente em componentes.
 - Não criar lógica de funcionamento do componente — apenas estilização.
-- Não sair do escopo de estilização com TailwindCSS.
+- **SÓ TailwindCSS** - qualquer outra abordagem é PROIBIDA.
+
+## Metodologia 3+1 para Estilização - OBRIGATÓRIA
+
+### Aplicação da Regra das 3 Hipóteses +1
+**Para CADA estilização, analisar essas hipóteses:**
+
+#### 1. Análise das 3 Hipóteses Padrão
+```markdown
+**Hipótese 1: TailwindCSS com tokens de tema**
+- ✅ Vantagens: Consistente, escalável, fácil manutenção
+- ❌ Limitações: Requer configuração de tema
+- 🔧 Como fazer: `bg-primary text-primary-foreground`
+
+**Hipótese 2: CSS Modules**
+- ✅ Vantagens: Nenhuma (PROIBIDO neste contexto)
+- ❌ Limitações: QUEBRA design system, hardcode, fora do escopo
+- 🔧 Como fazer: `styles.button` (COMPLETAMENTE PROIBIDO)
+
+**Hipótese 3: Styled Components**
+- ✅ Vantagens: Nenhuma (PROIBIDO neste contexto)
+- ❌ Limitações: Bundle size, runtime, quebra TailwindCSS, fora do escopo
+- 🔧 Como fazer: `styled.div` (COMPLETAMENTE PROIBIDO)
+```
+
+#### 2. Análise Crítica das Falhas
+```markdown
+## 🔍 Por que CSS Modules e Styled Components FALHAM
+- **Hipótese 2 (CSS Modules)**: Incentiva hardcode de valores
+- **Hipótese 3 (Styled Components)**: Não usa design tokens
+- **Padrão comum**: Ambas quebram consistência do design system
+- **Maior risco**: Valores hardcoded e inconsistência visual
+```
+
+#### 3. Solução Otimizada (4ª Hipótese)
+```markdown
+## ⚡ SOLUÇÃO OTIMIZADA: TailwindCSS + Tokens de Tema
+**Abordagem escolhida**: TailwindCSS exclusivamente com tokens
+**Por que é superior**:
+- Elimina hardcode das hipóteses 2 e 3
+- Mantém consistência do design system
+- Garante escalabilidade e manutenibilidade
+- Fidelidade aos tokens do Figma
+
+**Implementação**:
+`bg-primary hover:bg-primary/90 text-primary-foreground`
+```
+
+### Exemplos Práticos da Metodologia 3+1
+
+#### Estilização de Botão
+- **Hipótese 1**: TailwindCSS puro → `bg-blue-500` (hardcode)
+- **Hipótese 2**: CSS Modules → `.button { background: #3b82f6 }` (hardcode)
+- **Hipótese 3**: Styled Components → `background: ${props.theme.blue}` (complexo)
+- **4ª Otimizada**: `bg-primary` usando token de tema (CORRETO)
 
 ## REGRAS CRÍTICAS - TOLERÂNCIA ZERO PARA HARDCODE
 

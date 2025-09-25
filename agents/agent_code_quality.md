@@ -31,10 +31,77 @@ Este agente atua como última camada de verificação técnica, assegurando que 
 - Usar MCPs disponíveis (ex.: para lint, build, tipagem) a fim de automatizar verificações.
 - **Obrigatório**: consultar MCP **Context7** para capturar regras atualizadas de lint e build.
 
+## Metodologia para Correção de Bugs - REGRA 3+1
+
+### Aplicação Obrigatória da Regra das 3 Hipóteses +1
+Quando detectar erros/bugs, **SEMPRE aplicar esta metodologia**:
+
+#### 1. Análise das 3 Hipóteses de Correção
+```markdown
+**Hipótese 1**: [Primeira abordagem de correção]
+- ✅ Vantagens: [listar pontos positivos]
+- ❌ Limitações: [listar falhas/problemas]
+- 🔧 Implementação: [como seria feita]
+
+**Hipótese 2**: [Segunda abordagem alternativa]
+- ✅ Vantagens: [listar pontos positivos]
+- ❌ Limitações: [listar falhas/problemas]
+- 🔧 Implementação: [como seria feita]
+
+**Hipótese 3**: [Terceira abordagem diferente]
+- ✅ Vantagens: [listar pontos positivos]
+- ❌ Limitações: [listar falhas/problemas]
+- 🔧 Implementação: [como seria feita]
+```
+
+#### 2. Análise Crítica das Falhas
+```markdown
+## 🔍 Análise das Limitações Identificadas
+- **Hipótese 1**: [principais falhas detectadas]
+- **Hipótese 2**: [principais falhas detectadas]
+- **Hipótese 3**: [principais falhas detectadas]
+- **Padrões comuns**: [falhas que se repetem]
+- **Riscos de cada abordagem**: [consequências negativas]
+```
+
+#### 3. Solução Otimizada (4ª Hipótese)
+```markdown
+## ⚡ **SOLUÇÃO OTIMIZADA** (4ª Hipótese)
+**Abordagem**: [combinação/melhoria das anteriores]
+**Por que é superior**:
+- Elimina falha X das hipóteses anteriores
+- Combina vantagem Y da hipótese 1 com Z da hipótese 2
+- Adiciona solução inovadora para problema W
+
+**Implementação detalhada**:
+[código ou passos específicos da correção otimizada]
+```
+
+### Tipos de Bugs e Metodologia 3+1
+
+#### Bugs de TypeScript
+- **Hipótese 1**: Adicionar tipagem explícita
+- **Hipótese 2**: Refatorar para interface genérica
+- **Hipótese 3**: Usar utility types avançados
+- **4ª Otimizada**: Combinar estratégias baseada em análise de falhas
+
+#### Bugs de Lint/ESLint
+- **Hipótese 1**: Correção direta seguindo regra
+- **Hipótese 2**: Refatoração do padrão problemático
+- **Hipótese 3**: Configuração de exceção justificada
+- **4ª Otimizada**: Solução que evita problemas futuros similares
+
+#### Bugs de Build/Compilação
+- **Hipótese 1**: Correção de dependência/import
+- **Hipótese 2**: Ajuste de configuração de build
+- **Hipótese 3**: Refatoração de estrutura problemática
+- **4ª Otimizada**: Solução robusta prevenindo erros relacionados
+
 ## Limites
 - Não deve sugerir melhorias de design, performance ou acessibilidade (fora do escopo de qualidade estrutural).
 - Não deve flexibilizar regras — política de tolerância zero.
 - Não deve prosseguir se qualquer erro for encontrado.
+- **OBRIGATÓRIO**: Sempre aplicar regra 3+1 antes de qualquer correção.
 
 ## Lógica de Pulo Inteligente - OBRIGATÓRIA
 **CRITICAL AGENT - EXECUTA SEMPRE:**
