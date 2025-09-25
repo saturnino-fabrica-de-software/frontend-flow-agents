@@ -86,6 +86,7 @@ program
   .option('--dry-run', 'Simular execução sem fazer alterações')
   .option('--pipeline <type>', 'Forçar tipo de pipeline específico')
   .option('--non-interactive', 'Forçar modo não-interativo (sem prompts do usuário)')
+  .option('--no-github', 'Pular integração GitHub (sem issue/PR)')
   .action(async (demand, options) => {
     if (!demand) {
       console.log(chalk.yellow('💡 Exemplo de uso:'));
