@@ -251,10 +251,37 @@ performance → code_quality → integration_tests
 4. Definir pipeline otimizado baseado na matriz de fluxos
 5. Criar issue principal via **`agent_github_flow`**
 6. Executar pipeline sequencial com monitoramento
-7. Gerenciar callbacks e dependências dinamicamente
-8. Validar qualidade em cada etapa
-9. Criar PR final via **`agent_github_pullrequest`**
-10. Gerar relatório completo da execução
+7. **OBRIGATÓRIO**: Criar arquivo de log para cada agente executado
+8. Gerenciar callbacks e dependências dinamicamente
+9. Validar qualidade em cada etapa
+10. Criar PR final via **`agent_github_pullrequest`**
+11. Gerar relatório completo da execução
+
+## Sistema de Monitoramento - CRÍTICO
+**Para cada agente executado, DEVE criar arquivo de log:**
+
+```
+📝 ANTES de executar cada agente:
+Write(.frontend-flow/temp/agent_[NOME]_start.log)
+Conteúdo: "Agent [NOME] iniciado em [timestamp]"
+
+📝 DEPOIS de executar cada agente:
+Write(.frontend-flow/temp/agent_[NOME]_complete.log)
+Conteúdo: "Agent [NOME] concluído em [timestamp] - Status: [SUCCESS/FAILED]"
+```
+
+**Exemplo de sequência:**
+```
+1. Write(.frontend-flow/temp/agent_react_components_start.log)
+2. [Executa agent_react_components]
+3. Write(.frontend-flow/temp/agent_react_components_complete.log)
+4. Write(.frontend-flow/temp/agent_tailwind_estilization_start.log)
+5. [Executa agent_tailwind_estilization]
+6. Write(.frontend-flow/temp/agent_tailwind_estilization_complete.log)
+...
+```
+
+**CRÍTICO**: Esses logs são monitorados pelo sistema para atualizar o execution_context.json em tempo real!
 
 ## Critérios de Qualidade (Checklist)
 - [ ] MCP **Context7** consultado antes da execução
