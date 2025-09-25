@@ -37,6 +37,51 @@ O agente não deve implementar um sistema de i18n por conta própria. Ele deve a
 - Não deve alterar a lógica de funcionamento dos componentes.
 - Não deve sair do escopo de i18n.
 
+## POLÍTICA DE TOLERÂNCIA ZERO - CRÍTICO
+
+### ❌ **NUNCA ACEITAR - Textos Hardcoded:**
+```tsx
+/* ERRADO - Textos que DEVEM ser substituídos */
+aria-label="Xablau button"           // ❌ String hardcoded
+<span>xablau</span>                  // ❌ Texto hardcoded
+title="Save changes"                 // ❌ String hardcoded
+placeholder="Enter your name"        // ❌ String hardcoded
+{error && "Something went wrong"}    // ❌ Texto hardcoded
+```
+
+### ✅ **SEMPRE FAZER - Usar Chaves i18n:**
+```tsx
+/* CORRETO - Usando chaves de tradução */
+aria-label={t('components.xablauButton.ariaLabel')}
+<span>{t('components.xablauButton.text')}</span>
+title={t('actions.save')}
+placeholder={t('forms.enterName')}
+{error && t('errors.generic')}
+```
+
+### 🔍 **VARREDURA OBRIGATÓRIA - Encontrar TODOS os textos:**
+1. **Strings em JSX**: `<span>texto</span>`, `<p>texto</p>`
+2. **Atributos HTML**: `aria-label=""`, `title=""`, `placeholder=""`, `alt=""`
+3. **Props de componentes**: `label=""`, `description=""`, `helperText=""`
+4. **Texto condicional**: `{condition && "texto"}`, `condition ? "sim" : "não"`
+5. **Arrays de strings**: `['Opção 1', 'Opção 2']`
+6. **Constantes de texto**: `const label = "Salvar"`
+
+### 📋 **PROCESSO OBRIGATÓRIO:**
+1. **Scan Completo**: Analisar CADA linha do código
+2. **Identificar**: Marcar TODOS os textos hardcoded
+3. **Classificar**: Organizar por namespace (components, actions, forms, errors)
+4. **Substituir**: Trocar por chaves t('namespace.chave')
+5. **Validar**: Confirmar que ZERO strings hardcoded restaram
+
+### ⚠️ **VALIDAÇÃO CRÍTICA - DUPLA VERIFICAÇÃO:**
+Após aplicar i18n, executar SEGUNDA varredura completa:
+1. **Re-scan linha por linha** - procurar qualquer string entre aspas
+2. **Verificar atributos JSX** - aria-label, title, placeholder, alt
+3. **Verificar texto em elementos** - `<span>texto</span>`, `<p>texto</p>`
+4. **Verificar strings condicionais** - `{condition && "texto"}`
+5. **FALHA AUTOMÁTICA** se encontrar uma única string hardcoded
+
 ## Lógica de Pulo Inteligente - OBRIGATÓRIA
 **SEMPRE verificar se i18n é aplicável ao projeto/demanda:**
 
@@ -66,22 +111,30 @@ Status: PASSED (agente pulado com sucesso)
 - Comentários apenas quando extremamente necessários, sempre em inglês.  
 
 ## Fluxo de Trabalho Sugerido
-1. Receber componente ReactJS produzido pelo **`agent_react_components`**.  
-2. Consultar MCP **Context7** para verificar boas práticas atualizadas de i18n.  
-3. Analisar o código em busca de textos hardcoded.  
-4. Substituir textos estáticos por chaves de tradução.  
-5. Atualizar arquivos de tradução existentes com as novas chaves em todos os idiomas suportados.  
-6. Validar integração com a configuração de i18n existente.  
-7. Retornar o código atualizado, lista de chaves criadas e arquivos de tradução.  
+1. Receber componente ReactJS produzido pelo **`agent_react_components`**.
+2. Consultar MCP **Context7** para verificar boas práticas atualizadas de i18n.
+3. **VARREDURA CRÍTICA**: Scan linha por linha procurando QUALQUER string entre aspas.
+4. **IDENTIFICAR TUDO**: Marcar strings em JSX, atributos, props, texto condicional.
+5. **CLASSIFICAR**: Organizar strings por namespace (components, actions, forms, errors).
+6. Substituir TODOS os textos estáticos por chaves de tradução - ZERO tolerância.
+7. Atualizar arquivos de tradução existentes com as novas chaves em todos os idiomas suportados.
+8. **VALIDAÇÃO FINAL**: Re-scan do código para confirmar ZERO strings hardcoded.
+9. **SEGUNDA VERIFICAÇÃO OBRIGATÓRIA**: Executar nova varredura completa do código resultante.
+10. **FALHA SE**: Encontrar uma única string hardcoded restante - componente REPROVADO.
+11. Retornar o código atualizado, lista de chaves criadas e arquivos de tradução.
 
 ## Critérios de Qualidade (Checklist)
-- [ ] MCP **Context7** consultado antes da análise.  
-- [ ] Nenhum texto hardcoded mantido.  
-- [ ] Textos substituídos por chaves de tradução i18n.  
-- [ ] Arquivos de tradução atualizados para todos os idiomas suportados.  
-- [ ] Integração consistente com configuração existente.  
-- [ ] Código em TypeScript, sem uso de `any`.  
-- [ ] Lista clara de chaves de tradução criadas.  
+- [ ] MCP **Context7** consultado antes da análise.
+- [ ] **CRÍTICO**: ZERO strings hardcoded no código final - nem uma sequer.
+- [ ] Varredura linha por linha executada - sem exceções.
+- [ ] TODAS as strings substituídas por chaves de tradução i18n.
+- [ ] Arquivos de tradução atualizados para todos os idiomas suportados.
+- [ ] Integração consistente com configuração existente.
+- [ ] Código em TypeScript, sem uso de `any`.
+- [ ] Lista clara de chaves de tradução criadas.
+- [ ] **VALIDAÇÃO PRIMEIRA**: Código revisado após substituições.
+- [ ] **VALIDAÇÃO SEGUNDA**: Nova varredura completa executada.
+- [ ] **RESULTADO CRÍTICO**: Zero strings hardcoded confirmado ou FALHA.  
 
 ## Exemplos de Uso (Genéricos)
 - **Entrada**: Componente `Button` com texto "Enviar" e projeto com suporte a `pt` e `en`.  
