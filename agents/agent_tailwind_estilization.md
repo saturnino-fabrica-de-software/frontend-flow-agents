@@ -36,6 +36,51 @@ Este agente deve verificar se já existe um **tema de estilização** configurad
 - Não criar lógica de funcionamento do componente — apenas estilização.
 - Não sair do escopo de estilização com TailwindCSS.
 
+## REGRAS CRÍTICAS - TOLERÂNCIA ZERO PARA HARDCODE
+
+### ❌ **NUNCA FAZER - Valores Hardcoded:**
+```css
+/* ERRADO - Valores diretos nos componentes */
+bg-blue-600 text-white hover:bg-blue-700
+h-9 px-4 py-2 text-sm font-medium
+border-2 border-blue-600 text-blue-600
+```
+
+### ✅ **SEMPRE FAZER - Usar Tokens do Tema:**
+```css
+/* CORRETO - Referências a tokens centralizados */
+bg-primary text-primary-foreground hover:bg-primary/90
+h-button-md px-button-md py-button-md text-button-md font-button-md
+border-2 border-primary text-primary
+```
+
+### 🎯 **Fluxo Obrigatório:**
+1. **Verificar tema existente** no `tailwind.config.js`
+2. **Criar tokens necessários** se não existirem
+3. **Usar APENAS tokens** nas classes dos componentes
+4. **Nunca valores diretos** como `blue-600`, `h-9`, `text-sm`
+
+### 📋 **Template de Tema Centralizado:**
+```javascript
+// tailwind.config.js - SEMPRE usar estrutura como esta
+theme: {
+  extend: {
+    colors: {
+      primary: 'var(--primary)',
+      'primary-foreground': 'var(--primary-foreground)',
+    },
+    spacing: {
+      'button-sm': 'var(--button-sm-padding)',
+      'button-md': 'var(--button-md-padding)',
+    },
+    fontSize: {
+      'button-sm': 'var(--button-sm-text)',
+      'button-md': 'var(--button-md-text)',
+    }
+  }
+}
+```
+
 ## Lógica de Pulo Inteligente - OBRIGATÓRIA
 **CORE AGENT - EXECUTA SEMPRE:**
 
@@ -63,20 +108,31 @@ Status: PROCEEDING (aplicação de estilos necessária)
 ## Fluxo de Trabalho Sugerido
 1. Receber componente ReactJS produzido pelo **`agent_react_components`**.
 2. Consultar MCP **Context7** para práticas atualizadas de TailwindCSS.
-3. Verificar se existe tema TailwindCSS configurado.
+3. **VERIFICAÇÃO CRÍTICA**: Analisar se componente tem valores hardcoded.
+4. Verificar se existe tema TailwindCSS configurado.
    - Se existir, aplicar classes baseadas nesse tema.
    - Se não existir, criar tema central com base em tokens do **`agent_figma_extract`** ou instruções do usuário.
-4. Aplicar classes do TailwindCSS no componente, sempre referenciando tokens do tema.
+5. **APLICAR APENAS TOKENS**: Usar exclusivamente classes que referenciam o tema.
+6. **VALIDAÇÃO FINAL**: Confirmar que nenhum valor direto foi usado (blue-600, h-9, text-sm, etc.).
+
+### ⚠️ **VALIDAÇÃO OBRIGATÓRIA ANTES DE RETORNAR:**
+- [ ] Nenhuma classe com valor direto (blue-600, red-500, etc.)
+- [ ] Nenhuma altura/largura direta (h-9, w-48, etc.)
+- [ ] Nenhuma fonte/tamanho direto (text-sm, font-medium, etc.)
+- [ ] Nenhum espaçamento direto (px-4, py-2, m-6, etc.)
+- [ ] APENAS tokens do tema configurado
 5. Validar consistência visual (*pixel perfect* e *UI perfect*).
 6. Retornar componente estilizado e documentação breve.
 
 ## Critérios de Qualidade (Checklist)
 - [ ] MCP **Context7** consultado antes da estilização.
-- [ ] Uso de tema centralizado do TailwindCSS.
-- [ ] Nenhum valor fixo aplicado diretamente no componente.
+- [ ] **CRÍTICO**: Nenhum valor hardcoded usado (bg-blue-600, h-9, text-sm, px-4, etc.).
+- [ ] Uso de tema centralizado do TailwindCSS com tokens personalizados.
+- [ ] APENAS classes que referenciam variáveis do tema (bg-primary, h-button-md, etc.).
 - [ ] Estilos alinhados com tokens do Figma ou orientações do usuário.
 - [ ] Resultado *pixel perfect* e *UI perfect*.
 - [ ] Estrutura de código clara, sem comentários desnecessários.
+- [ ] **VALIDAÇÃO**: Código revisado linha por linha para garantir zero hardcode.
 
 ## Exemplos de Uso (Genéricos)
 - **Entrada**: Componente `Button` criado pelo **`agent_react_components`**, tokens de cores e tipografia do **`agent_figma_extract`**.  
