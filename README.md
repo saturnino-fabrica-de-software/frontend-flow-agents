@@ -1,6 +1,6 @@
 # 🚀 Frontend Flow Agents
 
-**Sistema autônomo de agentes IA para desenvolvimento React/TypeScript - Nível Enterprise 11/10**
+**Orquestrador de agentes IA especializados para desenvolvimento React/TypeScript**
 
 [![NPM Version](https://img.shields.io/npm/v/frontend-flow-agents)](https://npmjs.com/package/frontend-flow-agents)
 [![Downloads](https://img.shields.io/npm/dm/frontend-flow-agents)](https://npmjs.com/package/frontend-flow-agents)
@@ -8,13 +8,13 @@
 
 ## ✨ O que é o Frontend Flow?
 
-Frontend Flow é um sistema revolucionário de **22 agentes IA especializados** que automatizam completamente o desenvolvimento de aplicações React/TypeScript. Do conceito ao código em produção, tudo de forma autônoma.
+Frontend Flow é uma ferramenta que orquestra **22 agentes IA especializados** para automatizar tarefas comuns de desenvolvimento React/TypeScript. Os agentes trabalham em sequência ou paralelo para criar componentes, aplicar estilos, executar testes e gerenciar código.
 
 ### 🤖 **Integração Claude Code**
-- **Execução Real**: Detecta automaticamente Claude Code no sistema
-- **IA Genuína**: Agentes executam via Claude real, não simulação
-- **Fallback Inteligente**: Funciona mesmo sem Claude (modo demonstração)
-- **Zero Configuração**: Integração automática e transparente
+- **Detecção automática**: Identifica se Claude Code está instalado
+- **Execução real**: Agentes usam Claude para gerar código real
+- **Modo fallback**: Simula execução quando Claude não está disponível
+- **Configuração simples**: Funciona automaticamente quando disponível
 
 ### 📋 **MCPs Obrigatórios**
 Para funcionamento completo, os agentes requerem os seguintes MCPs no Claude:
@@ -46,36 +46,43 @@ claude mcp list
 npm install -g frontend-flow-agents
 
 # Em qualquer projeto React
-frontend-flow "criar dashboard de analytics com gráficos"
+cd meu-projeto
+frontend-flow init
 
-# ✨ Magia acontece:
-# → Issue criada automaticamente
-# → Branch feature/dashboard-analytics
-# → Componentes React gerados
-# → Estado Redux configurado
-# → Testes implementados
-# → PR criado e pronto
+# Exemplo 1: Componente básico
+frontend-flow "criar botão de login responsivo"
+
+# Exemplo 2: Baseado em Figma
+frontend-flow "implemente esse botão que estou selecionando no figma"
+
+# ✨ O que acontece:
+# → Issue criada automaticamente no GitHub
+# → Branch feature/login-button criada
+# → Componente React gerado com shadcn-ui
+# → Estilos do Figma aplicados automaticamente
+# → Testes de acessibilidade incluídos
+# → PR criado e pronto para review
 ```
 
-## 🏆 **Nível Enterprise 11/10**
+## 🔧 **Recursos Principais**
 
-### 🧠 **Inteligência Artificial Avançada**
-- **Parser NLP**: Compreende linguagem natural com 95%+ precisão
-- **Pipelines Adaptativos**: Gerados dinamicamente por demanda
-- **Auto-otimização**: Sistema aprende e melhora continuamente
-- **Predição de Problemas**: Antecipa e previne falhas
+### 🧠 **Processamento Inteligente**
+- **Classificação NLP**: Analisa solicitações em linguagem natural
+- **Pipelines adaptativos**: Seleciona agentes baseado na demanda
+- **Otimização automática**: Identifica oportunidades de paralelização
+- **Fallback inteligente**: Continua funcionando mesmo com falhas
 
-### ⚡ **Performance Inigualável**
-- **Execução Paralela**: 40-50% mais rápido que execução sequencial
-- **Cache Inteligente**: 25-35% ganho com reutilização inteligente
-- **Otimização Dinâmica**: Pipelines customizados para máxima eficiência
-- **Resource Management**: Balanceamento automático de recursos
+### ⚡ **Performance**
+- **Execução paralela**: Agentes independentes executam simultaneamente
+- **Sistema de cache**: Reutiliza resultados de execuções anteriores
+- **Pipelines otimizados**: Sequência de agentes adaptada ao contexto
+- **Monitoramento**: Acompanha progresso e performance em tempo real
 
-### 🛡️ **Confiabilidade Máxima**
-- **Auto-healing**: Recuperação automática de 85% das falhas
-- **Quality Gates**: Tolerância zero com validação rigorosa
-- **Estado Vivo**: Preservação de contexto mesmo após compactação
-- **Disaster Recovery**: Rollback e checkpoint automáticos
+### 🛡️ **Confiabilidade**
+- **Recuperação de erros**: Tenta resolver problemas automaticamente
+- **Validação rigorosa**: Verificações de qualidade em cada etapa
+- **Preservação de estado**: Mantém contexto durante toda execução
+- **Backup automático**: Pontos de recuperação em momentos críticos
 
 ## 🤖 **22 Agentes Especializados**
 
@@ -270,6 +277,6 @@ MIT © [Saturnino Fábrica de Software](https://github.com/saturnino-fabrica-de-
 
 ---
 
-**Made with ❤️ by [Saturnino Fábrica de Software](https://saturnino.dev)**
+**Made with ❤️ by [Emerson Saturnino](https://saturnino.dev)**
 
 *Frontend Flow - Transformando ideias em código de produção automaticamente*

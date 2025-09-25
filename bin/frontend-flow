@@ -15,7 +15,7 @@ const packageJson = require('../package.json');
 
 program
   .name('frontend-flow')
-  .description('🚀 Sistema autônomo de agentes IA para desenvolvimento React/TypeScript')
+  .description('🚀 Orquestrador de agentes IA para desenvolvimento React/TypeScript')
   .version(packageJson.version);
 
 // Command: init - Setup project
@@ -94,7 +94,7 @@ program
       return;
     }
 
-    console.log(chalk.blue('🚀 Frontend Flow - Sistema Enterprise 11/10'));
+    console.log(chalk.blue('🚀 Frontend Flow - Orquestrador de Agentes'));
     console.log(chalk.cyan(`📝 Demanda: "${demand}"`));
     console.log('');
 
@@ -157,7 +157,7 @@ program.parse();
 
 // Show help if no arguments provided
 if (!process.argv.slice(2).length) {
-  console.log(chalk.blue('🚀 Frontend Flow - Sistema Enterprise 11/10'));
+  console.log(chalk.blue('🚀 Frontend Flow - Orquestrador de Agentes'));
   console.log('');
   console.log(chalk.cyan('💡 Exemplos de uso:'));
   console.log('  frontend-flow init                           # Inicializar projeto');

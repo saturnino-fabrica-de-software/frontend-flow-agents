@@ -1,6 +1,6 @@
 # 🚀 Frontend Flow Agents - Documentação
 
-**Sistema autônomo de agentes IA para desenvolvimento React/TypeScript - Nível Enterprise 11/10**
+**Orquestrador de agentes IA especializados para desenvolvimento React/TypeScript**
 
 Esta documentação fornece guias detalhados em português para usar o Frontend Flow Agents de forma eficiente.
 
@@ -247,4 +247,4 @@ ff doctor
 
 **Frontend Flow Agents** - Transformando ideias em código de produção automaticamente 🚀
 
-*Feito com ❤️ por [Saturnino Fábrica de Software](https://saturnino.dev)*
+*Feito com ❤️ por [Emerson Saturnino](https://saturnino.dev)*
