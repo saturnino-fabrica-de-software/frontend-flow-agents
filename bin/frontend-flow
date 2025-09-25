@@ -48,6 +48,20 @@ program
     }
   });
 
+// Command: doctor - Check system health
+program
+  .command('doctor')
+  .description('🏥 Verificar saúde do sistema e dependências')
+  .action(async () => {
+    try {
+      const { checkSystemHealth } = require('../lib/doctor');
+      await checkSystemHealth();
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na verificação:'), error.message);
+      process.exit(1);
+    }
+  });
+
 // Command: clean - Clean temporary files
 program
   .command('clean')

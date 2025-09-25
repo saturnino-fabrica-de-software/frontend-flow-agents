@@ -10,6 +10,12 @@
 
 Frontend Flow é um sistema revolucionário de **22 agentes IA especializados** que automatizam completamente o desenvolvimento de aplicações React/TypeScript. Do conceito ao código em produção, tudo de forma autônoma.
 
+### 🤖 **Integração Claude Code**
+- **Execução Real**: Detecta automaticamente Claude Code no sistema
+- **IA Genuína**: Agentes executam via Claude real, não simulação
+- **Fallback Inteligente**: Funciona mesmo sem Claude (modo demonstração)
+- **Zero Configuração**: Integração automática e transparente
+
 ### 🎯 **Uma solicitação → Código completo**
 
 ```bash
@@ -204,6 +210,7 @@ frontend-flow "otimizar carregamento da página inicial reduzindo bundle size"
 frontend-flow init                    # Inicializar projeto
 frontend-flow "demanda"               # Executar pipeline
 frontend-flow status                  # Ver status atual
+frontend-flow doctor                  # Verificar saúde do sistema
 frontend-flow clean                   # Limpar temporários
 
 # Opções avançadas
@@ -213,6 +220,7 @@ frontend-flow "demanda" --pipeline=performance_focus  # Pipeline específico
 
 # Aliases disponíveis
 ff "demanda"                          # Alias curto
+ff doctor                             # Verificação rápida
 ```
 
 ## 🤝 **Contribuição**
