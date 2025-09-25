@@ -1,0 +1,4 @@
+# Frontend Flow - Diretório gerado automaticamente
+# Não commitar a pasta .frontend-flow pois contém arquivos temporários,
+# cache e estado local específico de cada desenvolvedor
+.frontend-flow/

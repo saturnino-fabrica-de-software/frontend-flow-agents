@@ -104,7 +104,7 @@ frontend-flow "implemente esse botão que estou selecionando no figma"
 - `agent_auto_healing` - Recuperação automática
 - `agent_metrics_collector` - Observabilidade completa
 
-[Ver todos os 22 agentes →](./docs/agents.md)
+[Ver todos os 22 agentes →](./agents/)
 
 ## 🚀 **Instalação e Uso**
 
@@ -224,14 +224,12 @@ frontend-flow "otimizar carregamento da página inicial reduzindo bundle size"
 - 📈 **Escalabilidade**: Suporte a projetos de qualquer tamanho
 - 🎯 **Quality Assurance**: Tolerância zero para bugs
 
-## 📚 **Documentação Completa**
+## 📚 **Documentação**
 
-- 📖 [Guia de Início Rápido](./docs/quick-start.md)
-- 🤖 [Referência dos Agentes](./docs/agents.md)
-- ⚙️ [Configuração Avançada](./docs/configuration.md)
-- 🔧 [Integração CI/CD](./docs/ci-cd.md)
-- 🚀 [Exemplos Avançados](./docs/examples.md)
-- 🐛 [Troubleshooting](./docs/troubleshooting.md)
+- 📖 [Documentação Completa em Português](./docs/README.md)
+- 🤖 [22 Agentes Disponíveis](./agents/) - Pasta com todos os agentes
+- ⚙️ [Configurações do Sistema](./configs/) - Arquivos de configuração
+- 🔧 [Templates GitHub](./templates/) - Templates para issues e PRs
 
 ## 💡 **CLI Completo**
 

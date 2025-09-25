@@ -125,10 +125,9 @@ temp/
 tmp/
 *.tmp
 
-# Frontend Flow specific temporary files
-.frontend-flow/temp/
-.frontend-flow/cache/
-.frontend-flow/temp/backups/
+# Frontend Flow - Diretório gerado automaticamente
+# Não commitar a pasta completa .frontend-flow pois contém arquivos temporários
+.frontend-flow/
 
 # Package files
 *.tar.gz
