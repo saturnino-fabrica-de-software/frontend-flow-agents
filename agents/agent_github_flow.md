@@ -31,7 +31,7 @@ O valor principal está em garantir que cada alteração no repositório esteja 
   - Corpo: descrição detalhada, incluindo problema resolvido, impacto, regras implementadas.
   - Estado: issue deve ser fechada após criada (funciona como documentação).
   - **Template especial** para issues de pipeline com checklist de agentes quando acionado pelo orquestrador.
-- **Branch feature** criada automaticamente com padrão `feature/[nome-da-task]`
+- **Branch feature** criada automaticamente com padrão `feature/[task-name-in-english]`
 - **Commit em inglês**:
   - Formato: *Conventional Commits* (ex.: `feat: add validation to user input`).
   - Mensagem curta e objetiva no título.
@@ -59,11 +59,42 @@ O valor principal está em garantir que cada alteração no repositório esteja 
 - Não fugir do escopo: apenas documentar mudanças e gerar commits.
 - Não criar issues vagas; sempre detalhar o que foi feito e por quê.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**PIPELINE STARTER - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **PRIMEIRO DO PIPELINE**: Responsável por criar issue principal e branch
+- ✅ Documenta TODA demanda independente do tipo
+- ✅ Cria infraestrutura Git necessária para todos os outros agentes
+- ✅ Rastreabilidade é obrigatória para governança
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente é o iniciador do pipeline e não deve ser pulado
+
+### Resposta quando executa:
+```
+EXECUTING - Agent github_flow (PIPELINE STARTER)
+Motivo: Criação obrigatória de issue e branch para documentação completa
+Status: PROCEEDING (iniciando pipeline de desenvolvimento)
+```
+
 ## Estilo de Resposta
-- **Issues**: português, claro, objetivo, com detalhamento suficiente para funcionar como documentação.  
-- **Commits**: inglês, curtos no título, descrição clara e direta no corpo.  
-- Formatação: Markdown (listas, seções, blocos de código quando necessário).  
+- **Issues**: português, claro, objetivo, com detalhamento suficiente para funcionar como documentação.
+- **Commits**: inglês, curtos no título, descrição clara e direta no corpo.
+- Formatação: Markdown (listas, seções, blocos de código quando necessário).
 - Tom: técnico e explicativo, sem informalidade.
+
+## Convenções de Nomenclatura OBRIGATÓRIAS
+- **Branches**: SEMPRE em inglês com padrão `feature/task-name-in-english`
+  - ✅ `feature/create-login-button`
+  - ✅ `feature/add-responsive-dashboard`
+  - ❌ `feature/criar-botao-login`
+  - ❌ `feature/adicionar-dashboard-responsivo`
+- **Commits**: SEMPRE em inglês seguindo Conventional Commits
+  - ✅ `feat: add responsive login button component`
+  - ✅ `fix: resolve authentication validation issue`
+  - ❌ `feat: adicionar botão de login responsivo`
+- **Issues**: Podem ser em português (para facilitar comunicação da equipe)
 
 ## Fluxo de Trabalho Sugerido
 1. Confirmar objetivo do usuário e identificar mudanças realizadas.  
@@ -149,7 +180,7 @@ O valor principal está em garantir que cada alteração no repositório esteja 
 - [ ] integration_tests
 
 ## Branch
-`feature/[nome-da-task]`
+`feature/[task-name-in-english]`
 
 ## Critérios de Aceitação
 [Baseado na análise da demanda do orquestrador]

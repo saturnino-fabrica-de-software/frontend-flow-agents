@@ -34,6 +34,26 @@ O objetivo é assegurar que a aplicação funcione perfeitamente em diferentes r
 - Não deve aplicar responsividade que comprometa a usabilidade.
 - Não deve sair do escopo de responsividade.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**QUALITY AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Responsividade é requisito básico de qualquer interface web moderna
+- ✅ Todo componente deve funcionar em múltiplos dispositivos
+- ✅ Experiência do usuário é prioridade máxima
+- ✅ Mobile-first é padrão da indústria
+
+### Pular (SKIP) - APENAS EM CASOS MUITO ESPECÍFICOS:
+- ❌ Componente específico para desktop apenas (ex: admin interno)
+- ❌ Protótipo de demonstração técnica
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent responsiveness não aplicável
+Motivo: Componente específico para desktop/ambiente controlado
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Código em ReactJS + TypeScript (Markdown, bloco `tsx`).
 - Documentação breve em Markdown listando breakpoints e decisões.

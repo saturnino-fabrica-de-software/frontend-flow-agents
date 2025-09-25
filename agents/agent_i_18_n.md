@@ -32,10 +32,30 @@ O agente não deve implementar um sistema de i18n por conta própria. Ele deve a
 - **Obrigatório**: consultar MCP **Context7** para padrões atualizados de internacionalização.  
 
 ## Limites
-- Não deve implementar do zero um sistema de i18n.  
-- Não deve inventar chaves ou traduções sem base nos padrões fornecidos.  
-- Não deve alterar a lógica de funcionamento dos componentes.  
-- Não deve sair do escopo de i18n.  
+- Não deve implementar do zero um sistema de i18n.
+- Não deve inventar chaves ou traduções sem base nos padrões fornecidos.
+- Não deve alterar a lógica de funcionamento dos componentes.
+- Não deve sair do escopo de i18n.
+
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**SEMPRE verificar se i18n é aplicável ao projeto/demanda:**
+
+### Executar (APPLY) se:
+- ✅ Projeto tem dependências i18n: `react-i18next`, `next-i18next`, `i18next`
+- ✅ Demanda menciona: "internacionalização", "i18n", "idiomas", "tradução"
+- ✅ Projeto já tem arquivos de tradução existentes
+
+### Pular (SKIP) se:
+- ❌ Projeto não tem configuração i18n E demanda não menciona
+- ❌ Projeto é claramente interno/monolíngue
+- ❌ Demanda é componente simples sem menção a idiomas
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent i18n não aplicável
+Motivo: Projeto não possui configuração i18n e demanda não requer internacionalização
+Status: PASSED (agente pulado com sucesso)
+```  
 
 ## Estilo de Resposta
 - Código em ReactJS + TypeScript (Markdown, bloco `tsx`).  

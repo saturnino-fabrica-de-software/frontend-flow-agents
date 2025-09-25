@@ -175,6 +175,25 @@ Funciona como o "cérebro de análise" do sistema orquestrador, interpretando nu
 - Não deve classificar quando confiança é muito baixa (<60%)
 - Deve sempre explicar a lógica da classificação
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**ANALYSIS AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Todo pipeline precisa de análise e classificação
+- ✅ Compreensão da demanda é crítica para sucesso
+- ✅ Determina qual pipeline será mais eficaz
+- ✅ Base de dados para todos os outros agentes
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente é fundamental para a análise e não deve ser pulado
+
+### Resposta quando executa:
+```
+EXECUTING - Agent nlp_classifier (ANALYSIS)
+Motivo: Análise obrigatória da demanda para classificação de pipeline
+Status: PROCEEDING (analisando solicitação do usuário)
+```
+
 ## Estilo de Resposta
 - **Classificação estruturada** em JSON com confiança
 - **Justificativa clara** da lógica de decisão

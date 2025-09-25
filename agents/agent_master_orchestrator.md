@@ -40,18 +40,41 @@ Ele integra-se diretamente com o **`agent_github_flow`** para criar issues de do
 8. **Internacionalização**: Implementação de i18n
 9. **Analytics**: Configuração de tracking e métricas
 
-### Matriz de Fluxos Automáticos
+### Pipeline Universal - TODOS os Agentes SEMPRE
 
-#### Componente Novo
+**PRINCÍPIO FUNDAMENTAL**: O sistema SEMPRE executa TODOS os 22 agentes, mas cada agente decide internamente se deve agir ou pular baseado no contexto.
+
+#### Pipeline Completo Obrigatório
 ```
-figma_extract → react_components → tailwind_estilization →
-performance → accessibility → security → code_quality → integration_tests
+1. github_flow (sempre cria issue/branch)
+2. nlp_classifier (sempre classifica)
+3. figma_extract (pula se não houver menção ao Figma)
+4. react_components (sempre necessário)
+5. redux_toolkit (pula se não precisar de estado global)
+6. tailwind_estilization (sempre aplica estilos)
+7. animations (pula se não houver animações)
+8. responsiveness (sempre verifica responsividade)
+9. accessibility (sempre aplica a11y)
+10. i_18_n (pula se não tiver i18n configurado)
+11. performance (sempre otimiza)
+12. security (sempre verifica)
+13. analytics (pula se não tiver analytics configurado)
+14. code_quality (sempre aplica)
+15. integration_tests (sempre cria testes)
+16. e_2_e_cypress (pula se não for feature complexa)
+17. pipeline_optimizer (sempre otimiza)
+18. state_manager (sempre gerencia estado)
+19. auto_healing (sempre verifica)
+20. cleanup_manager (sempre limpa)
+21. metrics_collector (sempre coleta)
+22. github_pullrequest (sempre cria PR)
 ```
 
-#### Feature Completa
-```
-figma_extract → react_components → redux_toolkit → tailwind_estilization →
-performance → accessibility → i18n → security → code_quality → integration_tests
+#### Lógica de Pulo Inteligente
+Cada agente deve implementar sua própria lógica:
+- **Aplicável**: Executa normalmente
+- **Não Aplicável**: Reporta "SKIPPED - [motivo]" e passa adiante
+- **Erro**: Reporta erro mas não bloqueia pipeline
 ```
 
 #### Refatoração

@@ -305,4 +305,29 @@ def optimize_pipeline(requirements, historical_data, constraints):
 }
 ```
 
+## Limites
+- Não deve modificar ordens de dependência críticas
+- Não deve pular agentes obrigatórios de qualidade
+- Não deve comprometer integridade por otimização
+- Não deve sair do escopo de otimização de pipelines
+
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**OPTIMIZATION AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Otimização é crítica para performance do sistema
+- ✅ Pipelines adaptáveis melhoram experiência do usuário
+- ✅ Redução de tempo de execução sem perder qualidade
+- ✅ Inteligência adaptativa baseada em contexto
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente é fundamental para performance do sistema
+
+### Resposta quando executa:
+```
+EXECUTING - Agent pipeline_optimizer (OPTIMIZATION)
+Motivo: Otimização obrigatória do pipeline para melhor performance
+Status: PROCEEDING (analisando oportunidades de otimização)
+```
+
 Este agente permitirá pipelines verdadeiramente adaptáveis e otimizados, elevando a inteligência do sistema para um novo patamar.

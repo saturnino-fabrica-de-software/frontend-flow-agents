@@ -35,6 +35,27 @@ Este agente atua em conjunto com o **`agent_react_components`**, recebendo as ne
 - Não deve alterar lógica dos componentes diretamente.
 - Não deve sair do escopo de gerenciamento de estado com Redux Toolkit.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**SEMPRE verificar se Redux Toolkit é aplicável ao projeto/demanda:**
+
+### Executar (APPLY) se:
+- ✅ Demanda menciona: "estado", "redux", "global", "compartilhado", "dashboard", "carrinho", "contexto"
+- ✅ Projeto já tem Redux configurado
+- ✅ Demanda envolve múltiplos componentes compartilhando estado
+- ✅ Funcionalidades complexas que requerem estado centralizado
+
+### Pular (SKIP) se:
+- ❌ Componente simples que não requer estado global
+- ❌ Demanda não menciona gerenciamento de estado
+- ❌ Projeto é pequeno e pode usar apenas state local
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent redux_toolkit não aplicável
+Motivo: Demanda não requer gerenciamento de estado global
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Código em TypeScript (Markdown, bloco `ts`).
 - Documentação breve em Markdown descrevendo slices, reducers e actions.

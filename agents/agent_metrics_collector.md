@@ -179,4 +179,29 @@ Funciona como um observador passivo que não interfere na execução dos pipelin
 }
 ```
 
+## Limites
+- Não deve interferir na execução dos pipelines
+- Não deve modificar configurações automaticamente
+- Não deve consumir recursos excessivos durante coleta
+- Não deve sair do escopo de observabilidade
+
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**MONITORING AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Observabilidade é crítica para melhoria contínua
+- ✅ Dados de performance são essenciais para otimização
+- ✅ Identificação de gargalos e problemas
+- ✅ Alimenta sistema de auto-healing
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente é fundamental para observabilidade do sistema
+
+### Resposta quando executa:
+```
+EXECUTING - Agent metrics_collector (MONITORING)
+Motivo: Coleta obrigatória de métricas para observabilidade
+Status: PROCEEDING (coletando dados de performance)
+```
+
 Este agente transformará o sistema em uma plataforma observável e auto-otimizante, fornecendo insights valiosos para melhoria contínua da performance e confiabilidade.

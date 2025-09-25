@@ -34,6 +34,26 @@ Este agente deve analisar o fluxo de dados e identificar pontos onde hooks como 
 - Não deve introduzir complexidade desnecessária.
 - Não deve sair do escopo de performance.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**QUALITY AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Performance é crítica para experiência do usuário
+- ✅ Todo componente deve ser analisado para otimizações
+- ✅ Prevenção de problemas antes que aconteçam
+- ✅ Boas práticas de React devem ser sempre aplicadas
+
+### Pular (SKIP) - APENAS EM CASOS MUITO ESPECÍFICOS:
+- ❌ Protótipo descartável de demonstração
+- ❌ Componente de documentação técnica interna
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent performance não aplicável
+Motivo: Protótipo descartável sem necessidade de otimização
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Código em ReactJS + TypeScript (Markdown, bloco `tsx`).
 - Explicação clara das otimizações aplicadas.

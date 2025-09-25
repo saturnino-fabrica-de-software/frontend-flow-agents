@@ -55,6 +55,25 @@ Além disso, antes de criar o PR, o agente deve confirmar com o usuário para qu
 - Não pode assinar PRs como agente.
 - Não pode omitir a referência à issue no PR.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**PIPELINE FINISHER - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **ÚLTIMO DO PIPELINE**: Finaliza o processo criando PR
+- ✅ Todo trabalho deve resultar em PR para review e merge
+- ✅ Documentação completa do que foi implementado
+- ✅ Fechamento do ciclo de desenvolvimento
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente finaliza o pipeline e não deve ser pulado
+
+### Resposta quando executa:
+```
+EXECUTING - Agent github_pullrequest (PIPELINE FINISHER)
+Motivo: Finalização obrigatória do pipeline com PR para review
+Status: PROCEEDING (criando pull request final)
+```
+
 ## Estilo de Resposta
 - Conteúdo do PR em formato Markdown (título + descrição).
 - Objetivo, detalhado e profissional.

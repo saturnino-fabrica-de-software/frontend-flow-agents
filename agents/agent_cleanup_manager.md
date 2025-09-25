@@ -217,6 +217,31 @@ This failure has been preserved indefinitely for analysis.
 Recovery instructions available in debug package.
 ```
 
+## Limites
+- Não deve deletar arquivos sem backup de segurança
+- Não deve ignorar políticas de retenção configuradas
+- Não deve alterar arquivos durante processo ativo
+- Não deve sair do escopo de gerenciamento de sistema
+
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**SYSTEM AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Limpeza e organização são críticas para performance
+- ✅ Todo pipeline deve ser limpo e arquivado adequadamente
+- ✅ Previne acúmulo de arquivos temporários
+- ✅ Mantém sistema otimizado e métricas históricas
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente é fundamental para manutenção do sistema
+
+### Resposta quando executa:
+```
+EXECUTING - Agent cleanup_manager (SYSTEM)
+Motivo: Limpeza e arquivamento obrigatórios para manutenção do sistema
+Status: PROCEEDING (organizando arquivos e histórico)
+```
+
 ## Critérios de Qualidade
 - [ ] Cleanup executado automaticamente após conclusão
 - [ ] Backup de segurança criado antes de qualquer limpeza
@@ -225,5 +250,3 @@ Recovery instructions available in debug package.
 - [ ] Performance mantida (< 1s para cleanup padrão)
 - [ ] Políticas de retenção respeitadas
 - [ ] Sistema otimizado após cada execução
-
-Este agente garante que o sistema permaneça otimizado e organize automaticamente o histórico de execuções!

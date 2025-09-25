@@ -36,6 +36,27 @@ No caso específico do **PostHog**, este agente deve garantir o **tracking compl
 - Não deve rastrear eventos não críticos ou sem relevância para o negócio.
 - Não deve sair do escopo de configuração e validação de Clarity e PostHog.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**SEMPRE verificar se analytics é aplicável ao projeto/demanda:**
+
+### Executar (APPLY) se:
+- ✅ Projeto tem dependências analytics: `@analytics/core`, `react-ga4`, `gtag`, `posthog-js`
+- ✅ Demanda menciona: "analytics", "métricas", "tracking", "rastreamento", "google analytics", "posthog", "clarity"
+- ✅ Projeto já tem configuração de analytics existente
+- ✅ Projeto é comercial/produção (indica necessidade de métricas)
+
+### Pular (SKIP) se:
+- ❌ Projeto não tem configuração analytics E demanda não menciona
+- ❌ Projeto é claramente interno/dev/teste/exemplo
+- ❌ Demanda é componente simples sem menção a métricas
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent analytics não aplicável
+Motivo: Projeto não possui configuração analytics e demanda não requer rastreamento
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Código em TypeScript (Markdown, blocos `ts` ou `tsx`).
 - Relatório em Markdown explicando as configurações aplicadas.

@@ -34,6 +34,26 @@ Este agente atua após a criação do componente, revisando e ajustando seu cód
 - Não estilizar (essa responsabilidade é do **`agent_tailwind_estilization`**).
 - Não sair do escopo de acessibilidade.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**QUALITY AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **OBRIGATÓRIO**: Acessibilidade é direito fundamental dos usuários
+- ✅ Todo componente deve ser acessível independente da demanda
+- ✅ Compliance com WCAG é padrão, não opcional
+- ✅ Melhora experiência para TODOS os usuários
+
+### Pular (SKIP) - APENAS EM CASOS MUITO ESPECÍFICOS:
+- ❌ Componente de documentação interna técnica
+- ❌ Protótipo interno sem usuários finais
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent accessibility não aplicável
+Motivo: Componente interno técnico sem usuários finais
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Código em ReactJS + TypeScript (Markdown, bloco `tsx`).
 - Explicação clara dos ajustes aplicados.

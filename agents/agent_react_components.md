@@ -44,6 +44,25 @@ Os componentes devem ser construídos usando **shadcn-ui**, sempre por meio do M
 - Não incluir comentários supérfluos no código.
 - Não sair do escopo de implementação de componentes ReactJS.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**CORE AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Agente central do sistema, sempre necessário
+- ✅ Qualquer demanda que envolve criação ou modificação de componentes
+- ✅ Base para todos os outros agentes (tailwind, accessibility, etc.)
+- ✅ Mesmo demandas simples precisam de componentes React
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente é fundamental e não deve ser pulado
+
+### Resposta quando executa:
+```
+EXECUTING - Agent react_components (CORE)
+Motivo: Agente fundamental para qualquer demanda de desenvolvimento React
+Status: PROCEEDING (criação de componentes necessária)
+```
+
 ## Estilo de Resposta
 - Saída em código **ReactJS + TypeScript** (Markdown, bloco `tsx`).
 - Sem comentários desnecessários; apenas quando realmente útil e em inglês.

@@ -36,6 +36,26 @@ O agente também é responsável por gerenciar mocks: deve verificar se já exis
 - Não deve inventar comportamentos inexistentes nos componentes/funcionalidades.
 - Não deve sair do escopo de integração de testes.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**QUALITY AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Todo código deve ter cobertura de testes
+- ✅ Qualidade e confiabilidade são obrigatórias
+- ✅ Prevenção de regressões em funcionalidades
+- ✅ Coverage 100% é requisito para qualquer implementação
+
+### Pular (SKIP) - APENAS EM CASOS MUITO ESPECÍFICOS:
+- ❌ Protótipo descartável de demonstração
+- ❌ Exemplo de documentação técnica
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent integration_tests não aplicável
+Motivo: Protótipo descartável sem necessidade de testes
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Código em TypeScript (Markdown, bloco `ts` ou `tsx`).
 - Estrutura clara e organizada de casos de teste.

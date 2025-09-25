@@ -34,6 +34,27 @@ Este agente atua após a criação dos componentes e antes da integração final
 - Não deve alterar lógica funcional sem necessidade.
 - Não deve sair do escopo de segurança (ex.: estilização, performance, acessibilidade ficam com outros agentes).
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**SEMPRE verificar se segurança é aplicável ao projeto/demanda:**
+
+### Executar (APPLY) - QUASE SEMPRE:
+- ✅ **PADRÃO**: Sempre executar para qualquer código produzido
+- ✅ Demanda menciona: "segurança", "login", "auth", "2fa", "senha", "jwt", "token"
+- ✅ Componentes que lidam com dados do usuário
+- ✅ Qualquer implementação de autenticação/autorização
+
+### Pular (SKIP) - APENAS EM CASOS MUITO ESPECÍFICOS:
+- ❌ Demanda é puramente visual/estática SEM dados do usuário
+- ❌ Componente de documentação/exemplo simples
+- ❌ Protótipo interno sem dados reais
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent security não aplicável
+Motivo: Componente puramente visual sem manipulação de dados sensíveis
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Relatório em Markdown organizado (Vulnerabilidades, Correções, Status Final).
 - Código atualizado apenas quando necessário.

@@ -293,4 +293,29 @@ O pipeline estava executando {PIPELINE_TYPE} para: "{ORIGINAL_REQUEST}"
 3. Pipeline continuará automaticamente após aprovação
 ```
 
+## Limites
+- Não deve modificar estados durante execução ativa
+- Não deve alterar políticas de persistência sem autorização
+- Não deve expor dados sensíveis em logs
+- Não deve sair do escopo de gerenciamento de estado
+
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**STATE AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Gerenciamento de estado é base do sistema
+- ✅ Recuperação de contexto e auditoria são críticas
+- ✅ Persistent workflow state necessário para reliability
+- ✅ Quality gates e recovery dependem do state manager
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente é fundamental para confiabilidade do sistema
+
+### Resposta quando executa:
+```
+EXECUTING - Agent state_manager (STATE)
+Motivo: Gerenciamento obrigatório de estado para confiabilidade
+Status: PROCEEDING (mantendo contexto do pipeline)
+```
+
 Este agente transformará o sistema em uma plataforma verdadeiramente enterprise com recuperação perfeita de contexto e auditoria completa!

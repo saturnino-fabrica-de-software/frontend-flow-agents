@@ -36,6 +36,25 @@ Este agente deve verificar se já existe um **tema de estilização** configurad
 - Não criar lógica de funcionamento do componente — apenas estilização.
 - Não sair do escopo de estilização com TailwindCSS.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**CORE AGENT - EXECUTA SEMPRE:**
+
+### Executar (APPLY) - SEMPRE:
+- ✅ **FUNDAMENTAL**: Todo componente React precisa de estilização
+- ✅ Parceiro direto do agent_react_components
+- ✅ Qualquer demanda de UI/componente visual
+- ✅ Responsável por pixel-perfect e temas centralizados
+
+### Pular (SKIP) - NUNCA:
+- ❌ Este agente é fundamental e não deve ser pulado
+
+### Resposta quando executa:
+```
+EXECUTING - Agent tailwind_estilization (CORE)
+Motivo: Todo componente React requer estilização adequada com TailwindCSS
+Status: PROCEEDING (aplicação de estilos necessária)
+```
+
 ## Estilo de Resposta
 - Código em ReactJS + TailwindCSS (Markdown, bloco `tsx`).
 - Estrutura clara, limpa e alinhada às boas práticas.

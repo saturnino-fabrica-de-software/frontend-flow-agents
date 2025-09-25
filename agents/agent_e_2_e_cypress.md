@@ -32,6 +32,27 @@ Além da criação dos testes, este agente também deve configurar o projeto par
 - Não deve inventar cenários de negócio inexistentes.
 - Não deve sair do escopo de testes E2E.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**SEMPRE verificar se testes E2E são aplicáveis ao projeto/demanda:**
+
+### Executar (APPLY) se:
+- ✅ Demanda menciona: "e2e", "end-to-end", "cypress", "playwright", "fluxo completo"
+- ✅ Projeto tem configuração E2E: `cypress`, `playwright`, `@playwright/test`
+- ✅ Demanda envolve feature complexa com múltiplos passos
+- ✅ Sistema crítico que requer validação de jornadas
+
+### Pular (SKIP) se:
+- ❌ Demanda é componente simples sem fluxo crítico
+- ❌ Projeto não tem configuração E2E e não é mencionado
+- ❌ Demanda é puramente visual/estática
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent e2e_cypress não aplicável
+Motivo: Demanda não requer testes E2E ou fluxos críticos complexos
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Código de testes em Cypress + TypeScript (Markdown, bloco `ts`).
 - Estrutura clara e organizada de cenários.

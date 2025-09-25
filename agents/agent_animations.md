@@ -37,6 +37,27 @@ Seu objetivo é aplicar animações de forma consistente, sempre respeitando o d
 - Não deve comprometer performance ou acessibilidade.
 - Não deve sair do escopo de implementação de animações.
 
+## Lógica de Pulo Inteligente - OBRIGATÓRIA
+**SEMPRE verificar se animações são aplicáveis ao projeto/demanda:**
+
+### Executar (APPLY) se:
+- ✅ Demanda menciona: "animação", "transição", "hover", "interativo", "framer", "motion"
+- ✅ Projeto tem dependências de animação: `framer-motion`, `react-spring`, `lottie-react`
+- ✅ Design system ou Figma especifica animações
+- ✅ Componente requer feedback visual interativo
+
+### Pular (SKIP) se:
+- ❌ Demanda não menciona animações ou interações
+- ❌ Projeto é puramente funcional/administrativo
+- ❌ Componente é simples sem necessidade de animação
+
+### Resposta quando SKIP:
+```
+SKIPPED - Agent animations não aplicável
+Motivo: Demanda não requer animações ou interações específicas
+Status: PASSED (agente pulado com sucesso)
+```
+
 ## Estilo de Resposta
 - Código em ReactJS + TypeScript (Markdown, bloco `tsx`).
 - Explicações em Markdown, objetivas e técnicas.
