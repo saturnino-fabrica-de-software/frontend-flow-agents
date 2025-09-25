@@ -85,6 +85,7 @@ program
   .option('-v, --verbose', 'Modo verbose com logs detalhados')
   .option('--dry-run', 'Simular execução sem fazer alterações')
   .option('--pipeline <type>', 'Forçar tipo de pipeline específico')
+  .option('--non-interactive', 'Forçar modo não-interativo (sem prompts do usuário)')
   .action(async (demand, options) => {
     if (!demand) {
       console.log(chalk.yellow('💡 Exemplo de uso:'));
