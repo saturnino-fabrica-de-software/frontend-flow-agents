@@ -84,19 +84,32 @@ Cada agente deve implementar sua própria lógica:
 - "Limite de tokens"
 - "Demanda atendida"
 - "Componente completo"
+- "Pipeline completo"
+- "Tarefa finalizada"
+- "Resultado satisfatório"
 - Qualquer outro motivo
 
 ✅ SEMPRE executar sequência completa:
 1-22 agentes, todos eles, em ordem
 Mesmo que agente faça SKIP, deve passar pelo agente
+
+🔄 OBRIGATÓRIO: Após cada agente, IMEDIATAMENTE executar próximo
 ```
 
 **Se agente individual reportar conclusão prematura:**
 ```
-- Ignorar justificativa de "demanda atendida"
+- Ignorar QUALQUER justificativa de finalização
 - Continuar para próximo agente automaticamente
 - Completar TODOS os 22 agentes da lista
 - Só finalizar após agent_github_pullrequest (agente #22)
+- NÃO ACEITAR "fim do pipeline" antes do agente 22
+```
+
+**CONTADOR OBRIGATÓRIO:**
+```
+⚠️ SEMPRE VERIFICAR: Estou executando agente X de 22
+✅ SÓ PARAR quando: X = 22 (agent_github_pullrequest)
+❌ NUNCA PARAR se: X < 22 (ainda há agentes restantes)
 ```
 ```
 
@@ -195,8 +208,38 @@ performance → code_quality → integration_tests
 - Logs estruturados em Markdown durante execução
 - Relatórios detalhados de cada fase
 - Status updates em tempo real
+- **OBRIGATÓRIO**: Sempre mostrar contador "Agente X/22"
+- **OBRIGATÓRIO**: Anunciar próximo agente antes de executá-lo
 - Explicação das decisões tomadas automaticamente
 - Linguagem técnica mas acessível
+
+## Debugging de Paradas Prematuras - CRÍTICO
+
+### ⚠️ Se Pipeline Parou Antes de 22 Agentes:
+```markdown
+🚨 PIPELINE INCOMPLETO DETECTADO
+
+**Status atual**: Parado no agente X (X < 22)
+**Agentes restantes**: [listar todos os agentes não executados]
+**Ação obrigatória**: CONTINUAR automaticamente
+
+### 🔄 RETOMANDO PIPELINE:
+- Próximo agente: [nome do agente X+1]
+- Motivo da continuação: Pipeline deve executar TODOS os 22 agentes
+- Ignorando mensagem anterior de "finalização"
+```
+
+### Mensagens Proibidas (NUNCA usar):
+- ❌ "Pipeline completo"
+- ❌ "Demanda atendida com sucesso"
+- ❌ "Componente implementado completamente"
+- ❌ "Finalizando o relatório"
+- ❌ "Encerramento do pipeline"
+
+### Mensagens Obrigatórias (SEMPRE usar):
+- ✅ "Agente X/22 concluído - próximo: Y"
+- ✅ "Continuando automaticamente..."
+- ✅ "Pipeline em execução - X agentes restantes"
 
 ## Metodologia Universal - REGRA 3+1 OBRIGATÓRIA
 
