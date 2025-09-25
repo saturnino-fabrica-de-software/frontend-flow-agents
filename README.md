@@ -8,7 +8,7 @@
 
 ## ✨ O que é o Frontend Flow?
 
-Frontend Flow é uma ferramenta que orquestra **22 agentes IA especializados** para automatizar tarefas comuns de desenvolvimento React/TypeScript. Os agentes trabalham em sequência ou paralelo para criar componentes, aplicar estilos, executar testes e gerenciar código.
+Frontend Flow é uma ferramenta que orquestra **22 agentes IA especializados** para automatizar completamente o desenvolvimento React/TypeScript. **TODOS os 22 agentes são executados SEMPRE**, mas cada agente decide inteligentemente se deve agir ou pular baseado no contexto do projeto, garantindo cobertura completa sem desperdício de recursos.
 
 ### 🤖 **Integração Claude Code**
 - **Detecção automática**: Identifica se Claude Code está instalado
@@ -55,20 +55,90 @@ frontend-flow "criar botão de login responsivo"
 # Exemplo 2: Baseado em Figma
 frontend-flow "implemente esse botão que estou selecionando no figma"
 
-# ✨ O que acontece:
-# → Issue criada automaticamente no GitHub
-# → Branch feature/login-button criada
-# → Componente React gerado com shadcn-ui
-# → Estilos do Figma aplicados automaticamente
-# → Testes de acessibilidade incluídos
-# → PR criado e pronto para review
+# 🔄 **Pipeline Completo - TODOS os 22 Agentes Executados:**
+
+# 📋 **FASE 1: ANÁLISE & PLANEJAMENTO**
+# → 1. agent_master_orchestrator - Orquestra todo o pipeline
+# → 2. agent_github_flow - Cria issue e branch feature/figma-button
+# → 3. agent_nlp_classifier - Analisa demanda (componente visual + Figma)
+
+# 🎨 **FASE 2: EXTRAÇÃO & CRIAÇÃO**
+# → 4. agent_figma_extract - Extrai tokens, cores e medidas do Figma
+# → 5. agent_react_components - Gera componente Button com shadcn-ui
+# → 6. agent_redux_toolkit - SKIP (botão simples, sem estado global)
+
+# 💅 **FASE 3: ESTILIZAÇÃO & UX**
+# → 7. agent_tailwind_estilization - Aplica estilos pixel-perfect do Figma
+# → 8. agent_animations - SKIP (sem animações na demanda)
+# → 9. agent_responsiveness - Garante funcionamento mobile/desktop
+# → 10. agent_accessibility - Adiciona ARIA labels e navegação por teclado
+
+# 🌍 **FASE 4: INTERNACIONALIZAÇÃO**
+# → 11. agent_i_18_n - SKIP (projeto sem configuração i18n)
+
+# ⚡ **FASE 5: OTIMIZAÇÃO**
+# → 12. agent_performance - Otimiza renders com React.memo se necessário
+# → 13. agent_security - Valida props e entradas do componente
+
+# 📊 **FASE 6: MÉTRICAS**
+# → 14. agent_analytics - SKIP (projeto sem analytics configurado)
+
+# 🔍 **FASE 7: QUALIDADE & TESTES**
+# → 15. agent_code_quality - Valida lint, tipos TypeScript, build
+# → 16. agent_integration_tests - Cria testes Vitest cobrindo 100%
+# → 17. agent_e_2_e_cypress - SKIP (componente simples, sem fluxo E2E)
+
+# ⚙️ **FASE 8: SISTEMA & OTIMIZAÇÃO**
+# → 18. agent_pipeline_optimizer - Analisa performance do pipeline
+# → 19. agent_state_manager - Gerencia estado do processo
+# → 20. agent_cleanup_manager - Organiza arquivos temporários
+# → 21. agent_metrics_collector - Coleta dados de performance
+
+# 🎯 **FASE 9: FINALIZAÇÃO**
+# → 22. agent_github_pullrequest - Cria PR com documentação completa
+
+# ✨ **RESULTADO FINAL:**
+# → Issue criada e documentada em português
+# → Branch feature/figma-button criada automaticamente
+# → Componente Button pixel-perfect baseado no Figma
+# → Estilos TailwindCSS com tokens centralizados
+# → Acessibilidade WCAG compliant
+# → Responsividade mobile/desktop
+# → Testes 100% coverage
+# → Qualidade de código garantida
+# → PR pronto para review com checklist automático
+```
+
+## 🧠 **Pipeline Universal com Decisão Inteligente**
+
+### **✨ Todos os 22 Agentes, Sempre!**
+- **🔄 Execução Universal**: Todos os 22 agentes são SEMPRE executados
+- **🧠 Decisão Inteligente**: Cada agente decide se deve agir ou pular baseado no contexto
+- **⚡ Otimização Automática**: Sem desperdício, mas com cobertura 100% completa
+
+### **📊 Categorias de Agentes**
+- **🎯 CORE** (sempre executam): `react_components`, `tailwind_estilization`, `github_flow/pullrequest`
+- **🛡️ QUALITY** (quase sempre): `security`, `accessibility`, `performance`, `code_quality`, `tests`
+- **🎨 CONTEXTUAL** (pulam inteligentemente): `figma_extract`, `redux_toolkit`, `i18n`, `analytics`, `animations`
+- **⚙️ SYSTEM** (sempre executam): `state_manager`, `cleanup_manager`, `metrics_collector`, `optimizer`
+
+### **🤖 Como Funciona**
+```bash
+frontend-flow "criar botão simples"
+# → Todos os 22 agentes são chamados
+# → agent_figma_extract: SKIP (sem menção ao Figma)
+# → agent_redux_toolkit: SKIP (componente simples)
+# → agent_security: APPLY (sempre valida segurança)
+# → agent_react_components: APPLY (sempre cria componente)
+# → Resultado: Pipeline otimizado automaticamente!
 ```
 
 ## 🔧 **Recursos Principais**
 
 ### 🧠 **Processamento Inteligente**
-- **Classificação NLP**: Analisa solicitações em linguagem natural
-- **Pipelines adaptativos**: Seleciona agentes baseado na demanda
+- **Classificação NLP**: Analisa solicitações em linguagem natural para orientar agentes
+- **Pipeline Universal**: TODOS os 22 agentes são executados sempre
+- **Decisão Distribuída**: Cada agente decide internamente se deve agir ou pular
 - **Otimização automática**: Identifica oportunidades de paralelização
 - **Fallback inteligente**: Continua funcionando mesmo com falhas
 
