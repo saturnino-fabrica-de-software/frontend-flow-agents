@@ -1,0 +1,289 @@
+{
+  "version": "2.0",
+  "auto_healing": {
+    "enabled": true,
+    "proactive_monitoring": true,
+    "predictive_healing": true,
+    "learning_enabled": true
+  },
+  "failure_patterns": {
+    "agent_timeout": {
+      "description": "Agent exceeds maximum execution time",
+      "detection_threshold": "200% of baseline time",
+      "healing_strategies": [
+        {
+          "name": "resource_boost",
+          "action": "increase_timeout_and_retry",
+          "multiplier": 1.5,
+          "max_retries": 2
+        },
+        {
+          "name": "fallback_mode",
+          "action": "run_with_minimal_requirements",
+          "conditions": ["non_critical_agent", "user_approval"]
+        }
+      ],
+      "success_rate": 75
+    },
+    "dependency_failure": {
+      "description": "Required dependency or external service unavailable",
+      "common_agents": ["agent_figma_extract", "agent_analytics"],
+      "healing_strategies": [
+        {
+          "name": "cache_fallback",
+          "action": "use_cached_result_if_available",
+          "max_age_hours": 48
+        },
+        {
+          "name": "mock_data",
+          "action": "use_predefined_mock_data",
+          "conditions": ["development_environment"]
+        },
+        {
+          "name": "skip_and_continue",
+          "action": "skip_agent_and_mark_for_later",
+          "conditions": ["non_blocking_agent"]
+        }
+      ],
+      "success_rate": 85
+    },
+    "quality_gate_failure": {
+      "description": "Code quality or security checks fail",
+      "critical_agents": ["agent_code_quality", "agent_security"],
+      "healing_strategies": [
+        {
+          "name": "auto_fix_common_issues",
+          "action": "apply_known_fixes",
+          "supported_issues": [
+            "linting_errors",
+            "basic_typescript_errors",
+            "common_security_patterns"
+          ]
+        },
+        {
+          "name": "incremental_fixes",
+          "action": "fix_and_retry_iteratively",
+          "max_iterations": 3
+        },
+        {
+          "name": "rollback_partial",
+          "action": "revert_last_changes_and_retry",
+          "conditions": ["recent_changes_detected"]
+        }
+      ],
+      "success_rate": 60
+    },
+    "resource_exhaustion": {
+      "description": "System running low on memory, CPU, or storage",
+      "healing_strategies": [
+        {
+          "name": "cleanup_cache",
+          "action": "clear_old_cache_entries",
+          "threshold": "80% storage usage"
+        },
+        {
+          "name": "sequential_mode",
+          "action": "disable_parallel_execution_temporarily",
+          "conditions": ["high_memory_usage"]
+        },
+        {
+          "name": "priority_scheduling",
+          "action": "delay_non_critical_agents",
+          "priority_agents": ["agent_code_quality", "agent_security"]
+        }
+      ],
+      "success_rate": 90
+    },
+    "configuration_drift": {
+      "description": "Agent configurations become inconsistent or corrupted",
+      "healing_strategies": [
+        {
+          "name": "config_validation",
+          "action": "validate_and_fix_configuration",
+          "backup_config": true
+        },
+        {
+          "name": "reset_to_baseline",
+          "action": "restore_default_configuration",
+          "conditions": ["corruption_detected"]
+        }
+      ],
+      "success_rate": 95
+    }
+  },
+  "predictive_healing": {
+    "enabled": true,
+    "learning_window_days": 30,
+    "prediction_models": {
+      "timeout_prediction": {
+        "enabled": true,
+        "factors": ["agent_load", "complexity_score", "historical_performance"],
+        "action": "preemptive_resource_allocation"
+      },
+      "failure_probability": {
+        "enabled": true,
+        "factors": ["recent_failures", "system_load", "external_dependencies"],
+        "action": "alternative_agent_preparation"
+      },
+      "bottleneck_detection": {
+        "enabled": true,
+        "factors": ["execution_patterns", "resource_usage", "queue_length"],
+        "action": "load_balancing_adjustment"
+      }
+    }
+  },
+  "recovery_strategies": {
+    "immediate_retry": {
+      "enabled": true,
+      "max_retries": 2,
+      "backoff_strategy": "exponential",
+      "applicable_failures": ["timeout", "temporary_network", "resource_contention"]
+    },
+    "fallback_agents": {
+      "enabled": true,
+      "mappings": {
+        "agent_figma_extract": "agent_design_token_generator",
+        "agent_analytics": "agent_basic_metrics",
+        "agent_e_2_e_cypress": "agent_integration_tests"
+      }
+    },
+    "graceful_degradation": {
+      "enabled": true,
+      "quality_levels": {
+        "full_quality": "all_agents_successful",
+        "high_quality": "critical_agents_only",
+        "minimal_quality": "mandatory_agents_only"
+      }
+    },
+    "checkpoint_recovery": {
+      "enabled": true,
+      "checkpoint_frequency": "after_each_agent",
+      "rollback_capability": true,
+      "max_rollback_depth": 3
+    }
+  },
+  "learning_system": {
+    "enabled": true,
+    "pattern_recognition": {
+      "failure_clustering": true,
+      "success_pattern_extraction": true,
+      "environmental_correlation": true
+    },
+    "adaptation_strategies": {
+      "timeout_adjustment": {
+        "learn_from": ["successful_retries", "historical_performance"],
+        "adjust_frequency": "weekly"
+      },
+      "resource_allocation": {
+        "learn_from": ["resource_usage_patterns", "performance_correlation"],
+        "adjust_frequency": "daily"
+      },
+      "priority_optimization": {
+        "learn_from": ["user_feedback", "pipeline_success_rates"],
+        "adjust_frequency": "monthly"
+      }
+    }
+  },
+  "monitoring_and_alerts": {
+    "health_checks": {
+      "frequency": "1_minute",
+      "metrics": [
+        "agent_response_time",
+        "failure_rate",
+        "resource_usage",
+        "queue_length"
+      ]
+    },
+    "alert_thresholds": {
+      "failure_rate": {
+        "warning": "10%",
+        "critical": "20%",
+        "time_window": "5_minutes"
+      },
+      "response_time": {
+        "warning": "150% of baseline",
+        "critical": "200% of baseline"
+      },
+      "healing_effectiveness": {
+        "warning": "healing_success_rate < 70%",
+        "critical": "healing_success_rate < 50%"
+      }
+    },
+    "reporting": {
+      "healing_summary": {
+        "frequency": "daily",
+        "include_success_rates": true,
+        "include_pattern_analysis": true
+      },
+      "trend_analysis": {
+        "frequency": "weekly",
+        "predict_future_issues": true,
+        "recommend_improvements": true
+      }
+    }
+  },
+  "known_issues_database": {
+    "common_fixes": {
+      "lint_missing_semicolon": {
+        "pattern": "Missing semicolon",
+        "fix": "add_semicolon",
+        "success_rate": 100
+      },
+      "typescript_implicit_any": {
+        "pattern": "Parameter .* implicitly has an 'any' type",
+        "fix": "add_type_annotation",
+        "success_rate": 95
+      },
+      "figma_rate_limit": {
+        "pattern": "Rate limit exceeded",
+        "fix": "wait_and_retry",
+        "delay_seconds": 60,
+        "success_rate": 98
+      },
+      "memory_leak_pattern": {
+        "pattern": "useEffect missing dependency",
+        "fix": "add_dependency_to_array",
+        "success_rate": 90
+      }
+    }
+  },
+  "integration_points": {
+    "metrics_collector": {
+      "share_healing_data": true,
+      "track_healing_effectiveness": true
+    },
+    "pipeline_optimizer": {
+      "inform_optimization_decisions": true,
+      "suggest_alternative_pipelines": true
+    },
+    "cache_system": {
+      "coordinate_cache_invalidation": true,
+      "use_cache_for_fallback": true
+    }
+  },
+  "emergency_protocols": {
+    "system_failure": {
+      "conditions": ["multiple_agent_failures", "cascading_errors"],
+      "actions": [
+        "halt_new_pipelines",
+        "preserve_existing_work",
+        "alert_administrators",
+        "attempt_graceful_recovery"
+      ]
+    },
+    "data_corruption": {
+      "conditions": ["config_corruption", "cache_corruption"],
+      "actions": [
+        "isolate_corrupted_data",
+        "restore_from_backup",
+        "validate_system_integrity"
+      ]
+    }
+  },
+  "success_metrics": {
+    "healing_effectiveness": "percentage_of_successfully_healed_issues",
+    "prevention_rate": "issues_prevented_vs_predicted",
+    "system_uptime": "pipeline_availability_percentage",
+    "user_satisfaction": "reduction_in_manual_interventions"
+  }
+}

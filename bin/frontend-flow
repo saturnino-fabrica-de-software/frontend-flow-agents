@@ -1,0 +1,156 @@
+#!/usr/bin/env node
+
+const { program } = require('commander');
+const chalk = require('chalk');
+const path = require('path');
+const fs = require('fs-extra');
+
+// Import core modules
+const { initProject } = require('../lib/init');
+const { analyzeProject } = require('../lib/analyzer');
+const { runPipeline } = require('../lib/orchestrator');
+const { showStatus } = require('../lib/status');
+
+const packageJson = require('../package.json');
+
+program
+  .name('frontend-flow')
+  .description('🚀 Sistema autônomo de agentes IA para desenvolvimento React/TypeScript')
+  .version(packageJson.version);
+
+// Command: init - Setup project
+program
+  .command('init')
+  .description('🔧 Inicializar Frontend Flow no projeto atual')
+  .option('--force', 'Sobrescrever configuração existente')
+  .action(async (options) => {
+    console.log(chalk.blue('🚀 Inicializando Frontend Flow...'));
+    try {
+      await initProject(process.cwd(), options);
+      console.log(chalk.green('✅ Frontend Flow configurado com sucesso!'));
+      console.log(chalk.cyan('📖 Use: frontend-flow "sua demanda" para começar'));
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na inicialização:'), error.message);
+      process.exit(1);
+    }
+  });
+
+// Command: status - Show pipeline status
+program
+  .command('status')
+  .description('📊 Mostrar status do pipeline atual')
+  .action(async () => {
+    try {
+      await showStatus(process.cwd());
+    } catch (error) {
+      console.error(chalk.red('❌ Erro ao mostrar status:'), error.message);
+      process.exit(1);
+    }
+  });
+
+// Command: clean - Clean temporary files
+program
+  .command('clean')
+  .description('🧹 Limpar arquivos temporários')
+  .option('--all', 'Limpar todos os arquivos incluindo cache')
+  .action(async (options) => {
+    console.log(chalk.blue('🧹 Limpando arquivos temporários...'));
+    try {
+      const { cleanTemp } = require('../lib/cleanup');
+      await cleanTemp(process.cwd(), options);
+      console.log(chalk.green('✅ Limpeza concluída!'));
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na limpeza:'), error.message);
+      process.exit(1);
+    }
+  });
+
+// Main command - Execute demand
+program
+  .argument('[demand]', 'Demanda em linguagem natural')
+  .option('-v, --verbose', 'Modo verbose com logs detalhados')
+  .option('--dry-run', 'Simular execução sem fazer alterações')
+  .option('--pipeline <type>', 'Forçar tipo de pipeline específico')
+  .action(async (demand, options) => {
+    if (!demand) {
+      console.log(chalk.yellow('💡 Exemplo de uso:'));
+      console.log(chalk.cyan('  frontend-flow "criar botão de login responsivo"'));
+      console.log(chalk.cyan('  frontend-flow "implementar dashboard com gráficos"'));
+      console.log(chalk.cyan('  frontend-flow "otimizar performance da listagem"'));
+      return;
+    }
+
+    console.log(chalk.blue('🚀 Frontend Flow - Sistema Enterprise 11/10'));
+    console.log(chalk.cyan(`📝 Demanda: "${demand}"`));
+    console.log('');
+
+    try {
+      // Verificar se projeto está inicializado
+      const projectPath = process.cwd();
+      const configPath = path.join(projectPath, '.frontend-flow');
+
+      if (!await fs.pathExists(configPath)) {
+        console.log(chalk.yellow('⚠️  Projeto não inicializado. Executando init automaticamente...'));
+        await initProject(projectPath, {});
+        console.log(chalk.green('✅ Projeto inicializado!'));
+        console.log('');
+      }
+
+      // Analisar projeto
+      console.log(chalk.blue('🔍 Analisando projeto...'));
+      const projectInfo = await analyzeProject(projectPath);
+      console.log(chalk.green(`✅ Projeto ${projectInfo.type} detectado`));
+      console.log('');
+
+      // Executar pipeline
+      console.log(chalk.blue('🤖 Iniciando pipeline autônomo...'));
+      const result = await runPipeline(demand, projectPath, {
+        ...options,
+        projectInfo
+      });
+
+      console.log('');
+      console.log(chalk.green('🎉 Pipeline concluído com sucesso!'));
+      console.log(chalk.cyan('📊 Resultados:'));
+      console.log(`   • Tempo: ${result.duration}`);
+      console.log(`   • Agentes executados: ${result.agentsExecuted}`);
+      console.log(`   • Arquivos modificados: ${result.filesModified}`);
+
+      if (result.pullRequest) {
+        console.log(chalk.magenta(`   • Pull Request: ${result.pullRequest}`));
+      }
+
+    } catch (error) {
+      console.error('');
+      console.error(chalk.red('❌ Erro na execução:'), error.message);
+
+      if (options.verbose) {
+        console.error(chalk.gray(error.stack));
+      }
+
+      console.error('');
+      console.error(chalk.yellow('💡 Dicas:'));
+      console.error('   • Use --verbose para mais detalhes');
+      console.error('   • Verifique o arquivo de estado: .frontend-flow/temp/current_pipeline_state.md');
+      console.error('   • Use frontend-flow status para ver o status atual');
+
+      process.exit(1);
+    }
+  });
+
+// Parse arguments
+program.parse();
+
+// Show help if no arguments provided
+if (!process.argv.slice(2).length) {
+  console.log(chalk.blue('🚀 Frontend Flow - Sistema Enterprise 11/10'));
+  console.log('');
+  console.log(chalk.cyan('💡 Exemplos de uso:'));
+  console.log('  frontend-flow init                           # Inicializar projeto');
+  console.log('  frontend-flow "criar botão responsivo"       # Executar demanda');
+  console.log('  frontend-flow "dashboard com analytics"      # Feature completa');
+  console.log('  frontend-flow status                        # Ver status');
+  console.log('  frontend-flow clean                         # Limpar temp');
+  console.log('');
+  console.log(chalk.gray('Use --help para ver todas as opções'));
+}

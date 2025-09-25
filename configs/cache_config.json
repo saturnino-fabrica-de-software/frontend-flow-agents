@@ -1,0 +1,210 @@
+{
+  "version": "2.0",
+  "cache_system": {
+    "enabled": true,
+    "storage_type": "file_based",
+    "base_path": ".claude/cache/",
+    "max_size_mb": 500,
+    "cleanup_threshold": 80
+  },
+  "cache_policies": {
+    "agent_figma_extract": {
+      "enabled": true,
+      "cache_duration": "24h",
+      "cache_key_pattern": "figma_{project_id}_{component_id}_{version}",
+      "invalidation_triggers": ["figma_file_updated", "design_tokens_changed"],
+      "estimated_hit_rate": 75,
+      "time_saving_minutes": 2.1,
+      "cache_conditions": [
+        "same_figma_project",
+        "same_component_reference",
+        "within_24_hours"
+      ]
+    },
+    "agent_security": {
+      "enabled": true,
+      "cache_duration": "until_code_change",
+      "cache_key_pattern": "security_{file_hash}_{dependencies_hash}",
+      "invalidation_triggers": ["code_changed", "dependencies_updated", "security_rules_updated"],
+      "estimated_hit_rate": 60,
+      "time_saving_minutes": 1.8,
+      "cache_conditions": [
+        "same_file_content_hash",
+        "same_dependencies",
+        "same_security_rules"
+      ]
+    },
+    "agent_performance": {
+      "enabled": true,
+      "cache_duration": "12h",
+      "cache_key_pattern": "perf_{component_hash}_{optimization_level}",
+      "invalidation_triggers": ["component_changed", "performance_rules_updated"],
+      "estimated_hit_rate": 45,
+      "time_saving_minutes": 1.2,
+      "cache_conditions": [
+        "same_component_structure",
+        "same_optimization_settings"
+      ]
+    },
+    "agent_accessibility": {
+      "enabled": true,
+      "cache_duration": "6h",
+      "cache_key_pattern": "a11y_{component_hash}_{accessibility_rules_version}",
+      "invalidation_triggers": ["component_structure_changed", "a11y_rules_updated"],
+      "estimated_hit_rate": 70,
+      "time_saving_minutes": 0.6,
+      "cache_conditions": [
+        "same_component_structure",
+        "same_accessibility_rules"
+      ]
+    },
+    "agent_integration_tests": {
+      "enabled": true,
+      "cache_duration": "2h",
+      "cache_key_pattern": "tests_{component_hash}_{test_config_hash}",
+      "invalidation_triggers": ["component_changed", "test_config_changed"],
+      "estimated_hit_rate": 35,
+      "time_saving_minutes": 3.2,
+      "cache_conditions": [
+        "same_component_implementation",
+        "same_test_configuration"
+      ]
+    },
+    "agent_code_quality": {
+      "enabled": false,
+      "reason": "Quality gate must always run fresh to ensure current standards",
+      "cache_duration": "never"
+    }
+  },
+  "cache_strategies": {
+    "design_tokens": {
+      "agents": ["agent_figma_extract"],
+      "strategy": "time_based",
+      "duration": "24h",
+      "shared_cache": true,
+      "description": "Design tokens rarely change within a day, high reuse potential"
+    },
+    "component_analysis": {
+      "agents": ["agent_performance", "agent_accessibility", "agent_security"],
+      "strategy": "content_hash",
+      "shared_cache": false,
+      "description": "Component-specific analysis cached based on content hash"
+    },
+    "test_results": {
+      "agents": ["agent_integration_tests", "agent_e_2_e_cypress"],
+      "strategy": "hybrid",
+      "duration": "2h",
+      "content_based": true,
+      "description": "Tests cached for short period if component unchanged"
+    },
+    "external_api_calls": {
+      "agents": ["agent_figma_extract", "agent_analytics"],
+      "strategy": "api_based",
+      "respect_api_limits": true,
+      "description": "Cache external API responses to avoid rate limits"
+    }
+  },
+  "invalidation_rules": {
+    "code_change": {
+      "triggers": ["file_modified", "git_commit", "dependency_updated"],
+      "affects_agents": [
+        "agent_security",
+        "agent_performance",
+        "agent_accessibility",
+        "agent_integration_tests"
+      ]
+    },
+    "design_change": {
+      "triggers": ["figma_file_updated", "design_tokens_modified"],
+      "affects_agents": [
+        "agent_figma_extract",
+        "agent_tailwind_estilization"
+      ]
+    },
+    "rules_update": {
+      "triggers": ["linting_rules_updated", "security_policies_updated", "a11y_guidelines_updated"],
+      "affects_agents": [
+        "agent_code_quality",
+        "agent_security",
+        "agent_accessibility"
+      ]
+    },
+    "global_invalidation": {
+      "triggers": ["major_system_update", "cache_corruption"],
+      "affects_agents": "all"
+    }
+  },
+  "performance_optimization": {
+    "parallel_cache_operations": true,
+    "background_cache_warming": {
+      "enabled": true,
+      "strategy": "predictive",
+      "warm_common_patterns": true
+    },
+    "compression": {
+      "enabled": true,
+      "algorithm": "gzip",
+      "min_size_bytes": 1024
+    },
+    "cache_partitioning": {
+      "enabled": true,
+      "partition_by": ["agent", "project", "date"],
+      "max_partitions": 100
+    }
+  },
+  "monitoring": {
+    "hit_rate_tracking": true,
+    "performance_impact_measurement": true,
+    "storage_usage_monitoring": true,
+    "automatic_optimization": true,
+    "cache_effectiveness_reporting": true
+  },
+  "fallback_strategies": {
+    "cache_miss": {
+      "strategy": "execute_fresh",
+      "log_miss_reasons": true
+    },
+    "cache_corruption": {
+      "strategy": "invalidate_and_rebuild",
+      "backup_to_secondary": false
+    },
+    "storage_full": {
+      "strategy": "lru_eviction",
+      "emergency_cleanup": true,
+      "preserve_high_value": true
+    }
+  },
+  "estimated_benefits": {
+    "overall_time_reduction": "25-35%",
+    "api_call_reduction": "60-70%",
+    "resource_usage_reduction": "30-40%",
+    "user_experience_improvement": "faster_pipeline_execution",
+    "cost_reduction": "fewer_external_api_calls"
+  },
+  "cache_warming": {
+    "popular_figma_components": {
+      "enabled": true,
+      "schedule": "daily_00:00",
+      "components": ["button", "card", "modal", "form"]
+    },
+    "common_security_patterns": {
+      "enabled": true,
+      "schedule": "weekly_sunday_02:00",
+      "patterns": ["react_component_security", "input_validation", "xss_prevention"]
+    }
+  },
+  "advanced_features": {
+    "intelligent_prefetching": {
+      "enabled": false,
+      "description": "Future: Predict needed cache entries based on patterns"
+    },
+    "distributed_caching": {
+      "enabled": false,
+      "description": "Future: Share cache across multiple development environments"
+    },
+    "ml_based_invalidation": {
+      "enabled": false,
+      "description": "Future: Use ML to predict when cache should be invalidated"
+    }
+  }
+}
