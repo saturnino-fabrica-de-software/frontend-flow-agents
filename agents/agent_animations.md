@@ -54,7 +54,9 @@ Seu objetivo é aplicar animações de forma consistente, sempre respeitando o d
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent animations não aplicável
+
 Motivo: Demanda não requer animações ou interações específicas
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

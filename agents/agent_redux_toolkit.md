@@ -52,7 +52,9 @@ Este agente atua em conjunto com o **`agent_react_components`**, recebendo as ne
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent redux_toolkit não aplicável
+
 Motivo: Demanda não requer gerenciamento de estado global
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

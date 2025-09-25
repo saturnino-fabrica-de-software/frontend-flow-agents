@@ -53,7 +53,9 @@ O agente não deve implementar um sistema de i18n por conta própria. Ele deve a
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent i18n não aplicável
+
 Motivo: Projeto não possui configuração i18n e demanda não requer internacionalização
+
 Status: PASSED (agente pulado com sucesso)
 ```  
 

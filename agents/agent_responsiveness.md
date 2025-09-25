@@ -50,7 +50,9 @@ O objetivo é assegurar que a aplicação funcione perfeitamente em diferentes r
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent responsiveness não aplicável
+
 Motivo: Componente específico para desktop/ambiente controlado
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

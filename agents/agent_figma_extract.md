@@ -56,7 +56,9 @@ O foco está em entregar dados completos e confiáveis para o próximo agente da
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent figma_extract não aplicável
+
 Motivo: Demanda não menciona Figma ou design system específico
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

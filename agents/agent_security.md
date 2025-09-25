@@ -51,7 +51,9 @@ Este agente atua após a criação dos componentes e antes da integração final
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent security não aplicável
+
 Motivo: Componente puramente visual sem manipulação de dados sensíveis
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

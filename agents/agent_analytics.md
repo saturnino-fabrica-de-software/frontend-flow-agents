@@ -53,7 +53,9 @@ No caso específico do **PostHog**, este agente deve garantir o **tracking compl
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent analytics não aplicável
+
 Motivo: Projeto não possui configuração analytics e demanda não requer rastreamento
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

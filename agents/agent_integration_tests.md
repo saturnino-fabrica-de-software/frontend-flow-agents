@@ -52,7 +52,9 @@ O agente também é responsável por gerenciar mocks: deve verificar se já exis
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent integration_tests não aplicável
+
 Motivo: Protótipo descartável sem necessidade de testes
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

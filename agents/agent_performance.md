@@ -50,7 +50,9 @@ Este agente deve analisar o fluxo de dados e identificar pontos onde hooks como 
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent performance não aplicável
+
 Motivo: Protótipo descartável sem necessidade de otimização
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

@@ -50,7 +50,9 @@ Este agente atua após a criação do componente, revisando e ajustando seu cód
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent accessibility não aplicável
+
 Motivo: Componente interno técnico sem usuários finais
+
 Status: PASSED (agente pulado com sucesso)
 ```
 

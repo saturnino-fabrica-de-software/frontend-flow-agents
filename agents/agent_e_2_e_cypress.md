@@ -49,7 +49,9 @@ Além da criação dos testes, este agente também deve configurar o projeto par
 ### Resposta quando SKIP:
 ```
 SKIPPED - Agent e2e_cypress não aplicável
+
 Motivo: Demanda não requer testes E2E ou fluxos críticos complexos
+
 Status: PASSED (agente pulado com sucesso)
 ```
 
