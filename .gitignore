@@ -125,6 +125,11 @@ temp/
 tmp/
 *.tmp
 
+# Frontend Flow specific temporary files
+.frontend-flow/temp/
+.frontend-flow/cache/
+.frontend-flow/temp/backups/
+
 # Package files
 *.tar.gz
 *.zip
