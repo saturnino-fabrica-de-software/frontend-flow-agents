@@ -1,3 +1,12 @@
+---
+name: "security-auditor"
+description: "Security specialist for vulnerability detection, authentication, and secure coding"
+tools: Read, Edit, Bash
+model: claude
+category: quality
+keywords: security, vulnerability, authentication, cors, xss, csrf
+---
+
 # Agent: Security
 
 ## Role

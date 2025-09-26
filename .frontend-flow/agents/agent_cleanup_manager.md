@@ -1,3 +1,12 @@
+---
+name: "cleanup-orchestrator"
+description: "Cleanup specialist for removing unused code, dependencies, and files"
+tools: Read, Edit, Bash
+model: claude
+category: utility
+keywords: cleanup, remove, unused, refactor, organize
+---
+
 # Agent: Cleanup Manager
 
 ## Role

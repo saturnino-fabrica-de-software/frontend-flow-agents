@@ -1,3 +1,12 @@
+---
+name: "agent-state-manager"
+description: "Specialist agent for agent state manager"
+tools: Read, Write, Edit
+model: claude
+category: frontend
+keywords: state, manager
+---
+
 # Agent: State Manager
 
 ## Role

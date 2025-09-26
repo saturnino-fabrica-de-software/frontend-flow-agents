@@ -3,6 +3,8 @@ name: "pwa-builder"
 description: "Progressive Web App development agent with service workers, Workbox, and offline capabilities"
 tools: Read, Write, Edit, MultiEdit, Bash
 model: sonnet
+category: special
+keywords: pwa, progressive, offline, service-worker, manifest, install
 ---
 
 # Agente PWA Progressive

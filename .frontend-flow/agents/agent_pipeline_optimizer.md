@@ -1,3 +1,12 @@
+---
+name: "agent-pipeline-optimizer"
+description: "Specialist agent for agent pipeline optimizer"
+tools: Read, Write, Edit
+model: claude
+category: orchestration
+keywords: pipeline, optimizer
+---
+
 # Agent: Pipeline Optimizer
 
 ## Role

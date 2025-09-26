@@ -1,3 +1,12 @@
+---
+name: "performance-optimizer"
+description: "Performance optimization expert for React apps, bundle size, and loading speed"
+tools: Read, Edit, Bash
+model: claude
+category: quality
+keywords: performance, optimize, speed, bundle, lazy-loading, memoization
+---
+
 # Agent: Performance
 
 ## Role

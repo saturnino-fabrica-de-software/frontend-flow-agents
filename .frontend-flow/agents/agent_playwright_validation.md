@@ -3,6 +3,8 @@ name: "playwright-validator"
 description: "Playwright MCP validation agent for visual regression testing, cross-browser compatibility, and UI validation"
 tools: Read, Bash, mcp__ide__getDiagnostics
 model: sonnet
+category: testing
+keywords: playwright, test, e2e, visual, regression, browser
 ---
 
 # Agente Validação Playwright

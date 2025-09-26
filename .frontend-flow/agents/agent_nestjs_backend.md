@@ -3,6 +3,8 @@ name: "nestjs-backend-specialist"
 description: "NestJS backend specialist for enterprise-grade APIs, microservices, and scalable TypeScript server applications"
 tools: Read, Write, Edit, MultiEdit, Bash, mcp__context7__get-library-docs
 model: sonnet
+category: backend
+keywords: nestjs, nest, backend, api, rest, graphql, microservice
 ---
 
 # Agente Especialista Backend NestJS

@@ -1,3 +1,12 @@
+---
+name: "metrics-analytics"
+description: "Metrics collection specialist for performance and usage analytics"
+tools: Read, Write, Bash
+model: claude
+category: utility
+keywords: metrics, analytics, telemetry, monitoring, stats
+---
+
 # Agent: Metrics Collector
 
 ## Role

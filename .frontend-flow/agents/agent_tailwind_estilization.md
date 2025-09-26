@@ -1,3 +1,12 @@
+---
+name: "tailwind-style-master"
+description: "Tailwind CSS styling expert for responsive, dark mode, and pixel-perfect designs"
+tools: Read, Edit, MultiEdit
+model: claude
+category: frontend
+keywords: tailwind, css, styling, responsive, dark-mode, theme
+---
+
 # Agent: Tailwind Styling
 
 ## Role

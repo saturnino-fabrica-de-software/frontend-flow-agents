@@ -3,6 +3,8 @@ name: "accessibility-auditor"
 description: "WCAG compliance agent ensuring accessibility standards and inclusive design practices"
 tools: Read, Edit, MultiEdit, Bash
 model: sonnet
+category: quality
+keywords: accessibility, a11y, wcag, aria, inclusive, screen-reader
 ---
 
 # Agente de Acessibilidade em Componentes React

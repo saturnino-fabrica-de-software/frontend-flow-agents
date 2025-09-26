@@ -1,3 +1,12 @@
+---
+name: "agent-analytics"
+description: "Specialist agent for agent analytics"
+tools: Read, Write, Edit
+model: claude
+category: utility
+keywords: analytics
+---
+
 # Agent: Analytics
 
 ## Role

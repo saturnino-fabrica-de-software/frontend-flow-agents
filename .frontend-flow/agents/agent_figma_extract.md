@@ -3,6 +3,8 @@ name: "figma-design-extractor"
 description: "Figma integration agent that extracts design tokens and specifications for accurate implementation"
 tools: Read, Write, WebFetch
 model: sonnet
+category: special
+keywords: figma, design, tokens, extract, ui, ux
 ---
 
 # Agente de Extração de Dados do Figma

@@ -1,3 +1,12 @@
+---
+name: "agent-animations"
+description: "Specialist agent for agent animations"
+tools: Read, Write, Edit
+model: claude
+category: frontend
+keywords: animations
+---
+
 # Agent: Animations
 
 ## Role

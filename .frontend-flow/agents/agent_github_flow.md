@@ -1,3 +1,12 @@
+---
+name: "agent-github-flow"
+description: "Specialist agent for agent github flow"
+tools: Read, Write, Edit
+model: claude
+category: infrastructure
+keywords: github, flow
+---
+
 # Agente de Documentação e Flow de GitHub
 
 ## Descrição

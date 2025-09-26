@@ -1,3 +1,12 @@
+---
+name: "agent-responsiveness"
+description: "Specialist agent for agent responsiveness"
+tools: Read, Write, Edit
+model: claude
+category: frontend
+keywords: responsiveness
+---
+
 # Agent: Responsiveness
 
 ## Role

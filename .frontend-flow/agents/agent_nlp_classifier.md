@@ -1,3 +1,12 @@
+---
+name: "nlp-demand-classifier"
+description: "NLP specialist for classifying and understanding user demands in natural language"
+tools: Read
+model: claude
+category: orchestration
+keywords: nlp, classify, natural-language, demand, understand
+---
+
 # Agent: NLP Classifier
 
 ## Role

@@ -1,3 +1,12 @@
+---
+name: "simple-test-runner"
+description: "Simple test runner for basic validation and smoke tests"
+tools: Bash
+model: claude
+category: testing
+keywords: test, simple, validation, smoke, quick
+---
+
 # Agent: Test Simple
 
 ## Objetivo

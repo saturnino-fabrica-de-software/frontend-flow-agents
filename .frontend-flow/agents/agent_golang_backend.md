@@ -3,6 +3,8 @@ name: "golang-backend-specialist"
 description: "Go backend specialist for high-performance APIs, microservices, and concurrent systems"
 tools: Read, Write, Edit, MultiEdit, Bash, mcp__context7__get-library-docs
 model: sonnet
+category: backend
+keywords: golang, go, backend, microservice, grpc, performance
 ---
 
 # Agente Especialista Backend Golang

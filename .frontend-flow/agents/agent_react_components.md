@@ -1,3 +1,12 @@
+---
+name: "react-component-creator"
+description: "React component specialist for creating TypeScript components with hooks, props, and best practices"
+tools: Read, Write, Edit, MultiEdit
+model: claude
+category: frontend
+keywords: react, component, jsx, tsx, hooks, props, typescript
+---
+
 # Agent: React Components
 
 ## Role

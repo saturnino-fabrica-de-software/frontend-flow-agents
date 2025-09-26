@@ -3,6 +3,8 @@ name: "mcp-memory-manager"
 description: "MCP Memory integration agent for persistent context, learning patterns, and cross-session knowledge retention"
 tools: Read, Write, Edit, mcp__memory__store, mcp__memory__retrieve, mcp__memory__search
 model: sonnet
+category: special
+keywords: memory, persistent, context, learning, mcp, knowledge
 ---
 
 # Agente Gerenciador MCP Memory

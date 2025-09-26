@@ -1,3 +1,12 @@
+---
+name: "auto-healing-system"
+description: "Auto-healing specialist for error recovery and self-correction"
+tools: Read, Edit, Bash
+model: claude
+category: quality
+keywords: healing, recovery, error, fix, auto-correct
+---
+
 # Agent: Auto Healing
 
 ## Role

@@ -1,3 +1,12 @@
+---
+name: "test-automation-expert"
+description: "Testing specialist for unit, integration, and E2E tests with Jest/Vitest"
+tools: Read, Write, Edit, Bash
+model: claude
+category: testing
+keywords: test, jest, vitest, coverage, unit, integration
+---
+
 # Agent: Integration Tests
 
 ## Role

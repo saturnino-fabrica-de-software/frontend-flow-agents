@@ -1,3 +1,12 @@
+---
+name: "agent-e-2-e-cypress"
+description: "Specialist agent for agent e 2 e cypress"
+tools: Read, Write, Edit
+model: claude
+category: testing
+keywords: e, 2, e, cypress
+---
+
 # Agent: E2E Cypress
 
 ## Role

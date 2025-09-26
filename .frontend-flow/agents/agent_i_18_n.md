@@ -1,3 +1,12 @@
+---
+name: "agent-i-18-n"
+description: "Specialist agent for agent i 18 n"
+tools: Read, Write, Edit
+model: claude
+category: frontend
+keywords: i, 18, n
+---
+
 # Agent: Internationalization
 
 ## Role

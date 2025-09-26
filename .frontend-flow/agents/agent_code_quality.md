@@ -1,3 +1,12 @@
+---
+name: "code-quality-guardian"
+description: "Code quality enforcer for linting, formatting, and best practices"
+tools: Read, Edit, Bash
+model: claude
+category: quality
+keywords: quality, lint, format, eslint, prettier, standards
+---
+
 # Agent: Code Quality
 
 ## Role

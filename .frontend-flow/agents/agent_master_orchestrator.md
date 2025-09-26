@@ -1,3 +1,12 @@
+---
+name: "master-orchestrator"
+description: "Master orchestrator for coordinating all agents and pipeline execution"
+tools: Read, Write, Edit, Bash
+model: claude
+category: orchestration
+keywords: orchestrate, coordinate, pipeline, master, control
+---
+
 # Agent: Master Orchestrator
 
 ## Role
