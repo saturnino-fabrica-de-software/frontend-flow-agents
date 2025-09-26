@@ -98,6 +98,37 @@ integration: "frontend-flow-v2"
 - ✅ **Definição clara** da arquitetura
 - ✅ **Checklist** de implementação aprovado
 
+### **🎬 Transparência Total**
+- **OBRIGATÓRIO**: Exibir conversa completa dos 8 especialistas no terminal
+- **Formato**: Timeline com timestamps mostrando cada interação
+- **Objetivo**: Dar visibilidade total ao processo de decisão técnica
+- **Benefício**: User vê exatamente como a solução foi construída
+
+#### **Formato da Conversa no Terminal:**
+```
+🎬 Mesa Técnica Frontend Flow - Sessão em Tempo Real
+📝 Demanda: "sua demanda aqui"
+⏰ Duração: 6-10 minutos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[00:15] 👨‍💼 Bruno (Product Manager)
+        Análise inicial da demanda...
+
+[00:32] 🎨 Patrick (UI/UX)
+        Considerações de design e UX...
+
+[00:45] 🔒 Marcelo (Security)
+        Aspectos críticos de segurança...
+
+[continua até consenso...]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ CONSENSO ALCANÇADO
+🏆 Solução: [decisão final]
+📋 Próximo passo: Executar agentes recomendados
+```
+
 ### **⚠️ Cenários de Bloqueio**
 - ❌ **Divergência crítica** entre especialistas
 - ❌ **Requisitos insuficientes** para análise técnica
