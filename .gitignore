@@ -125,9 +125,25 @@ temp/
 tmp/
 *.tmp
 
-# Frontend Flow - Diretório gerado automaticamente
-# Não commitar a pasta completa .frontend-flow pois contém arquivos temporários
-.frontend-flow/
+# Frontend Flow
+.frontend-flow/temp/
+.frontend-flow/cache/
+.frontend-flow/metrics/
+.frontend-flow/telemetry/
+
+# Test artifacts
+test-*.js
+test-*.sh
+test-button.jsx
+test-demand.txt
+pack-output.txt
+
+# Development docs
+IMPLEMENTATION-*.md
+INSIGHTS-*.md
+
+# Claude settings
+.claude/
 
 # Package files
 *.tar.gz

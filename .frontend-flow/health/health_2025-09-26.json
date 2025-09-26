@@ -1,0 +1,1934 @@
+{
+  "agent_react_components": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.446Z",
+    "metrics": {
+      "success_rate": 0.9179704600903249,
+      "avg_duration": "45s",
+      "total_runs": 15427,
+      "error_trend": "stable"
+    },
+    "version": "2.1.0",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.454Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9417324360386329,
+          "avg_duration": "45s",
+          "total_runs": 15428,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9194475580724275,
+          "avg_duration": "45s",
+          "total_runs": 15423,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.459Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9255787075666095,
+          "avg_duration": "45s",
+          "total_runs": 15426,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.458Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.921470588670925,
+          "avg_duration": "45s",
+          "total_runs": 15423,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.409Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9175517656867402,
+          "avg_duration": "45s",
+          "total_runs": 15423,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.442Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9590152976229868,
+          "avg_duration": "45s",
+          "total_runs": 15426,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.446Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9179704600903249,
+          "avg_duration": "45s",
+          "total_runs": 15427,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_tailwind_estilization": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.446Z",
+    "metrics": {
+      "success_rate": 0.9454710158105993,
+      "avg_duration": "30s",
+      "total_runs": 14350,
+      "error_trend": "stable"
+    },
+    "version": "2.0.0",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.454Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9523559726232008,
+          "avg_duration": "30s",
+          "total_runs": 14355,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.946245508747127,
+          "avg_duration": "30s",
+          "total_runs": 14357,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.459Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.984615940305264,
+          "avg_duration": "30s",
+          "total_runs": 14356,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.458Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9691089417853481,
+          "avg_duration": "30s",
+          "total_runs": 14357,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.409Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9516101636529672,
+          "avg_duration": "30s",
+          "total_runs": 14354,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.442Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9774396548699756,
+          "avg_duration": "30s",
+          "total_runs": 14350,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.446Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9454710158105993,
+          "avg_duration": "30s",
+          "total_runs": 14350,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_redux_toolkit": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.447Z",
+    "metrics": {
+      "success_rate": 0.8935955149265444,
+      "avg_duration": "60s",
+      "total_runs": 8925,
+      "error_trend": "stable"
+    },
+    "version": "1.9.0",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.454Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.863993070719734,
+          "avg_duration": "60s",
+          "total_runs": 8926,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8908832550419488,
+          "avg_duration": "60s",
+          "total_runs": 8920,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.460Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8736112537279125,
+          "avg_duration": "60s",
+          "total_runs": 8925,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.459Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8845601606116346,
+          "avg_duration": "60s",
+          "total_runs": 8923,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.409Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8967671618317369,
+          "avg_duration": "60s",
+          "total_runs": 8928,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.442Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8928189267866701,
+          "avg_duration": "60s",
+          "total_runs": 8928,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.447Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8935955149265444,
+          "avg_duration": "60s",
+          "total_runs": 8925,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_figma_extract": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.447Z",
+    "metrics": {
+      "success_rate": 0.9245528346579126,
+      "avg_duration": "25s",
+      "total_runs": 6542,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.454Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.893422295349231,
+          "avg_duration": "25s",
+          "total_runs": 6540,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9162742952603233,
+          "avg_duration": "25s",
+          "total_runs": 6545,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.460Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9198967219940405,
+          "avg_duration": "25s",
+          "total_runs": 6545,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.459Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8995545812402133,
+          "avg_duration": "25s",
+          "total_runs": 6541,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.409Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9304822592631661,
+          "avg_duration": "25s",
+          "total_runs": 6547,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.442Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9349248377412147,
+          "avg_duration": "25s",
+          "total_runs": 6542,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.447Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9245528346579126,
+          "avg_duration": "25s",
+          "total_runs": 6542,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_github_flow": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.447Z",
+    "metrics": {
+      "success_rate": 0.9799482852528002,
+      "avg_duration": "15s",
+      "total_runs": 12893,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9507941211174072,
+          "avg_duration": "15s",
+          "total_runs": 12892,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9621625284109426,
+          "avg_duration": "15s",
+          "total_runs": 12893,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.460Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9915238920568508,
+          "avg_duration": "15s",
+          "total_runs": 12892,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.460Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9501871268554427,
+          "avg_duration": "15s",
+          "total_runs": 12897,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.410Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9919332854317761,
+          "avg_duration": "15s",
+          "total_runs": 12891,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.442Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9708501129144187,
+          "avg_duration": "15s",
+          "total_runs": 12890,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.447Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9799482852528002,
+          "avg_duration": "15s",
+          "total_runs": 12893,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_code_quality": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.448Z",
+    "metrics": {
+      "success_rate": 0.9533214717089239,
+      "avg_duration": "40s",
+      "total_runs": 18450,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9257571480197406,
+          "avg_duration": "40s",
+          "total_runs": 18459,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9457535231744879,
+          "avg_duration": "40s",
+          "total_runs": 18450,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.461Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9507366667929341,
+          "avg_duration": "40s",
+          "total_runs": 18451,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.460Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9715833558775053,
+          "avg_duration": "40s",
+          "total_runs": 18456,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.410Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9684966446409056,
+          "avg_duration": "40s",
+          "total_runs": 18451,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.443Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9363305074964381,
+          "avg_duration": "40s",
+          "total_runs": 18452,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.448Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9533214717089239,
+          "avg_duration": "40s",
+          "total_runs": 18450,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_accessibility": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.448Z",
+    "metrics": {
+      "success_rate": 0.9230620244491015,
+      "avg_duration": "35s",
+      "total_runs": 9879,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.918300953280377,
+          "avg_duration": "35s",
+          "total_runs": 9874,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9108012746730307,
+          "avg_duration": "35s",
+          "total_runs": 9877,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.461Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9128220289660225,
+          "avg_duration": "35s",
+          "total_runs": 9875,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.460Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9513889576821822,
+          "avg_duration": "35s",
+          "total_runs": 9878,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.410Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9090223051302991,
+          "avg_duration": "35s",
+          "total_runs": 9875,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.443Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.925763045196797,
+          "avg_duration": "35s",
+          "total_runs": 9872,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.448Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9230620244491015,
+          "avg_duration": "35s",
+          "total_runs": 9879,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_performance": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.448Z",
+    "metrics": {
+      "success_rate": 0.893870549303574,
+      "avg_duration": "50s",
+      "total_runs": 7657,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8990216452099026,
+          "avg_duration": "50s",
+          "total_runs": 7657,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8835448116567303,
+          "avg_duration": "50s",
+          "total_runs": 7650,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.461Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8892038937547058,
+          "avg_duration": "50s",
+          "total_runs": 7653,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.461Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8790925810081496,
+          "avg_duration": "50s",
+          "total_runs": 7652,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.410Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8957025046392574,
+          "avg_duration": "50s",
+          "total_runs": 7659,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.443Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.897325605956702,
+          "avg_duration": "50s",
+          "total_runs": 7652,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.448Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.893870549303574,
+          "avg_duration": "50s",
+          "total_runs": 7657,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_integration_tests": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.449Z",
+    "metrics": {
+      "success_rate": 0.8970169808394698,
+      "avg_duration": "55s",
+      "total_runs": 11232,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8848308517077628,
+          "avg_duration": "55s",
+          "total_runs": 11236,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9120213225413139,
+          "avg_duration": "55s",
+          "total_runs": 11234,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.461Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.892611271121931,
+          "avg_duration": "55s",
+          "total_runs": 11234,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.462Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9145177199196778,
+          "avg_duration": "55s",
+          "total_runs": 11236,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.410Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9055629059421567,
+          "avg_duration": "55s",
+          "total_runs": 11237,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.443Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8851072405260753,
+          "avg_duration": "55s",
+          "total_runs": 11230,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.449Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8970169808394698,
+          "avg_duration": "55s",
+          "total_runs": 11232,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_animations": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.449Z",
+    "metrics": {
+      "success_rate": 0.9243242754706317,
+      "avg_duration": "35s",
+      "total_runs": 5434,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9287210318036551,
+          "avg_duration": "35s",
+          "total_runs": 5431,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.457Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.934479788058248,
+          "avg_duration": "35s",
+          "total_runs": 5432,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.462Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.931595203682967,
+          "avg_duration": "35s",
+          "total_runs": 5436,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.462Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9349298703565488,
+          "avg_duration": "35s",
+          "total_runs": 5435,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.411Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9282848898093911,
+          "avg_duration": "35s",
+          "total_runs": 5436,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.443Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9348913188312319,
+          "avg_duration": "35s",
+          "total_runs": 5437,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.449Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9243242754706317,
+          "avg_duration": "35s",
+          "total_runs": 5434,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_i_18_n": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.449Z",
+    "metrics": {
+      "success_rate": 0.9265608120270001,
+      "avg_duration": "40s",
+      "total_runs": 4329,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.893421174366405,
+          "avg_duration": "40s",
+          "total_runs": 4322,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.457Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9055499107229863,
+          "avg_duration": "40s",
+          "total_runs": 4324,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.462Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8880016965239881,
+          "avg_duration": "40s",
+          "total_runs": 4326,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.462Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8950419191934902,
+          "avg_duration": "40s",
+          "total_runs": 4329,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.411Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.928327151938028,
+          "avg_duration": "40s",
+          "total_runs": 4323,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.444Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9040357710494239,
+          "avg_duration": "40s",
+          "total_runs": 4327,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.449Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9265608120270001,
+          "avg_duration": "40s",
+          "total_runs": 4329,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_security": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.450Z",
+    "metrics": {
+      "success_rate": 0.9868065913735552,
+      "avg_duration": "45s",
+      "total_runs": 13455,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.98782100414373,
+          "avg_duration": "45s",
+          "total_runs": 13454,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.457Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9837179918367973,
+          "avg_duration": "45s",
+          "total_runs": 13450,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.462Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9586333783353916,
+          "avg_duration": "45s",
+          "total_runs": 13452,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.463Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9738434346263422,
+          "avg_duration": "45s",
+          "total_runs": 13456,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.411Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9706768610787154,
+          "avg_duration": "45s",
+          "total_runs": 13451,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.444Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9910135082690601,
+          "avg_duration": "45s",
+          "total_runs": 13454,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.450Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9868065913735552,
+          "avg_duration": "45s",
+          "total_runs": 13455,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_responsiveness": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.451Z",
+    "metrics": {
+      "success_rate": 0.9159061109702757,
+      "avg_duration": "30s",
+      "total_runs": 10233,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.455Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9356495387947449,
+          "avg_duration": "30s",
+          "total_runs": 10230,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.457Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9220012193928732,
+          "avg_duration": "30s",
+          "total_runs": 10238,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.463Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9519026279418369,
+          "avg_duration": "30s",
+          "total_runs": 10230,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.463Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9527321423477466,
+          "avg_duration": "30s",
+          "total_runs": 10234,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.411Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9367850867701323,
+          "avg_duration": "30s",
+          "total_runs": 10235,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.444Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9494495081514,
+          "avg_duration": "30s",
+          "total_runs": 10233,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.451Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9159061109702757,
+          "avg_duration": "30s",
+          "total_runs": 10233,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_master_orchestrator": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.451Z",
+    "metrics": {
+      "success_rate": 1,
+      "avg_duration": "10s",
+      "total_runs": 20006,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9897866398251933,
+          "avg_duration": "10s",
+          "total_runs": 20003,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.457Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9838017104471466,
+          "avg_duration": "10s",
+          "total_runs": 20009,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.463Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9658219756405485,
+          "avg_duration": "10s",
+          "total_runs": 20001,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.463Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 1,
+          "avg_duration": "10s",
+          "total_runs": 20003,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.411Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9899846611835047,
+          "avg_duration": "10s",
+          "total_runs": 20005,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.444Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9846653574751354,
+          "avg_duration": "10s",
+          "total_runs": 20008,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.451Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 1,
+          "avg_duration": "10s",
+          "total_runs": 20006,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_nlp_classifier": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.451Z",
+    "metrics": {
+      "success_rate": 0.9460332398264922,
+      "avg_duration": "5s",
+      "total_runs": 19502,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9384734891584702,
+          "avg_duration": "5s",
+          "total_runs": 19507,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.457Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9606606252785099,
+          "avg_duration": "5s",
+          "total_runs": 19508,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.463Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9582894296311028,
+          "avg_duration": "5s",
+          "total_runs": 19501,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.464Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9611870593899909,
+          "avg_duration": "5s",
+          "total_runs": 19503,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.412Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9695514619956883,
+          "avg_duration": "5s",
+          "total_runs": 19500,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.444Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9617377045413218,
+          "avg_duration": "5s",
+          "total_runs": 19500,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.451Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9460332398264922,
+          "avg_duration": "5s",
+          "total_runs": 19502,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_technical_roundtable": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.452Z",
+    "metrics": {
+      "success_rate": 0.9218011799480195,
+      "avg_duration": "120s",
+      "total_runs": 3205,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "warning",
+        "metrics": {
+          "success_rate": 0.9350659484889945,
+          "avg_duration": "120s",
+          "total_runs": 3201,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.458Z",
+        "health": "warning",
+        "metrics": {
+          "success_rate": 0.9396218813866476,
+          "avg_duration": "120s",
+          "total_runs": 3201,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.464Z",
+        "health": "warning",
+        "metrics": {
+          "success_rate": 0.9374385713260092,
+          "avg_duration": "120s",
+          "total_runs": 3201,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.464Z",
+        "health": "warning",
+        "metrics": {
+          "success_rate": 0.9446308731035252,
+          "avg_duration": "120s",
+          "total_runs": 3207,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.412Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9149664619680979,
+          "avg_duration": "120s",
+          "total_runs": 3202,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.444Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9358954663826147,
+          "avg_duration": "120s",
+          "total_runs": 3207,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.452Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9218011799480195,
+          "avg_duration": "120s",
+          "total_runs": 3205,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_state_manager": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.452Z",
+    "metrics": {
+      "success_rate": 0.9685142171647259,
+      "avg_duration": "2s",
+      "total_runs": 19805,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9766696268430481,
+          "avg_duration": "2s",
+          "total_runs": 19801,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.458Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9885141088337212,
+          "avg_duration": "2s",
+          "total_runs": 19803,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.464Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9779438276025771,
+          "avg_duration": "2s",
+          "total_runs": 19802,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.464Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9947195945029024,
+          "avg_duration": "2s",
+          "total_runs": 19806,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.412Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.981242242668148,
+          "avg_duration": "2s",
+          "total_runs": 19807,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.444Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9775358884701917,
+          "avg_duration": "2s",
+          "total_runs": 19800,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.452Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9685142171647259,
+          "avg_duration": "2s",
+          "total_runs": 19805,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_pipeline_optimizer": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.452Z",
+    "metrics": {
+      "success_rate": 0.9508520473207065,
+      "avg_duration": "8s",
+      "total_runs": 15604,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9537198325707397,
+          "avg_duration": "8s",
+          "total_runs": 15601,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.458Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9727796724995773,
+          "avg_duration": "8s",
+          "total_runs": 15609,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.464Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9908244614828182,
+          "avg_duration": "8s",
+          "total_runs": 15608,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.464Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.992918027346421,
+          "avg_duration": "8s",
+          "total_runs": 15606,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.412Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.977552756353162,
+          "avg_duration": "8s",
+          "total_runs": 15606,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.445Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9903499951873934,
+          "avg_duration": "8s",
+          "total_runs": 15603,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.452Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9508520473207065,
+          "avg_duration": "8s",
+          "total_runs": 15604,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_metrics_collector": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.453Z",
+    "metrics": {
+      "success_rate": 0.9676999141258239,
+      "avg_duration": "3s",
+      "total_runs": 18903,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9976679029632773,
+          "avg_duration": "3s",
+          "total_runs": 18905,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.458Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9737549883645438,
+          "avg_duration": "3s",
+          "total_runs": 18900,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.465Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9699415599519741,
+          "avg_duration": "3s",
+          "total_runs": 18901,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.465Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9839017298408707,
+          "avg_duration": "3s",
+          "total_runs": 18900,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.412Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 1,
+          "avg_duration": "3s",
+          "total_runs": 18909,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.445Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9881031465556296,
+          "avg_duration": "3s",
+          "total_runs": 18901,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.453Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9676999141258239,
+          "avg_duration": "3s",
+          "total_runs": 18903,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_cleanup_manager": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.453Z",
+    "metrics": {
+      "success_rate": 0.9826607668939719,
+      "avg_duration": "5s",
+      "total_runs": 17201,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9869867785182241,
+          "avg_duration": "5s",
+          "total_runs": 17206,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.458Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 1,
+          "avg_duration": "5s",
+          "total_runs": 17202,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.466Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9681379051592665,
+          "avg_duration": "5s",
+          "total_runs": 17206,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.465Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9666958022244679,
+          "avg_duration": "5s",
+          "total_runs": 17205,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.412Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 1,
+          "avg_duration": "5s",
+          "total_runs": 17200,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.445Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 1,
+          "avg_duration": "5s",
+          "total_runs": 17205,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.453Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9826607668939719,
+          "avg_duration": "5s",
+          "total_runs": 17201,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_github_pullrequest": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.453Z",
+    "metrics": {
+      "success_rate": 0.9653991727444489,
+      "avg_duration": "20s",
+      "total_runs": 8903,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.980589262403375,
+          "avg_duration": "20s",
+          "total_runs": 8901,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.458Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9403832585189895,
+          "avg_duration": "20s",
+          "total_runs": 8906,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.466Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9632562148367405,
+          "avg_duration": "20s",
+          "total_runs": 8902,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.466Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9784584102813177,
+          "avg_duration": "20s",
+          "total_runs": 8907,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.412Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9538004296703539,
+          "avg_duration": "20s",
+          "total_runs": 8907,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.445Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9448284621249962,
+          "avg_duration": "20s",
+          "total_runs": 8904,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.453Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9653991727444489,
+          "avg_duration": "20s",
+          "total_runs": 8903,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_analytics": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.453Z",
+    "metrics": {
+      "success_rate": 0.8812867990651718,
+      "avg_duration": "30s",
+      "total_runs": 3453,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8782120453613657,
+          "avg_duration": "30s",
+          "total_runs": 3456,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.459Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8802544933189907,
+          "avg_duration": "30s",
+          "total_runs": 3456,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.466Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8944880175445257,
+          "avg_duration": "30s",
+          "total_runs": 3459,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.466Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8758452717358886,
+          "avg_duration": "30s",
+          "total_runs": 3456,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.412Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8952910173500768,
+          "avg_duration": "30s",
+          "total_runs": 3451,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.445Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.9183616493027577,
+          "avg_duration": "30s",
+          "total_runs": 3456,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.453Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8812867990651718,
+          "avg_duration": "30s",
+          "total_runs": 3453,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  },
+  "agent_e_2_e_cypress": {
+    "health": "healthy",
+    "last_check": "2025-09-26T22:41:32.454Z",
+    "metrics": {
+      "success_rate": 0.8578882683863084,
+      "avg_duration": "180s",
+      "total_runs": 2102,
+      "error_trend": "stable"
+    },
+    "version": "unknown",
+    "dependencies": {},
+    "status_history": [
+      {
+        "timestamp": "2025-09-26T22:25:52.456Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": 0.8588704892331633,
+          "avg_duration": "180s",
+          "total_runs": 2108,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:22.459Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": 0.8433040018785487,
+          "avg_duration": "180s",
+          "total_runs": 2109,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:26:52.466Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": 0.8504980093852614,
+          "avg_duration": "180s",
+          "total_runs": 2100,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:27:22.466Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": 0.8723873217776632,
+          "avg_duration": "180s",
+          "total_runs": 2109,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:40:32.413Z",
+        "health": "warning",
+        "metrics": {
+          "success_rate": 0.8392127515791881,
+          "avg_duration": "180s",
+          "total_runs": 2101,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:02.445Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8521625695194919,
+          "avg_duration": "180s",
+          "total_runs": 2100,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-26T22:41:32.454Z",
+        "health": "healthy",
+        "metrics": {
+          "success_rate": 0.8578882683863084,
+          "avg_duration": "180s",
+          "total_runs": 2102,
+          "error_trend": "stable"
+        }
+      }
+    ]
+  }
+}
