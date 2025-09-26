@@ -100,7 +100,7 @@ jobs:
         run: |
           echo "🏗️ Testing build process..."
           npm run prepublishOnly
-          npm pack --dry-run > pack-output.txt
+          npm pack --dry-run 2>&1 | tee pack-output.txt
 
           # Verify package contents
           echo "📦 Verifying package contents..."
@@ -108,6 +108,7 @@ jobs:
             echo "✅ Enhanced agents included"
           else
             echo "❌ Enhanced agents missing in package"
+            cat pack-output.txt
             exit 1
           fi
 
@@ -115,6 +116,7 @@ jobs:
             echo "✅ Enhanced lib included"
           else
             echo "❌ Enhanced lib missing in package"
+            cat pack-output.txt
             exit 1
           fi
 
