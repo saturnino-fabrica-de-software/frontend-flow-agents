@@ -10,6 +10,10 @@ const { initProject } = require('../lib/init');
 const { analyzeProject } = require('../lib/analyzer');
 const { runPipeline } = require('../lib/orchestrator');
 const { showStatus } = require('../lib/status');
+const MarketplaceManager = require('../lib/marketplace-manager');
+const FrameworkDetector = require('../lib/framework-detector');
+const HealthMonitor = require('../lib/health-monitor');
+const AnalyticsServer = require('../lib/analytics-server');
 
 const packageJson = require('../package.json');
 
@@ -79,6 +83,159 @@ program
     }
   });
 
+// Command: marketplace - Agent marketplace management
+const marketplaceCmd = program
+  .command('marketplace')
+  .description('🏪 Gerenciar marketplace de agentes da comunidade');
+
+marketplaceCmd
+  .command('search [query]')
+  .description('Buscar agentes no marketplace')
+  .option('-c, --category <category>', 'Filtrar por categoria')
+  .option('-f, --framework <framework>', 'Filtrar por framework')
+  .option('-v, --verified', 'Apenas agentes verificados')
+  .action(async (query, options) => {
+    try {
+      const marketplace = new MarketplaceManager();
+      await marketplace.initialize();
+      const results = await marketplace.searchAgents(query, options);
+      await marketplace.displaySearchResults(results, true);
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na busca:'), error.message);
+      process.exit(1);
+    }
+  });
+
+marketplaceCmd
+  .command('install <agentId>')
+  .description('Instalar um agente do marketplace')
+  .action(async (agentId) => {
+    try {
+      const marketplace = new MarketplaceManager();
+      await marketplace.initialize();
+      await marketplace.installAgent(agentId);
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na instalação:'), error.message);
+      process.exit(1);
+    }
+  });
+
+marketplaceCmd
+  .command('uninstall <agentId>')
+  .description('Desinstalar um agente')
+  .action(async (agentId) => {
+    try {
+      const marketplace = new MarketplaceManager();
+      await marketplace.initialize();
+      await marketplace.uninstallAgent(agentId);
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na desinstalação:'), error.message);
+      process.exit(1);
+    }
+  });
+
+marketplaceCmd
+  .command('list')
+  .description('Listar agentes instalados')
+  .action(async () => {
+    try {
+      const marketplace = new MarketplaceManager();
+      await marketplace.initialize();
+      await marketplace.listInstalled();
+    } catch (error) {
+      console.error(chalk.red('❌ Erro ao listar:'), error.message);
+      process.exit(1);
+    }
+  });
+
+marketplaceCmd
+  .command('stats')
+  .description('Estatísticas do marketplace')
+  .action(async () => {
+    try {
+      const marketplace = new MarketplaceManager();
+      await marketplace.initialize();
+      await marketplace.showStats();
+    } catch (error) {
+      console.error(chalk.red('❌ Erro ao mostrar estatísticas:'), error.message);
+      process.exit(1);
+    }
+  });
+
+// Command: detect-framework - Detect project framework
+program
+  .command('detect-framework')
+  .description('🔍 Detectar framework do projeto')
+  .option('-d, --detailed', 'Mostrar informações detalhadas')
+  .action(async (options) => {
+    try {
+      const detector = new FrameworkDetector();
+      await detector.loadConfig();
+      const result = await detector.detectFramework(process.cwd());
+      await detector.displayDetectionResult(result);
+
+      if (options.detailed) {
+        const agents = detector.getRecommendedAgents(result.primary);
+        console.log(chalk.cyan('\n🤖 Agentes otimizados para seu projeto:'));
+        agents.forEach(agent => {
+          console.log(chalk.gray(`   • ${agent}`));
+        });
+      }
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na detecção:'), error.message);
+      process.exit(1);
+    }
+  });
+
+// Command: health - System health monitoring
+program
+  .command('health')
+  .description('🏥 Verificar saúde dos agentes')
+  .option('-r, --report', 'Gerar relatório completo')
+  .option('--recover <agentName>', 'Tentar recuperar agente específico')
+  .action(async (options) => {
+    try {
+      const monitor = new HealthMonitor();
+      await monitor.initialize();
+
+      if (options.recover) {
+        await monitor.performRecovery(options.recover);
+      } else if (options.report) {
+        await monitor.generateHealthReport();
+      } else {
+        await monitor.performHealthCheck();
+      }
+
+      // Stop monitoring after single check to prevent infinite loop
+      await monitor.stopMonitoring();
+    } catch (error) {
+      console.error(chalk.red('❌ Erro no monitoramento:'), error.message);
+      process.exit(1);
+    }
+  });
+
+// Command: dashboard - Open analytics dashboard
+program
+  .command('dashboard')
+  .description('📊 Abrir dashboard de analytics')
+  .option('-p, --port <port>', 'Porta do servidor', '8082')
+  .action(async (options) => {
+    try {
+      const server = new AnalyticsServer({ port: options.port });
+      await server.start();
+
+      // Keep server running
+      process.on('SIGINT', async () => {
+        console.log(chalk.yellow('\n⏹️ Parando servidor...'));
+        await server.stop();
+        process.exit(0);
+      });
+    } catch (error) {
+      console.error(chalk.red('❌ Erro ao iniciar dashboard:'), error.message);
+      process.exit(1);
+    }
+  });
+
 // Main command - Execute demand
 program
   .argument('[demand]', 'Demanda em linguagem natural')
@@ -87,6 +244,14 @@ program
   .option('--pipeline <type>', 'Forçar tipo de pipeline específico')
   .option('--non-interactive', 'Forçar modo não-interativo (sem prompts do usuário)')
   .option('--no-github', 'Pular integração GitHub (sem issue/PR)')
+  .option('--enhanced', 'Forçar modo Enhanced v2.0')
+  .option('--standard', 'Forçar modo Standard')
+  .option('--educational', 'Ativar modo educacional')
+  .option('--educational-verbosity <level>', 'Nível de verbosidade educacional (minimal|standard|detailed|expert)', 'standard')
+  .option('--no-monitor', 'Desabilitar monitor em tempo real')
+  .option('--collect-metrics', 'Coletar métricas de execução')
+  .option('--auto-approve', 'Aprovar automaticamente todas as ações do Claude (CUIDADO!)')
+  .option('--interactive', 'Forçar modo interativo com Claude')
   .action(async (demand, options) => {
     if (!demand) {
       console.log(chalk.yellow('💡 Exemplo de uso:'));

@@ -1,0 +1,262 @@
+{
+  "version": "1.0.0",
+  "name": "Frontend Flow Agent Marketplace",
+  "description": "Community-driven marketplace for Frontend Flow agents",
+  "stats": {
+    "total_agents": 45,
+    "community_agents": 23,
+    "official_agents": 22,
+    "total_downloads": 125420,
+    "active_contributors": 89
+  },
+  "featured_agents": [
+    {
+      "id": "agent-nextjs-app-router",
+      "name": "Next.js 14 App Router Specialist",
+      "author": "community",
+      "version": "2.1.0",
+      "description": "Specialized agent for Next.js 14+ App Router with Server Components",
+      "category": "framework-specific",
+      "stars": 456,
+      "downloads": 12340,
+      "verified": true,
+      "badge": "🏆 Gold Standard",
+      "compatibility": {
+        "min_version": "2.0.0",
+        "frameworks": ["next"],
+        "requires_mcps": ["Context7"]
+      },
+      "metrics": {
+        "success_rate": 0.96,
+        "avg_duration": "35s",
+        "user_rating": 4.9
+      }
+    },
+    {
+      "id": "agent-vue-composition-api",
+      "name": "Vue 3 Composition API Expert",
+      "author": "vue-team",
+      "version": "1.8.0",
+      "description": "Vue 3 components with Composition API and script setup",
+      "category": "framework-specific",
+      "stars": 342,
+      "downloads": 8920,
+      "verified": true,
+      "badge": "✅ Verified",
+      "compatibility": {
+        "min_version": "2.0.0",
+        "frameworks": ["vue"],
+        "requires_mcps": []
+      },
+      "metrics": {
+        "success_rate": 0.93,
+        "avg_duration": "40s",
+        "user_rating": 4.7
+      }
+    },
+    {
+      "id": "agent-three-js-3d",
+      "name": "Three.js 3D Components",
+      "author": "3d-wizards",
+      "version": "1.2.0",
+      "description": "Create 3D experiences with Three.js and React Three Fiber",
+      "category": "specialized",
+      "stars": 289,
+      "downloads": 5430,
+      "verified": false,
+      "badge": "✨ Creative",
+      "compatibility": {
+        "min_version": "2.0.0",
+        "frameworks": ["react"],
+        "requires_mcps": []
+      },
+      "metrics": {
+        "success_rate": 0.88,
+        "avg_duration": "60s",
+        "user_rating": 4.5
+      }
+    }
+  ],
+  "community_agents": [
+    {
+      "id": "agent-stripe-integration",
+      "name": "Stripe Payment Integration",
+      "author": "payment-pros",
+      "version": "1.5.0",
+      "description": "Complete Stripe payment flow with webhook handling",
+      "category": "integration",
+      "stars": 523,
+      "downloads": 15670,
+      "verified": true,
+      "badge": "💰 Payment",
+      "price": "free"
+    },
+    {
+      "id": "agent-supabase-crud",
+      "name": "Supabase CRUD Generator",
+      "author": "database-ninjas",
+      "version": "2.0.0",
+      "description": "Generate CRUD operations with Supabase",
+      "category": "backend-integration",
+      "stars": 412,
+      "downloads": 11200,
+      "verified": true,
+      "badge": "🔥 Popular"
+    },
+    {
+      "id": "agent-gsap-animations",
+      "name": "GSAP Advanced Animations",
+      "author": "motion-masters",
+      "version": "1.3.0",
+      "description": "Complex animations with GSAP and ScrollTrigger",
+      "category": "animation",
+      "stars": 367,
+      "downloads": 9450,
+      "verified": false,
+      "badge": "🎨 Animation"
+    },
+    {
+      "id": "agent-prisma-schema",
+      "name": "Prisma Schema Designer",
+      "author": "orm-experts",
+      "version": "1.9.0",
+      "description": "Design and generate Prisma schemas with migrations",
+      "category": "database",
+      "stars": 445,
+      "downloads": 13200,
+      "verified": true,
+      "badge": "🗄️ Database"
+    },
+    {
+      "id": "agent-graphql-apollo",
+      "name": "GraphQL Apollo Setup",
+      "author": "graphql-guild",
+      "version": "2.2.0",
+      "description": "Complete GraphQL setup with Apollo Client and Server",
+      "category": "api",
+      "stars": 398,
+      "downloads": 10800,
+      "verified": true,
+      "badge": "🔗 API"
+    },
+    {
+      "id": "agent-seo-optimizer",
+      "name": "SEO Meta Optimizer",
+      "author": "seo-masters",
+      "version": "1.6.0",
+      "description": "Optimize meta tags, structured data, and sitemap",
+      "category": "seo",
+      "stars": 456,
+      "downloads": 14300,
+      "verified": true,
+      "badge": "🔍 SEO"
+    },
+    {
+      "id": "agent-aws-deployment",
+      "name": "AWS Amplify Deployment",
+      "author": "cloud-architects",
+      "version": "1.4.0",
+      "description": "Deploy to AWS Amplify with CI/CD pipeline",
+      "category": "deployment",
+      "stars": 312,
+      "downloads": 7650,
+      "verified": false,
+      "badge": "☁️ Cloud"
+    },
+    {
+      "id": "agent-storybook-stories",
+      "name": "Storybook Story Generator",
+      "author": "ui-developers",
+      "version": "2.0.0",
+      "description": "Auto-generate Storybook stories for components",
+      "category": "documentation",
+      "stars": 389,
+      "downloads": 9870,
+      "verified": true,
+      "badge": "📚 Docs"
+    },
+    {
+      "id": "agent-react-native",
+      "name": "React Native Mobile",
+      "author": "mobile-team",
+      "version": "1.7.0",
+      "description": "Convert React components to React Native",
+      "category": "mobile",
+      "stars": 502,
+      "downloads": 16400,
+      "verified": true,
+      "badge": "📱 Mobile"
+    },
+    {
+      "id": "agent-d3-charts",
+      "name": "D3.js Data Visualization",
+      "author": "dataviz-pros",
+      "version": "1.8.0",
+      "description": "Complex data visualizations with D3.js",
+      "category": "visualization",
+      "stars": 423,
+      "downloads": 12100,
+      "verified": true,
+      "badge": "📊 DataViz"
+    }
+  ],
+  "categories": {
+    "framework-specific": {
+      "name": "Framework Specific",
+      "count": 8,
+      "icon": "🔧"
+    },
+    "integration": {
+      "name": "Third-party Integration",
+      "count": 12,
+      "icon": "🔌"
+    },
+    "animation": {
+      "name": "Animation & Motion",
+      "count": 5,
+      "icon": "🎨"
+    },
+    "database": {
+      "name": "Database & ORM",
+      "count": 6,
+      "icon": "🗄️"
+    },
+    "api": {
+      "name": "API & Backend",
+      "count": 7,
+      "icon": "🔗"
+    },
+    "specialized": {
+      "name": "Specialized Tasks",
+      "count": 4,
+      "icon": "⚡"
+    },
+    "deployment": {
+      "name": "Deployment & CI/CD",
+      "count": 3,
+      "icon": "🚀"
+    }
+  },
+  "submission_guidelines": {
+    "requirements": [
+      "Agent must be tested with at least 100 executions",
+      "Success rate must be above 80%",
+      "Must include documentation and examples",
+      "Must follow Frontend Flow agent standards",
+      "Must not duplicate existing functionality"
+    ],
+    "review_process": [
+      "Submit PR to marketplace/community-agents/",
+      "Automated tests run",
+      "Community review (3 approvals needed)",
+      "Security scan",
+      "Final approval by maintainers"
+    ],
+    "benefits": [
+      "Get credited as author",
+      "Earn badges and recognition",
+      "Contribute to the community",
+      "Optional: monetization for premium agents"
+    ]
+  }
+}

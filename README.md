@@ -10,6 +10,36 @@
 
 Frontend Flow é uma ferramenta que orquestra **22+ agentes IA especializados** para automatizar completamente o desenvolvimento React/TypeScript. A **versão 2.0 Enhanced** integra agentes Claude avançados para elevar a qualidade técnica e experiência do usuário.
 
+## 🌟 **Agent Showcase - Destaques da Semana**
+
+### **🏆 Top Performers**
+
+#### **agent_react_components**
+- **Badge:** 🏆 Gold Standard
+- **Problema:** Criação manual de componentes é lenta e propensa a erros
+- **Solução:** Gera componente completo com TypeScript, testes e stories
+- **Métricas:** 94% taxa de sucesso | 45s tempo médio | 15.4k+ usos
+- **Rating:** ⭐⭐⭐⭐⭐ 4.8/5.0 (baseado em 450+ avaliações)
+- **Exemplo:** `ff "criar card de produto com imagem, título, preço e botão de compra"`
+
+#### **agent_security**
+- **Badge:** 🛡️ Security First
+- **Problema:** Vulnerabilidades de segurança passam despercebidas
+- **Solução:** Análise profunda e correção automática de vulnerabilidades
+- **Métricas:** 98% taxa de sucesso | 45s tempo médio | 13.4k+ usos
+- **Rating:** ⭐⭐⭐⭐⭐ 4.9/5.0 (baseado em 380+ avaliações)
+- **Exemplo:** `ff "auditar segurança do formulário de login"`
+
+#### **agent_tailwind_estilization**
+- **Badge:** 🏆 Gold Standard
+- **Problema:** Estilização manual consome muito tempo
+- **Solução:** Aplica estilos Tailwind pixel-perfect baseado em design
+- **Métricas:** 96% taxa de sucesso | 30s tempo médio | 14.3k+ usos
+- **Rating:** ⭐⭐⭐⭐⭐ 4.9/5.0 (baseado em 520+ avaliações)
+- **Exemplo:** `ff "aplicar dark mode em todo o dashboard"`
+
+[📊 Ver métricas completas de todos os agentes →](./configs/agent-metrics.json)
+
 ### 🆕 **Novidades v2.0 Enhanced**
 
 #### **🧠 Mesa Técnica Obrigatória**

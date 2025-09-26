@@ -1,0 +1,157 @@
+{
+  "name": "Real-time Collaboration Chat",
+  "version": "1.0.0",
+  "description": "Slack-like real-time chat application with channels, DMs, and file sharing",
+  "category": "communication",
+  "complexity": "expert",
+  "estimated_time": "2-2.5 hours",
+  "tech_stack": {
+    "frontend": ["React", "TypeScript", "TailwindCSS"],
+    "realtime": ["WebSocket", "Socket.io"],
+    "state": ["Redux Toolkit", "RTK Query"],
+    "ui": ["shadcn-ui", "Emoji Picker"],
+    "media": ["WebRTC", "File Upload"],
+    "testing": ["Vitest", "Cypress"]
+  },
+  "features": [
+    "Real-time messaging",
+    "Channel management",
+    "Direct messages",
+    "File sharing",
+    "Message reactions",
+    "Thread replies",
+    "User presence",
+    "Message search",
+    "Voice/Video calls",
+    "Screen sharing",
+    "Message formatting",
+    "Notifications"
+  ],
+  "components": {
+    "chat": [
+      {
+        "name": "MessageList",
+        "description": "Virtualized message list with infinite scroll",
+        "agents": ["agent_react_components", "agent_performance"]
+      },
+      {
+        "name": "MessageInput",
+        "description": "Rich text input with mentions and emoji",
+        "agents": ["agent_react_components", "agent_accessibility"]
+      },
+      {
+        "name": "ChannelSidebar",
+        "description": "Channel and DM navigation",
+        "agents": ["agent_react_components", "agent_redux_toolkit"]
+      },
+      {
+        "name": "UserPresence",
+        "description": "Online/offline status indicators",
+        "agents": ["agent_react_components", "agent_animations"]
+      }
+    ],
+    "media": [
+      {
+        "name": "FileUploader",
+        "description": "Drag-drop file upload with preview",
+        "agents": ["agent_react_components", "agent_security"]
+      },
+      {
+        "name": "VideoCall",
+        "description": "WebRTC video calling interface",
+        "agents": ["agent_react_components", "agent_performance"]
+      },
+      {
+        "name": "EmojiPicker",
+        "description": "Custom emoji picker with search",
+        "agents": ["agent_react_components", "agent_animations"]
+      }
+    ]
+  },
+  "realtime_architecture": {
+    "connection": {
+      "transport": "websocket",
+      "fallback": "long-polling",
+      "reconnection": true,
+      "heartbeat": "30s"
+    },
+    "events": [
+      "message:new",
+      "message:edit",
+      "message:delete",
+      "user:typing",
+      "user:presence",
+      "channel:join",
+      "channel:leave"
+    ],
+    "optimizations": {
+      "message_batching": true,
+      "compression": true,
+      "lazy_loading": true
+    }
+  },
+  "pipeline": {
+    "phases": [
+      {
+        "name": "Setup & Architecture",
+        "agents": ["agent_technical_roundtable", "agent_master_orchestrator"],
+        "duration": "10 minutes"
+      },
+      {
+        "name": "Core Chat Components",
+        "agents": ["agent_react_components", "agent_tailwind_estilization"],
+        "duration": "40 minutes"
+      },
+      {
+        "name": "Real-time Features",
+        "agents": ["agent_redux_toolkit", "agent_state_manager"],
+        "duration": "30 minutes"
+      },
+      {
+        "name": "Media & Rich Features",
+        "agents": ["agent_react_components", "agent_animations"],
+        "duration": "25 minutes"
+      },
+      {
+        "name": "Performance & Security",
+        "agents": ["agent_performance", "agent_security"],
+        "duration": "20 minutes"
+      },
+      {
+        "name": "Testing & QA",
+        "agents": ["agent_integration_tests", "agent_code_quality"],
+        "duration": "15 minutes"
+      }
+    ]
+  },
+  "folder_structure": {
+    "src/": {
+      "components/": {
+        "chat/": ["MessageList.tsx", "MessageItem.tsx", "MessageInput.tsx"],
+        "channels/": ["ChannelList.tsx", "ChannelHeader.tsx", "ChannelMembers.tsx"],
+        "users/": ["UserAvatar.tsx", "UserPresence.tsx", "UserProfile.tsx"],
+        "media/": ["FileUpload.tsx", "ImageViewer.tsx", "VideoPlayer.tsx"],
+        "modals/": ["CreateChannel.tsx", "UserSettings.tsx", "EmojiPicker.tsx"]
+      },
+      "hooks/": ["useWebSocket.ts", "useMessages.ts", "usePresence.ts"],
+      "services/": ["websocket.ts", "api.ts", "webrtc.ts"],
+      "store/": ["messagesSlice.ts", "channelsSlice.ts", "usersSlice.ts"],
+      "types/": ["message.ts", "channel.ts", "user.ts", "media.ts"]
+    }
+  },
+  "performance_targets": {
+    "message_latency": "<100ms",
+    "typing_indicator": "<50ms",
+    "file_upload": "<2s per MB",
+    "initial_load": "<1.5s",
+    "message_render": "<16ms"
+  },
+  "security_considerations": [
+    "End-to-end encryption option",
+    "XSS prevention in messages",
+    "File type validation",
+    "Rate limiting",
+    "Authentication tokens",
+    "CORS configuration"
+  ]
+}

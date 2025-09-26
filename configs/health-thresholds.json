@@ -1,0 +1,52 @@
+{
+  "thresholds": {
+    "critical": {
+      "success_rate": 0.70,
+      "response_time_ms": 120000,
+      "error_rate": 0.30,
+      "memory_usage_mb": 1024,
+      "consecutive_failures": 5
+    },
+    "warning": {
+      "success_rate": 0.85,
+      "response_time_ms": 60000,
+      "error_rate": 0.15,
+      "memory_usage_mb": 512,
+      "consecutive_failures": 3
+    },
+    "healthy": {
+      "success_rate": 0.95,
+      "response_time_ms": 30000,
+      "error_rate": 0.05,
+      "memory_usage_mb": 256,
+      "consecutive_failures": 0
+    }
+  },
+  "monitoring": {
+    "check_interval_ms": 30000,
+    "history_retention_count": 100,
+    "alert_cooldown_minutes": 5,
+    "auto_recovery_enabled": true,
+    "notification_channels": ["console", "file", "webhook"]
+  },
+  "recovery": {
+    "max_retry_attempts": 3,
+    "retry_delay_ms": 5000,
+    "cache_clear_on_recovery": true,
+    "restart_agent_on_critical": false
+  },
+  "alerts": {
+    "email_enabled": false,
+    "email_recipients": [],
+    "slack_enabled": false,
+    "slack_webhook": "",
+    "discord_enabled": false,
+    "discord_webhook": ""
+  },
+  "performance": {
+    "enable_profiling": false,
+    "collect_memory_stats": true,
+    "collect_cpu_stats": true,
+    "sample_rate": 0.1
+  }
+}

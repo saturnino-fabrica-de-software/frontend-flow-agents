@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "name": "frontend-flow-dashboard",
+  "builds": [
+    {
+      "src": "dashboard/analytics-dashboard.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "lib/analytics-server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/lib/analytics-server.js"
+    },
+    {
+      "src": "/ws",
+      "dest": "/lib/analytics-server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dashboard/analytics-dashboard.html"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "DASHBOARD_PORT": "@dashboard_port"
+  },
+  "regions": ["gru1", "iad1"],
+  "functions": {
+    "lib/analytics-server.js": {
+      "maxDuration": 30
+    }
+  }
+}

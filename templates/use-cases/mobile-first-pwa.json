@@ -1,0 +1,123 @@
+{
+  "name": "Mobile-First PWA",
+  "version": "1.0.0",
+  "description": "Progressive Web App with offline support, push notifications, and mobile-first design",
+  "category": "mobile",
+  "complexity": "advanced",
+  "estimated_time": "1-1.5 hours",
+  "tech_stack": {
+    "frontend": ["React", "TypeScript", "TailwindCSS"],
+    "pwa": ["Workbox", "Service Workers"],
+    "state": ["Zustand", "React Query"],
+    "ui": ["Framer Motion", "React Spring"],
+    "testing": ["Vitest", "Playwright"]
+  },
+  "features": [
+    "Offline functionality",
+    "Push notifications",
+    "App-like navigation",
+    "Touch gestures",
+    "Camera integration",
+    "Geolocation",
+    "Background sync",
+    "Install prompt",
+    "Splash screen",
+    "App shortcuts"
+  ],
+  "components": {
+    "mobile": [
+      {
+        "name": "BottomNavigation",
+        "description": "iOS/Android style bottom nav",
+        "agents": ["agent_react_components", "agent_animations"]
+      },
+      {
+        "name": "PullToRefresh",
+        "description": "Native-like pull to refresh",
+        "agents": ["agent_react_components", "agent_animations"]
+      },
+      {
+        "name": "SwipeableCards",
+        "description": "Tinder-like swipeable cards",
+        "agents": ["agent_react_components", "agent_animations"]
+      },
+      {
+        "name": "FloatingActionButton",
+        "description": "Material Design FAB",
+        "agents": ["agent_react_components", "agent_tailwind_estilization"]
+      }
+    ],
+    "pwa": [
+      {
+        "name": "InstallPrompt",
+        "description": "A2HS prompt component",
+        "agents": ["agent_react_components", "agent_accessibility"]
+      },
+      {
+        "name": "OfflineIndicator",
+        "description": "Network status indicator",
+        "agents": ["agent_react_components", "agent_responsiveness"]
+      },
+      {
+        "name": "NotificationManager",
+        "description": "Push notification handler",
+        "agents": ["agent_react_components", "agent_security"]
+      }
+    ]
+  },
+  "pipeline": {
+    "phases": [
+      {
+        "name": "PWA Setup",
+        "agents": ["agent_master_orchestrator", "agent_performance"],
+        "duration": "10 minutes"
+      },
+      {
+        "name": "Mobile Components",
+        "agents": ["agent_react_components", "agent_responsiveness"],
+        "duration": "30 minutes"
+      },
+      {
+        "name": "Animations & Gestures",
+        "agents": ["agent_animations", "agent_tailwind_estilization"],
+        "duration": "20 minutes"
+      },
+      {
+        "name": "PWA Features",
+        "agents": ["agent_performance", "agent_security"],
+        "duration": "15 minutes"
+      },
+      {
+        "name": "Testing",
+        "agents": ["agent_integration_tests", "agent_accessibility"],
+        "duration": "15 minutes"
+      }
+    ]
+  },
+  "manifest": {
+    "name": "My PWA App",
+    "short_name": "MyPWA",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "icons": [
+      {
+        "src": "icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  },
+  "performance_budget": {
+    "first_paint": "<1s",
+    "interactive": "<2s",
+    "offline_ready": true,
+    "lighthouse_pwa": ">95"
+  }
+}

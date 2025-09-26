@@ -1,0 +1,213 @@
+{
+  "version": "1.0.0",
+  "description": "Educational mode configuration for learning and understanding agent decisions",
+  "enabled": false,
+  "settings": {
+    "verbosity": {
+      "levels": {
+        "minimal": {
+          "description": "Show only key decisions",
+          "details": ["agent_selection", "final_result"]
+        },
+        "standard": {
+          "description": "Show decisions and reasoning",
+          "details": ["agent_selection", "decision_reasoning", "execution_steps", "final_result"]
+        },
+        "detailed": {
+          "description": "Show everything including alternatives",
+          "details": [
+            "nlp_classification",
+            "agent_selection",
+            "decision_reasoning",
+            "alternatives_considered",
+            "execution_steps",
+            "error_handling",
+            "optimization_applied",
+            "final_result",
+            "performance_metrics"
+          ]
+        },
+        "expert": {
+          "description": "Full technical breakdown",
+          "details": [
+            "nlp_classification",
+            "confidence_scores",
+            "agent_selection",
+            "decision_tree",
+            "alternatives_considered",
+            "hypothesis_testing",
+            "execution_steps",
+            "code_analysis",
+            "error_handling",
+            "rollback_points",
+            "optimization_applied",
+            "performance_metrics",
+            "memory_usage",
+            "learning_extracted"
+          ]
+        }
+      },
+      "default": "standard"
+    },
+    "explanations": {
+      "show_why": true,
+      "show_how": true,
+      "show_alternatives": true,
+      "show_confidence": true,
+      "show_risks": true,
+      "show_improvements": true
+    },
+    "learning_resources": {
+      "enabled": true,
+      "categories": {
+        "concepts": {
+          "description": "Core concepts being used",
+          "examples": ["Component Architecture", "State Management", "Design Patterns"]
+        },
+        "best_practices": {
+          "description": "Industry best practices applied",
+          "examples": ["SOLID Principles", "Clean Code", "Performance Optimization"]
+        },
+        "documentation": {
+          "description": "Relevant documentation links",
+          "examples": ["React Docs", "TypeScript Handbook", "MDN Web Docs"]
+        },
+        "tutorials": {
+          "description": "Step-by-step tutorials",
+          "examples": ["Building Components", "Managing State", "Testing Strategies"]
+        }
+      }
+    },
+    "interactive_mode": {
+      "enabled": true,
+      "features": {
+        "pause_points": {
+          "description": "Pause at key decision points for user input",
+          "enabled": false
+        },
+        "quiz_mode": {
+          "description": "Test understanding with questions",
+          "enabled": false
+        },
+        "exploration_mode": {
+          "description": "Allow user to explore alternatives",
+          "enabled": true
+        }
+      }
+    }
+  },
+  "templates": {
+    "decision_explanation": {
+      "format": "## 🤔 Decision Point: {title}\n\n**Why:** {reasoning}\n**Confidence:** {confidence}%\n**Alternatives:** {alternatives}\n**Chosen:** {choice}\n**Impact:** {impact}"
+    },
+    "agent_explanation": {
+      "format": "## 🤖 Agent: {agent_name}\n\n**Purpose:** {purpose}\n**Input:** {input}\n**Process:** {process}\n**Output:** {output}\n**Learn More:** {resources}"
+    },
+    "error_explanation": {
+      "format": "## ⚠️ Error Encountered: {error_type}\n\n**What Happened:** {description}\n**Why It Happened:** {cause}\n**How We Fixed It:** {solution}\n**Prevention:** {prevention_tips}"
+    },
+    "optimization_explanation": {
+      "format": "## ⚡ Optimization Applied: {optimization_name}\n\n**Before:** {before_state}\n**After:** {after_state}\n**Improvement:** {metrics}\n**Technique:** {technique_used}"
+    }
+  },
+  "learning_paths": {
+    "beginner": {
+      "name": "Frontend Basics",
+      "modules": [
+        {
+          "id": "react-basics",
+          "title": "React Fundamentals",
+          "topics": ["Components", "Props", "State", "Lifecycle"],
+          "estimated_time": "2 hours"
+        },
+        {
+          "id": "typescript-intro",
+          "title": "TypeScript Introduction",
+          "topics": ["Types", "Interfaces", "Generics", "Type Safety"],
+          "estimated_time": "1.5 hours"
+        },
+        {
+          "id": "styling-basics",
+          "title": "Styling with Tailwind",
+          "topics": ["Utility Classes", "Responsive Design", "Custom Styles"],
+          "estimated_time": "1 hour"
+        }
+      ]
+    },
+    "intermediate": {
+      "name": "Advanced Patterns",
+      "modules": [
+        {
+          "id": "state-management",
+          "title": "State Management Patterns",
+          "topics": ["Redux", "Context API", "Zustand", "Best Practices"],
+          "estimated_time": "3 hours"
+        },
+        {
+          "id": "performance",
+          "title": "Performance Optimization",
+          "topics": ["Memoization", "Code Splitting", "Lazy Loading", "Bundle Size"],
+          "estimated_time": "2 hours"
+        },
+        {
+          "id": "testing",
+          "title": "Testing Strategies",
+          "topics": ["Unit Tests", "Integration Tests", "E2E Tests", "TDD"],
+          "estimated_time": "2.5 hours"
+        }
+      ]
+    },
+    "expert": {
+      "name": "Architecture & Scale",
+      "modules": [
+        {
+          "id": "architecture",
+          "title": "Application Architecture",
+          "topics": ["Clean Architecture", "Micro-frontends", "Module Federation"],
+          "estimated_time": "4 hours"
+        },
+        {
+          "id": "ci-cd",
+          "title": "CI/CD & DevOps",
+          "topics": ["Automation", "Deployment", "Monitoring", "Scaling"],
+          "estimated_time": "3 hours"
+        }
+      ]
+    }
+  },
+  "glossary": {
+    "terms": {
+      "agent": "An AI-powered module specialized in a specific development task",
+      "pipeline": "The sequence of agents executed to complete a task",
+      "orchestrator": "The system that coordinates agent execution",
+      "mcp": "Model Context Protocol - integration with Claude",
+      "badge": "Quality indicator for agent performance",
+      "reflection_loop": "Process where agents review and improve their output",
+      "consensus": "Agreement mechanism between multiple agents",
+      "fallback": "Alternative execution path when primary fails"
+    }
+  },
+  "examples": {
+    "decision_points": [
+      {
+        "scenario": "Component Creation",
+        "decision": "Choosing between functional vs class component",
+        "explanation": "Functional components are preferred for better performance and hooks support",
+        "code_example": "const MyComponent = () => { return <div>Hello</div> };"
+      },
+      {
+        "scenario": "State Management",
+        "decision": "Local state vs global state",
+        "explanation": "Use local state for component-specific data, global for shared data",
+        "code_example": "const [localState, setLocalState] = useState();"
+      }
+    ]
+  },
+  "commands": {
+    "enable": "frontend-flow --educational",
+    "set_verbosity": "frontend-flow --educational --verbosity=detailed",
+    "interactive": "frontend-flow --educational --interactive",
+    "quiz": "frontend-flow --educational --quiz",
+    "learning_path": "frontend-flow --educational --path=beginner"
+  }
+}

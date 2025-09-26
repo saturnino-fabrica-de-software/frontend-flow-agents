@@ -1,0 +1,154 @@
+{
+  "name": "E-commerce Complete Stack",
+  "version": "1.0.0",
+  "description": "Complete e-commerce solution with product catalog, cart, checkout, and admin dashboard",
+  "category": "e-commerce",
+  "complexity": "expert",
+  "estimated_time": "2-3 hours",
+  "tech_stack": {
+    "frontend": ["React", "TypeScript", "TailwindCSS", "shadcn-ui"],
+    "state": ["Redux Toolkit", "RTK Query"],
+    "routing": ["React Router v6"],
+    "forms": ["React Hook Form", "Zod"],
+    "payments": ["Stripe"],
+    "analytics": ["Google Analytics 4"],
+    "testing": ["Vitest", "React Testing Library", "Cypress"]
+  },
+  "features": [
+    "Product catalog with filters",
+    "Shopping cart with persistence",
+    "Multi-step checkout",
+    "User authentication",
+    "Order tracking",
+    "Admin dashboard",
+    "Inventory management",
+    "Payment processing",
+    "Email notifications",
+    "Review system"
+  ],
+  "components": {
+    "core": [
+      {
+        "name": "ProductCard",
+        "description": "Display product with image, price, and quick actions",
+        "agents": ["agent_react_components", "agent_tailwind_estilization"]
+      },
+      {
+        "name": "ShoppingCart",
+        "description": "Cart sidebar with item management",
+        "agents": ["agent_react_components", "agent_redux_toolkit", "agent_animations"]
+      },
+      {
+        "name": "CheckoutFlow",
+        "description": "Multi-step checkout process",
+        "agents": ["agent_react_components", "agent_redux_toolkit", "agent_security"]
+      },
+      {
+        "name": "ProductFilters",
+        "description": "Advanced filtering system",
+        "agents": ["agent_react_components", "agent_performance"]
+      }
+    ],
+    "admin": [
+      {
+        "name": "AdminDashboard",
+        "description": "Analytics and management dashboard",
+        "agents": ["agent_react_components", "agent_analytics"]
+      },
+      {
+        "name": "InventoryManager",
+        "description": "Product inventory CRUD",
+        "agents": ["agent_react_components", "agent_redux_toolkit"]
+      }
+    ]
+  },
+  "pipeline": {
+    "phases": [
+      {
+        "name": "Setup",
+        "agents": ["agent_github_flow", "agent_master_orchestrator"],
+        "duration": "5 minutes"
+      },
+      {
+        "name": "Core Components",
+        "agents": ["agent_react_components", "agent_tailwind_estilization"],
+        "duration": "30 minutes"
+      },
+      {
+        "name": "State Management",
+        "agents": ["agent_redux_toolkit", "agent_state_manager"],
+        "duration": "20 minutes"
+      },
+      {
+        "name": "Features",
+        "agents": ["agent_react_components", "agent_animations", "agent_responsiveness"],
+        "duration": "45 minutes"
+      },
+      {
+        "name": "Quality",
+        "agents": ["agent_security", "agent_accessibility", "agent_performance"],
+        "duration": "25 minutes"
+      },
+      {
+        "name": "Testing",
+        "agents": ["agent_integration_tests", "agent_e_2_e_cypress"],
+        "duration": "20 minutes"
+      },
+      {
+        "name": "Deployment",
+        "agents": ["agent_github_pullrequest", "agent_metrics_collector"],
+        "duration": "10 minutes"
+      }
+    ]
+  },
+  "commands": {
+    "init": "frontend-flow init --template=e-commerce-complete",
+    "quick_start": "frontend-flow \"criar loja online completa com carrinho e checkout\"",
+    "components_only": "frontend-flow \"criar componentes de e-commerce sem backend\""
+  },
+  "folder_structure": {
+    "src/": {
+      "components/": {
+        "products/": ["ProductCard.tsx", "ProductList.tsx", "ProductDetail.tsx"],
+        "cart/": ["CartItem.tsx", "CartSummary.tsx", "CartDrawer.tsx"],
+        "checkout/": ["CheckoutForm.tsx", "PaymentStep.tsx", "ReviewStep.tsx"],
+        "admin/": ["Dashboard.tsx", "ProductManager.tsx", "OrderManager.tsx"],
+        "common/": ["Header.tsx", "Footer.tsx", "Layout.tsx"]
+      },
+      "pages/": ["Home.tsx", "Products.tsx", "Cart.tsx", "Checkout.tsx", "Admin.tsx"],
+      "store/": {
+        "slices/": ["cartSlice.ts", "productsSlice.ts", "userSlice.ts"],
+        "api/": ["productsApi.ts", "ordersApi.ts", "authApi.ts"]
+      },
+      "hooks/": ["useCart.ts", "useAuth.ts", "useProducts.ts"],
+      "utils/": ["formatters.ts", "validators.ts", "constants.ts"],
+      "types/": ["product.ts", "cart.ts", "user.ts", "order.ts"]
+    }
+  },
+  "sample_data": {
+    "products": 50,
+    "categories": 8,
+    "users": 100,
+    "orders": 200
+  },
+  "deployment": {
+    "platforms": ["Vercel", "Netlify", "AWS Amplify"],
+    "environment_variables": [
+      "REACT_APP_API_URL",
+      "REACT_APP_STRIPE_KEY",
+      "REACT_APP_GA_ID"
+    ]
+  },
+  "success_metrics": {
+    "performance": {
+      "lighthouse_score": ">90",
+      "first_contentful_paint": "<1.5s",
+      "time_to_interactive": "<3s"
+    },
+    "quality": {
+      "test_coverage": ">80%",
+      "accessibility_score": "100%",
+      "typescript_strict": true
+    }
+  }
+}

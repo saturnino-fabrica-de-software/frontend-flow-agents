@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Flow - Analytics Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 16px;
+            padding: 24px 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .stat-card .label {
+            color: #718096;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .stat-card .value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .stat-card .change {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .stat-card .change.positive {
+            color: #48bb78;
+        }
+
+        .stat-card .change.negative {
+            color: #f56565;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .chart-container h2 {
+            color: #2d3748;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .chart-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .agents-table {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .agents-table h2 {
+            color: #2d3748;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            font-weight: 600;
+            color: #4a5568;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            color: #2d3748;
+            font-size: 14px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge.gold {
+            background: #ffd700;
+            color: #000;
+        }
+
+        .badge.silver {
+            background: #c0c0c0;
+            color: #000;
+        }
+
+        .badge.performance {
+            background: #667eea;
+            color: white;
+        }
+
+        .badge.security {
+            background: #48bb78;
+            color: white;
+        }
+
+        .progress-bar {
+            width: 100px;
+            height: 6px;
+            background: #e2e8f0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-bar .progress {
+            height: 100%;
+            background: #48bb78;
+            transition: width 0.3s;
+        }
+
+        .live-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px 12px;
+            background: #48bb78;
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .live-indicator::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .chart-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h1>🚀 Frontend Flow Analytics Dashboard</h1>
+                    <p>Real-time monitoring and metrics for all agents</p>
+                </div>
+                <div class="live-indicator">
+                    LIVE
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="label">Total Executions</div>
+                <div class="value">245,678</div>
+                <div class="change positive">↑ 12.5% from last week</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="label">Success Rate</div>
+                <div class="value">94.3%</div>
+                <div class="change positive">↑ 2.1% from last week</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="label">Active Agents</div>
+                <div class="value">45</div>
+                <div class="change positive">↑ 3 new this week</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="label">Avg Response Time</div>
+                <div class="value">38s</div>
+                <div class="change positive">↓ 5s improvement</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="label">Community Agents</div>
+                <div class="value">23</div>
+                <div class="change positive">↑ 2 new</div>
+            </div>
+        </div>
+
+        <div class="chart-row">
+            <div class="chart-container">
+                <h2>📊 Executions Over Time</h2>
+                <canvas id="executionsChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <h2>🏆 Top Agents by Usage</h2>
+                <canvas id="agentsChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>⚡ Performance Metrics</h2>
+            <canvas id="performanceChart"></canvas>
+        </div>
+
+        <div class="agents-table">
+            <h2>🤖 Agent Performance Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Agent</th>
+                        <th>Badge</th>
+                        <th>Executions</th>
+                        <th>Success Rate</th>
+                        <th>Avg Time</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>agent_react_components</strong></td>
+                        <td><span class="badge gold">🏆 Gold</span></td>
+                        <td>15,420</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 94%"></div>
+                            </div>
+                            94%
+                        </td>
+                        <td>45s</td>
+                        <td>⭐ 4.8</td>
+                    </tr>
+                    <tr>
+                        <td><strong>agent_tailwind_estilization</strong></td>
+                        <td><span class="badge gold">🏆 Gold</span></td>
+                        <td>14,350</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 96%"></div>
+                            </div>
+                            96%
+                        </td>
+                        <td>30s</td>
+                        <td>⭐ 4.9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>agent_security</strong></td>
+                        <td><span class="badge security">🛡️ Security</span></td>
+                        <td>13,450</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 98%"></div>
+                            </div>
+                            98%
+                        </td>
+                        <td>45s</td>
+                        <td>⭐ 4.9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>agent_performance</strong></td>
+                        <td><span class="badge performance">⚡ Performance</span></td>
+                        <td>7,650</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                            90%
+                        </td>
+                        <td>50s</td>
+                        <td>⭐ 4.6</td>
+                    </tr>
+                    <tr>
+                        <td><strong>agent_redux_toolkit</strong></td>
+                        <td><span class="badge silver">🥈 Silver</span></td>
+                        <td>8,920</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                            88%
+                        </td>
+                        <td>60s</td>
+                        <td>⭐ 4.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Executions Over Time Chart
+        const executionsCtx = document.getElementById('executionsChart').getContext('2d');
+        new Chart(executionsCtx, {
+            type: 'line',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                datasets: [{
+                    label: 'Executions',
+                    data: [32000, 35000, 33000, 38000, 42000, 28000, 25000],
+                    borderColor: '#667eea',
+                    backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Top Agents Chart
+        const agentsCtx = document.getElementById('agentsChart').getContext('2d');
+        new Chart(agentsCtx, {
+            type: 'bar',
+            data: {
+                labels: ['React Components', 'Tailwind', 'Security', 'Code Quality', 'Redux'],
+                datasets: [{
+                    label: 'Usage',
+                    data: [15420, 14350, 13450, 18450, 8920],
+                    backgroundColor: [
+                        '#667eea',
+                        '#764ba2',
+                        '#48bb78',
+                        '#f6ad55',
+                        '#fc8181'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // Performance Chart
+        const performanceCtx = document.getElementById('performanceChart').getContext('2d');
+        new Chart(performanceCtx, {
+            type: 'line',
+            data: {
+                labels: ['00:00', '04:00', '08:00', '12:00', '16:00', '20:00'],
+                datasets: [
+                    {
+                        label: 'Response Time (s)',
+                        data: [35, 32, 38, 45, 42, 40],
+                        borderColor: '#667eea',
+                        backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                        tension: 0.4,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: 'Success Rate (%)',
+                        data: [95, 96, 94, 92, 93, 94],
+                        borderColor: '#48bb78',
+                        backgroundColor: 'rgba(72, 187, 120, 0.1)',
+                        tension: 0.4,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                },
+                scales: {
+                    y: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        title: {
+                            display: true,
+                            text: 'Response Time (s)'
+                        }
+                    },
+                    y1: {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        grid: {
+                            drawOnChartArea: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Success Rate (%)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Simulate real-time updates
+        setInterval(() => {
+            const totalExec = document.querySelector('.stat-card .value');
+            const current = parseInt(totalExec.textContent.replace(',', ''));
+            totalExec.textContent = (current + Math.floor(Math.random() * 10)).toLocaleString();
+        }, 5000);
+    </script>
+</body>
+</html>

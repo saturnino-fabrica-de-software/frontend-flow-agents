@@ -1,0 +1,258 @@
+{
+  "version": "2.1",
+  "description": "Multi-framework support configuration",
+  "supported_frameworks": {
+    "react": {
+      "name": "React",
+      "versions": ["18.x", "17.x"],
+      "variants": {
+        "next": {
+          "name": "Next.js",
+          "versions": ["14.x", "13.x"],
+          "features": ["app-router", "pages-router", "ssr", "ssg", "isr"],
+          "agents_adaptation": {
+            "agent_react_components": "next-components",
+            "agent_tailwind_estilization": "next-tailwind",
+            "agent_performance": "next-optimization"
+          }
+        },
+        "vite": {
+          "name": "Vite + React",
+          "versions": ["5.x", "4.x"],
+          "features": ["hmr", "fast-build", "esm"],
+          "agents_adaptation": {
+            "agent_react_components": "vite-components",
+            "agent_performance": "vite-optimization"
+          }
+        },
+        "cra": {
+          "name": "Create React App",
+          "versions": ["5.x"],
+          "features": ["zero-config", "webpack"],
+          "deprecated": false,
+          "agents_adaptation": {
+            "agent_react_components": "cra-components"
+          }
+        },
+        "gatsby": {
+          "name": "Gatsby",
+          "versions": ["5.x"],
+          "features": ["ssg", "graphql", "plugins"],
+          "agents_adaptation": {
+            "agent_react_components": "gatsby-components",
+            "agent_performance": "gatsby-optimization"
+          }
+        },
+        "remix": {
+          "name": "Remix",
+          "versions": ["2.x"],
+          "features": ["nested-routing", "progressive-enhancement"],
+          "agents_adaptation": {
+            "agent_react_components": "remix-components"
+          }
+        }
+      }
+    },
+    "vue": {
+      "name": "Vue.js",
+      "versions": ["3.x"],
+      "variants": {
+        "nuxt": {
+          "name": "Nuxt",
+          "versions": ["3.x"],
+          "features": ["ssr", "ssg", "auto-imports"],
+          "agents_adaptation": {
+            "agent_vue_components": "nuxt-components",
+            "agent_tailwind_estilization": "nuxt-tailwind"
+          }
+        },
+        "vite-vue": {
+          "name": "Vite + Vue",
+          "versions": ["5.x"],
+          "features": ["composition-api", "script-setup"],
+          "agents_adaptation": {
+            "agent_vue_components": "vite-vue-components"
+          }
+        },
+        "quasar": {
+          "name": "Quasar",
+          "versions": ["2.x"],
+          "features": ["material-design", "mobile-first"],
+          "agents_adaptation": {
+            "agent_vue_components": "quasar-components"
+          }
+        }
+      }
+    },
+    "angular": {
+      "name": "Angular",
+      "versions": ["17.x", "16.x"],
+      "variants": {
+        "angular-cli": {
+          "name": "Angular CLI",
+          "versions": ["17.x"],
+          "features": ["standalone-components", "signals"],
+          "agents_adaptation": {
+            "agent_angular_components": "ng-components",
+            "agent_angular_services": "ng-services"
+          }
+        },
+        "nx": {
+          "name": "Nx + Angular",
+          "versions": ["17.x"],
+          "features": ["monorepo", "generators"],
+          "agents_adaptation": {
+            "agent_angular_components": "nx-components"
+          }
+        }
+      }
+    },
+    "svelte": {
+      "name": "Svelte",
+      "versions": ["4.x"],
+      "variants": {
+        "sveltekit": {
+          "name": "SvelteKit",
+          "versions": ["2.x"],
+          "features": ["ssr", "file-routing", "adapters"],
+          "agents_adaptation": {
+            "agent_svelte_components": "sveltekit-components"
+          }
+        },
+        "vite-svelte": {
+          "name": "Vite + Svelte",
+          "versions": ["5.x"],
+          "features": ["fast-hmr", "small-bundle"],
+          "agents_adaptation": {
+            "agent_svelte_components": "vite-svelte-components"
+          }
+        }
+      }
+    },
+    "solid": {
+      "name": "SolidJS",
+      "versions": ["1.x"],
+      "experimental": true,
+      "variants": {
+        "solid-start": {
+          "name": "SolidStart",
+          "versions": ["0.x"],
+          "features": ["fine-grained-reactivity"],
+          "agents_adaptation": {
+            "agent_solid_components": "solid-components"
+          }
+        }
+      }
+    }
+  },
+  "detection": {
+    "strategies": [
+      {
+        "name": "package.json",
+        "priority": 1,
+        "indicators": {
+          "react": ["react", "react-dom"],
+          "next": ["next"],
+          "vue": ["vue"],
+          "nuxt": ["nuxt"],
+          "angular": ["@angular/core"],
+          "svelte": ["svelte"],
+          "sveltekit": ["@sveltejs/kit"],
+          "solid": ["solid-js"]
+        }
+      },
+      {
+        "name": "config-files",
+        "priority": 2,
+        "files": {
+          "next": ["next.config.js", "next.config.ts"],
+          "nuxt": ["nuxt.config.js", "nuxt.config.ts"],
+          "angular": ["angular.json"],
+          "vite": ["vite.config.js", "vite.config.ts"],
+          "svelte": ["svelte.config.js"]
+        }
+      },
+      {
+        "name": "file-extensions",
+        "priority": 3,
+        "patterns": {
+          "react": ["*.jsx", "*.tsx"],
+          "vue": ["*.vue"],
+          "angular": ["*.component.ts"],
+          "svelte": ["*.svelte"]
+        }
+      }
+    ]
+  },
+  "agent_mappings": {
+    "react": {
+      "component_agent": "agent_react_components",
+      "style_agent": "agent_tailwind_estilization",
+      "state_agent": "agent_redux_toolkit",
+      "test_agent": "agent_integration_tests"
+    },
+    "vue": {
+      "component_agent": "agent_vue_components",
+      "style_agent": "agent_tailwind_estilization",
+      "state_agent": "agent_pinia_store",
+      "test_agent": "agent_vue_tests"
+    },
+    "angular": {
+      "component_agent": "agent_angular_components",
+      "style_agent": "agent_angular_styles",
+      "state_agent": "agent_ngrx_store",
+      "test_agent": "agent_angular_tests"
+    },
+    "svelte": {
+      "component_agent": "agent_svelte_components",
+      "style_agent": "agent_svelte_styles",
+      "state_agent": "agent_svelte_stores",
+      "test_agent": "agent_svelte_tests"
+    }
+  },
+  "conversion_templates": {
+    "react_to_vue": {
+      "enabled": true,
+      "agents": ["agent_framework_converter"],
+      "mappings": {
+        "useState": "ref",
+        "useEffect": "onMounted/watch",
+        "props": "props/defineProps",
+        "jsx": "template"
+      }
+    },
+    "vue_to_react": {
+      "enabled": true,
+      "agents": ["agent_framework_converter"],
+      "mappings": {
+        "ref": "useState",
+        "computed": "useMemo",
+        "watch": "useEffect",
+        "template": "jsx"
+      }
+    }
+  },
+  "framework_specific_features": {
+    "next": {
+      "app_router": {
+        "agents": ["agent_next_app_router"],
+        "features": ["layouts", "loading", "error", "metadata"]
+      },
+      "api_routes": {
+        "agents": ["agent_next_api"],
+        "features": ["middleware", "edge-runtime"]
+      }
+    },
+    "nuxt": {
+      "auto_imports": {
+        "agents": ["agent_nuxt_composables"],
+        "features": ["utils", "composables"]
+      }
+    }
+  },
+  "cli_commands": {
+    "detect": "frontend-flow detect-framework",
+    "convert": "frontend-flow convert --from=react --to=vue",
+    "adapt": "frontend-flow adapt --framework=next"
+  }
+}

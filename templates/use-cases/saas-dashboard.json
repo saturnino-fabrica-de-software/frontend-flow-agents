@@ -1,0 +1,148 @@
+{
+  "name": "SaaS Dashboard Starter",
+  "version": "1.0.0",
+  "description": "Modern SaaS dashboard with analytics, user management, and subscription handling",
+  "category": "saas",
+  "complexity": "advanced",
+  "estimated_time": "1.5-2 hours",
+  "tech_stack": {
+    "frontend": ["React", "TypeScript", "TailwindCSS", "shadcn-ui"],
+    "state": ["Redux Toolkit", "React Query"],
+    "charts": ["Recharts", "D3.js"],
+    "routing": ["React Router v6"],
+    "auth": ["Auth0", "JWT"],
+    "testing": ["Vitest", "React Testing Library"]
+  },
+  "features": [
+    "Real-time analytics dashboard",
+    "User management system",
+    "Role-based access control",
+    "Subscription management",
+    "Billing integration",
+    "Team collaboration",
+    "Activity logs",
+    "API usage tracking",
+    "Custom reports",
+    "Dark mode support"
+  ],
+  "components": {
+    "dashboard": [
+      {
+        "name": "MetricsOverview",
+        "description": "Key metrics cards with trend indicators",
+        "agents": ["agent_react_components", "agent_animations"]
+      },
+      {
+        "name": "AnalyticsCharts",
+        "description": "Interactive charts and graphs",
+        "agents": ["agent_react_components", "agent_performance"]
+      },
+      {
+        "name": "ActivityFeed",
+        "description": "Real-time activity stream",
+        "agents": ["agent_react_components", "agent_redux_toolkit"]
+      }
+    ],
+    "user_management": [
+      {
+        "name": "UserTable",
+        "description": "Advanced data table with filters",
+        "agents": ["agent_react_components", "agent_performance"]
+      },
+      {
+        "name": "UserProfile",
+        "description": "User profile management",
+        "agents": ["agent_react_components", "agent_security"]
+      },
+      {
+        "name": "TeamManager",
+        "description": "Team and permissions management",
+        "agents": ["agent_react_components", "agent_redux_toolkit"]
+      }
+    ],
+    "billing": [
+      {
+        "name": "SubscriptionPlans",
+        "description": "Pricing tiers display",
+        "agents": ["agent_react_components", "agent_tailwind_estilization"]
+      },
+      {
+        "name": "BillingHistory",
+        "description": "Invoice and payment history",
+        "agents": ["agent_react_components", "agent_accessibility"]
+      }
+    ]
+  },
+  "pipeline": {
+    "phases": [
+      {
+        "name": "Setup",
+        "agents": ["agent_github_flow", "agent_nlp_classifier"],
+        "duration": "5 minutes"
+      },
+      {
+        "name": "Layout & Navigation",
+        "agents": ["agent_react_components", "agent_responsiveness"],
+        "duration": "20 minutes"
+      },
+      {
+        "name": "Dashboard Components",
+        "agents": ["agent_react_components", "agent_tailwind_estilization"],
+        "duration": "35 minutes"
+      },
+      {
+        "name": "State & Data",
+        "agents": ["agent_redux_toolkit", "agent_state_manager"],
+        "duration": "25 minutes"
+      },
+      {
+        "name": "Polish & UX",
+        "agents": ["agent_animations", "agent_accessibility"],
+        "duration": "20 minutes"
+      },
+      {
+        "name": "Testing & QA",
+        "agents": ["agent_integration_tests", "agent_code_quality"],
+        "duration": "15 minutes"
+      }
+    ]
+  },
+  "folder_structure": {
+    "src/": {
+      "components/": {
+        "dashboard/": ["MetricsCard.tsx", "Chart.tsx", "ActivityLog.tsx"],
+        "users/": ["UserTable.tsx", "UserModal.tsx", "UserFilters.tsx"],
+        "billing/": ["PlanCard.tsx", "InvoiceList.tsx", "PaymentMethod.tsx"],
+        "layout/": ["Sidebar.tsx", "TopBar.tsx", "Breadcrumbs.tsx"],
+        "ui/": ["Button.tsx", "Card.tsx", "Modal.tsx", "Table.tsx"]
+      },
+      "pages/": {
+        "dashboard/": ["Overview.tsx", "Analytics.tsx", "Reports.tsx"],
+        "users/": ["Users.tsx", "Teams.tsx", "Roles.tsx"],
+        "billing/": ["Subscription.tsx", "Invoices.tsx", "Settings.tsx"]
+      },
+      "store/": ["dashboardSlice.ts", "userSlice.ts", "billingSlice.ts"],
+      "services/": ["api.ts", "auth.ts", "analytics.ts"],
+      "hooks/": ["useAuth.ts", "useMetrics.ts", "useSubscription.ts"],
+      "types/": ["dashboard.ts", "user.ts", "billing.ts"]
+    }
+  },
+  "sample_data": {
+    "users": 500,
+    "teams": 50,
+    "metrics": 30,
+    "transactions": 1000
+  },
+  "success_metrics": {
+    "performance": {
+      "dashboard_load": "<2s",
+      "chart_render": "<500ms",
+      "api_response": "<200ms"
+    },
+    "ux": {
+      "mobile_responsive": true,
+      "dark_mode": true,
+      "keyboard_navigation": true
+    }
+  }
+}

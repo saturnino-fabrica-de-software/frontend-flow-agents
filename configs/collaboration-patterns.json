@@ -1,0 +1,248 @@
+{
+  "version": "2.1",
+  "description": "Hierarchical collaboration patterns for agent teams",
+  "patterns": {
+    "supervisor_mode": {
+      "enabled": true,
+      "description": "Hierarchical team organization with supervisors",
+      "lead": "agent_master_orchestrator",
+      "teams": {
+        "ui_team": {
+          "supervisor": "agent_react_components",
+          "members": [
+            "agent_tailwind_estilization",
+            "agent_animations",
+            "agent_responsiveness",
+            "agent_figma_extract"
+          ],
+          "responsibilities": [
+            "Component creation",
+            "Styling and design",
+            "User interface",
+            "Visual consistency"
+          ]
+        },
+        "quality_team": {
+          "supervisor": "agent_code_quality",
+          "members": [
+            "agent_security",
+            "agent_accessibility",
+            "agent_performance",
+            "agent_integration_tests",
+            "agent_e_2_e_cypress"
+          ],
+          "responsibilities": [
+            "Code quality assurance",
+            "Security validation",
+            "Performance optimization",
+            "Testing coverage"
+          ]
+        },
+        "data_team": {
+          "supervisor": "agent_redux_toolkit",
+          "members": [
+            "agent_state_manager",
+            "agent_analytics",
+            "agent_metrics_collector"
+          ],
+          "responsibilities": [
+            "State management",
+            "Data flow",
+            "Analytics tracking",
+            "Metrics collection"
+          ]
+        },
+        "devops_team": {
+          "supervisor": "agent_github_flow",
+          "members": [
+            "agent_github_pullrequest",
+            "agent_pipeline_optimizer",
+            "agent_cleanup_manager"
+          ],
+          "responsibilities": [
+            "Version control",
+            "CI/CD pipeline",
+            "Code deployment",
+            "Environment management"
+          ]
+        }
+      }
+    },
+    "reflection_loop": {
+      "enabled": true,
+      "description": "Self-improvement through iterative reflection",
+      "max_iterations": 3,
+      "strategies": {
+        "code_review": {
+          "enabled": true,
+          "agents": ["agent_code_quality", "agent_security"],
+          "trigger": "after_implementation"
+        },
+        "performance_review": {
+          "enabled": true,
+          "agents": ["agent_performance", "agent_metrics_collector"],
+          "trigger": "after_testing"
+        },
+        "ux_review": {
+          "enabled": true,
+          "agents": ["agent_accessibility", "agent_responsiveness"],
+          "trigger": "after_styling"
+        }
+      }
+    },
+    "parallel_execution": {
+      "enabled": true,
+      "description": "Parallel execution for independent tasks",
+      "groups": [
+        {
+          "name": "independent_quality_checks",
+          "agents": [
+            "agent_security",
+            "agent_accessibility",
+            "agent_code_quality"
+          ],
+          "condition": "after_component_creation"
+        },
+        {
+          "name": "styling_and_animations",
+          "agents": [
+            "agent_tailwind_estilization",
+            "agent_animations"
+          ],
+          "condition": "component_ready"
+        }
+      ]
+    },
+    "chain_of_thought": {
+      "enabled": true,
+      "description": "Sequential reasoning for complex decisions",
+      "chains": {
+        "component_creation": [
+          "agent_nlp_classifier",
+          "agent_technical_roundtable",
+          "agent_react_components",
+          "agent_tailwind_estilization",
+          "agent_accessibility"
+        ],
+        "full_feature": [
+          "agent_github_flow",
+          "agent_react_components",
+          "agent_redux_toolkit",
+          "agent_integration_tests",
+          "agent_github_pullrequest"
+        ],
+        "optimization": [
+          "agent_performance",
+          "agent_pipeline_optimizer",
+          "agent_code_quality",
+          "agent_metrics_collector"
+        ]
+      }
+    },
+    "consensus_mechanism": {
+      "enabled": true,
+      "description": "Multiple agents vote on decisions",
+      "voting_scenarios": {
+        "architecture_decision": {
+          "voters": [
+            "agent_technical_roundtable",
+            "agent_master_orchestrator",
+            "agent_code_quality"
+          ],
+          "min_consensus": 0.66,
+          "tiebreaker": "agent_technical_roundtable"
+        },
+        "deployment_readiness": {
+          "voters": [
+            "agent_integration_tests",
+            "agent_security",
+            "agent_code_quality",
+            "agent_performance"
+          ],
+          "min_consensus": 0.75,
+          "tiebreaker": "agent_code_quality"
+        }
+      }
+    },
+    "expertise_routing": {
+      "enabled": true,
+      "description": "Route tasks to most qualified agents",
+      "specializations": {
+        "react_expert": ["agent_react_components"],
+        "styling_expert": ["agent_tailwind_estilization", "agent_animations"],
+        "testing_expert": ["agent_integration_tests", "agent_e_2_e_cypress"],
+        "security_expert": ["agent_security"],
+        "performance_expert": ["agent_performance", "agent_pipeline_optimizer"],
+        "accessibility_expert": ["agent_accessibility"],
+        "git_expert": ["agent_github_flow", "agent_github_pullrequest"],
+        "state_expert": ["agent_redux_toolkit", "agent_state_manager"]
+      }
+    },
+    "error_recovery": {
+      "enabled": true,
+      "description": "Collaborative error recovery strategies",
+      "strategies": {
+        "type_errors": {
+          "primary": "agent_code_quality",
+          "fallback": ["agent_react_components"]
+        },
+        "style_conflicts": {
+          "primary": "agent_tailwind_estilization",
+          "fallback": ["agent_responsiveness"]
+        },
+        "test_failures": {
+          "primary": "agent_integration_tests",
+          "fallback": ["agent_code_quality", "agent_react_components"]
+        },
+        "security_vulnerabilities": {
+          "primary": "agent_security",
+          "fallback": ["agent_code_quality"]
+        }
+      }
+    },
+    "learning_mode": {
+      "enabled": true,
+      "description": "Agents learn from successful patterns",
+      "mechanisms": {
+        "pattern_recognition": {
+          "enabled": true,
+          "storage": ".frontend-flow/patterns/learned-patterns.json"
+        },
+        "success_tracking": {
+          "enabled": true,
+          "min_successes": 5,
+          "confidence_threshold": 0.9
+        },
+        "failure_analysis": {
+          "enabled": true,
+          "analyze_after": 3,
+          "report_to": "agent_metrics_collector"
+        }
+      }
+    }
+  },
+  "communication_protocols": {
+    "message_format": {
+      "type": "structured",
+      "fields": ["agent_id", "message", "priority", "context", "timestamp"]
+    },
+    "priority_levels": {
+      "critical": 1,
+      "high": 2,
+      "medium": 3,
+      "low": 4
+    },
+    "response_timeout": {
+      "critical": "10s",
+      "high": "30s",
+      "medium": "60s",
+      "low": "120s"
+    }
+  },
+  "performance_optimization": {
+    "cache_agent_results": true,
+    "reuse_successful_patterns": true,
+    "parallel_threshold": 3,
+    "max_parallel_agents": 5
+  }
+}

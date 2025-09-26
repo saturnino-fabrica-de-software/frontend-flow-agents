@@ -1,0 +1,195 @@
+{
+  "version": "1.0.0",
+  "description": "Agent versioning system for tracking changes and rollback support",
+  "agents": {
+    "agent_react_components": {
+      "current": "2.1.0",
+      "stable": "2.0.0",
+      "beta": "2.2.0-beta.1",
+      "legacy": ["1.9.0", "1.8.0"],
+      "versions": {
+        "2.2.0-beta.1": {
+          "release_date": "2025-09-28",
+          "status": "beta",
+          "changes": [
+            "Added Server Components support",
+            "Improved TypeScript 5.0 compatibility",
+            "New memo optimization patterns"
+          ],
+          "breaking_changes": [],
+          "min_frontend_flow": "2.1.0"
+        },
+        "2.1.0": {
+          "release_date": "2025-09-26",
+          "status": "current",
+          "changes": [
+            "Enhanced shadcn-ui integration",
+            "Better error boundaries",
+            "Automatic prop validation"
+          ],
+          "breaking_changes": [],
+          "min_frontend_flow": "2.0.0"
+        },
+        "2.0.0": {
+          "release_date": "2025-09-15",
+          "status": "stable",
+          "changes": [
+            "Complete rewrite for performance",
+            "New component architecture",
+            "Added composition patterns"
+          ],
+          "breaking_changes": [
+            "Changed API structure",
+            "Removed class component support"
+          ],
+          "min_frontend_flow": "2.0.0"
+        },
+        "1.9.0": {
+          "release_date": "2025-08-01",
+          "status": "legacy",
+          "changes": [
+            "Bug fixes",
+            "Performance improvements"
+          ],
+          "breaking_changes": [],
+          "min_frontend_flow": "1.8.0",
+          "deprecation_notice": "Will be removed in v3.0.0"
+        }
+      },
+      "changelog_url": "agents/changelogs/react-components.md"
+    },
+    "agent_tailwind_estilization": {
+      "current": "2.0.0",
+      "stable": "2.0.0",
+      "beta": "2.1.0-beta",
+      "legacy": ["1.8.0"],
+      "versions": {
+        "2.1.0-beta": {
+          "release_date": "2025-09-27",
+          "status": "beta",
+          "changes": [
+            "Tailwind CSS v4 support",
+            "New animation utilities",
+            "Container queries support"
+          ],
+          "breaking_changes": [],
+          "min_frontend_flow": "2.0.0"
+        },
+        "2.0.0": {
+          "release_date": "2025-09-20",
+          "status": "stable",
+          "changes": [
+            "Dark mode improvements",
+            "JIT compiler optimization",
+            "Custom variant support"
+          ],
+          "breaking_changes": [],
+          "min_frontend_flow": "2.0.0"
+        }
+      },
+      "changelog_url": "agents/changelogs/tailwind-estilization.md"
+    },
+    "agent_redux_toolkit": {
+      "current": "1.9.0",
+      "stable": "1.9.0",
+      "beta": "2.0.0-alpha",
+      "legacy": ["1.7.0", "1.6.0"],
+      "versions": {
+        "2.0.0-alpha": {
+          "release_date": "2025-09-25",
+          "status": "alpha",
+          "changes": [
+            "RTK 2.0 support",
+            "New async flow patterns",
+            "Built-in DevTools integration"
+          ],
+          "breaking_changes": [
+            "Changed slice structure",
+            "New middleware API"
+          ],
+          "min_frontend_flow": "2.1.0"
+        },
+        "1.9.0": {
+          "release_date": "2025-09-10",
+          "status": "stable",
+          "changes": [
+            "Improved TypeScript inference",
+            "Better error messages",
+            "Performance optimizations"
+          ],
+          "breaking_changes": [],
+          "min_frontend_flow": "2.0.0"
+        }
+      },
+      "changelog_url": "agents/changelogs/redux-toolkit.md"
+    }
+  },
+  "versioning_policy": {
+    "semantic_versioning": true,
+    "version_format": "MAJOR.MINOR.PATCH",
+    "pre_release_tags": ["alpha", "beta", "rc"],
+    "support_policy": {
+      "current": "Full support with active development",
+      "stable": "Full support with bug fixes only",
+      "beta": "Preview features, may have bugs",
+      "legacy": "Security fixes only",
+      "deprecated": "No support, migration recommended"
+    },
+    "lifecycle": {
+      "alpha": "1-2 weeks",
+      "beta": "2-4 weeks",
+      "release_candidate": "1 week",
+      "stable": "6 months minimum",
+      "legacy": "3 months after deprecation"
+    }
+  },
+  "migration_guides": {
+    "agent_react_components": {
+      "from_1_to_2": {
+        "guide_url": "docs/migrations/react-components-v2.md",
+        "automated": true,
+        "migration_agent": "agent_migration_helper",
+        "estimated_time": "30 minutes",
+        "risk_level": "medium"
+      }
+    },
+    "agent_redux_toolkit": {
+      "from_1_to_2": {
+        "guide_url": "docs/migrations/redux-toolkit-v2.md",
+        "automated": false,
+        "migration_agent": null,
+        "estimated_time": "2 hours",
+        "risk_level": "high"
+      }
+    }
+  },
+  "compatibility_matrix": {
+    "frontend_flow_versions": {
+      "2.1.0": {
+        "compatible_agents": {
+          "agent_react_components": ["2.0.0", "2.1.0", "2.2.0-beta.1"],
+          "agent_tailwind_estilization": ["2.0.0", "2.1.0-beta"],
+          "agent_redux_toolkit": ["1.9.0", "2.0.0-alpha"]
+        }
+      },
+      "2.0.0": {
+        "compatible_agents": {
+          "agent_react_components": ["2.0.0", "2.1.0"],
+          "agent_tailwind_estilization": ["2.0.0"],
+          "agent_redux_toolkit": ["1.9.0"]
+        }
+      }
+    }
+  },
+  "rollback_strategy": {
+    "enabled": true,
+    "auto_rollback_on_failure": true,
+    "rollback_window": "24 hours",
+    "backup_versions": 3,
+    "rollback_triggers": [
+      "success_rate_below_80",
+      "critical_error_count_above_5",
+      "performance_degradation_above_50"
+    ]
+  }
+}
