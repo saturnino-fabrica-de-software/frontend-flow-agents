@@ -1,0 +1,59 @@
+{
+  "mcp_memory": {
+    "enabled": true,
+    "provider": "mcp__memory",
+    "config": {
+      "persistence": {
+        "enabled": true,
+        "storage_path": ".frontend-flow/memory",
+        "max_size_mb": 100,
+        "retention_days": 90
+      },
+      "learning": {
+        "pattern_recognition": true,
+        "success_tracking": true,
+        "failure_analysis": true,
+        "cross_project_learning": true
+      },
+      "context": {
+        "preserve_decisions": true,
+        "track_preferences": true,
+        "solution_history": true,
+        "team_knowledge": true
+      },
+      "privacy": {
+        "exclude_sensitive": true,
+        "patterns": [
+          "password",
+          "token",
+          "secret",
+          "key",
+          "credential"
+        ]
+      },
+      "integration": {
+        "auto_restore": true,
+        "share_between_agents": true,
+        "sync_interval_minutes": 5
+      }
+    },
+    "memory_types": {
+      "short_term": {
+        "ttl_hours": 24,
+        "max_items": 1000
+      },
+      "long_term": {
+        "ttl_days": 90,
+        "max_items": 10000
+      },
+      "permanent": {
+        "items": [
+          "architectural_decisions",
+          "validated_patterns",
+          "team_preferences",
+          "best_practices"
+        ]
+      }
+    }
+  }
+}

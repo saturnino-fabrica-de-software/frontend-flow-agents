@@ -1,14 +1,14 @@
-# 🚀 Frontend Flow Agents v2.0 Enhanced
+# 🚀 Full-Stack Flow Agents v2.2
 
-**Orquestrador de agentes IA especializados para desenvolvimento React/TypeScript com integração Claude avançada**
+**Orquestrador de agentes IA para desenvolvimento Full-Stack (React, NestJS, Go) com integração Claude avançada**
 
 [![NPM Version](https://img.shields.io/npm/v/frontend-flow-agents)](https://npmjs.com/package/frontend-flow-agents)
 [![Downloads](https://img.shields.io/npm/dm/frontend-flow-agents)](https://npmjs.com/package/frontend-flow-agents)
 [![License](https://img.shields.io/npm/l/frontend-flow-agents)](https://github.com/saturnino-fabrica-de-software/frontend-flow-agents/blob/main/LICENSE)
 
-## ✨ O que é o Frontend Flow v2.0?
+## ✨ O que é o Full-Stack Flow v2.2?
 
-Frontend Flow é uma ferramenta que orquestra **22+ agentes IA especializados** para automatizar completamente o desenvolvimento React/TypeScript. A **versão 2.0 Enhanced** integra agentes Claude avançados para elevar a qualidade técnica e experiência do usuário.
+Full-Stack Flow é uma ferramenta que orquestra **29 agentes IA especializados** para automatizar completamente o desenvolvimento Full-Stack (Frontend + Backend). A **versão 2.2** expande o escopo original integrando agentes para NestJS, Go, PWA, testes automatizados e muito mais.
 
 ## 🌟 **Agent Showcase - Destaques da Semana**
 
@@ -40,7 +40,18 @@ Frontend Flow é uma ferramenta que orquestra **22+ agentes IA especializados** 
 
 [📊 Ver métricas completas de todos os agentes →](./configs/agent-metrics.json)
 
-### 🆕 **Novidades v2.0 Enhanced**
+### 🆕 **Novidades v2.2 Full-Stack**
+
+#### **🚀 7 Novos Agentes Especializados**
+- **🧠 MCP Memory Manager**: Memória persistente e aprendizado contínuo
+- **🎭 Playwright Validation**: Testes visuais e funcionais automatizados
+- **♿ Accessibility Auditor**: WCAG compliance automático
+- **📱 PWA Progressive**: Transformação em Progressive Web Apps
+- **🎨 Figma Extract**: Extração de design tokens direto do Figma
+- **🏗️ NestJS Backend**: APIs enterprise com NestJS
+- **⚡ Golang Backend**: Microserviços de alta performance em Go
+
+### **Novidades v2.0 Enhanced**
 
 #### **🧠 Mesa Técnica Obrigatória**
 - **8 especialistas virtuais** analisam TODA demanda antes da execução

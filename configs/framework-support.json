@@ -143,6 +143,39 @@
           }
         }
       }
+    },
+    "nestjs": {
+      "name": "NestJS",
+      "versions": ["10.x", "9.x"],
+      "backend": true,
+      "features": ["decorators", "dependency-injection", "microservices", "graphql"],
+      "agents_adaptation": {
+        "agent_nestjs_backend": "nest-modules",
+        "agent_api_integration": "nest-controllers",
+        "agent_database": "typeorm-integration"
+      }
+    },
+    "golang": {
+      "name": "Go",
+      "versions": ["1.21", "1.20"],
+      "backend": true,
+      "features": ["goroutines", "channels", "performance", "microservices"],
+      "agents_adaptation": {
+        "agent_golang_backend": "go-services",
+        "agent_microservices": "go-micro",
+        "agent_performance": "go-optimization"
+      }
+    },
+    "pwa": {
+      "name": "Progressive Web App",
+      "versions": ["*"],
+      "enhancement": true,
+      "features": ["service-worker", "offline", "push-notifications", "install"],
+      "agents_adaptation": {
+        "agent_pwa_progressive": "pwa-setup",
+        "agent_offline_first": "cache-strategies",
+        "agent_push_notifications": "push-setup"
+      }
     }
   },
   "detection": {

@@ -1,0 +1,47 @@
+{
+  "playwright": {
+    "enabled": true,
+    "mcp_integration": "mcp__playwright",
+    "test_config": {
+      "browsers": ["chromium", "firefox", "webkit"],
+      "headless": true,
+      "timeout": 30000,
+      "retries": 2,
+      "workers": 4,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    "validation_types": {
+      "visual": {
+        "enabled": true,
+        "threshold": 0.95,
+        "screenshots": true,
+        "diff_output": true
+      },
+      "functional": {
+        "enabled": true,
+        "user_flows": true,
+        "form_validation": true,
+        "navigation": true
+      },
+      "accessibility": {
+        "enabled": true,
+        "wcag_level": "AA",
+        "axe_core": true
+      },
+      "performance": {
+        "enabled": true,
+        "lighthouse": true,
+        "metrics": ["FCP", "LCP", "CLS", "FID"]
+      }
+    },
+    "reports": {
+      "format": ["html", "json", "junit"],
+      "output_dir": ".frontend-flow/playwright-reports",
+      "include_videos": false,
+      "include_traces": true
+    }
+  }
+}
