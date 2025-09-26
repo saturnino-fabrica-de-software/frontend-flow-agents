@@ -3,9 +3,9 @@
   "name": "Frontend Flow Agent Marketplace",
   "description": "Community-driven marketplace for Frontend Flow agents",
   "stats": {
-    "total_agents": 45,
+    "total_agents": 52,
     "community_agents": 23,
-    "official_agents": 22,
+    "official_agents": 29,
     "total_downloads": 125420,
     "active_contributors": 89
   },

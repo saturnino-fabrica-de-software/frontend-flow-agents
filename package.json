@@ -1,7 +1,7 @@
 {
   "name": "frontend-flow-agents",
-  "version": "2.1.0",
-  "description": "🚀 Orquestrador de agentes IA especializados para desenvolvimento React/TypeScript",
+  "version": "2.2.0",
+  "description": "🚀 Orquestrador de agentes IA para desenvolvimento Full-Stack (React, NestJS, Go)",
   "main": "lib/index.js",
   "bin": {
     "frontend-flow": "bin/frontend-flow",
@@ -17,7 +17,14 @@
   "keywords": [
     "react",
     "typescript",
+    "nestjs",
+    "golang",
+    "fullstack",
     "ai-agents",
+    "mcp",
+    "playwright",
+    "pwa",
+    "accessibility",
     "automation",
     "claude",
     "frontend",
