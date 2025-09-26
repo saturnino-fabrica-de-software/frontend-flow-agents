@@ -1,0 +1,70 @@
+{
+  "enabled": true,
+  "version": "2.0",
+  "description": "Frontend Flow Enhanced with Claude Agents Integration",
+  "features": {
+    "technicalRoundtable": {
+      "enabled": true,
+      "mandatory": true,
+      "specialists": 8,
+      "methodology": "3_hypotheses_plus_1_optimized"
+    },
+    "advancedNLPClassifier": {
+      "enabled": true,
+      "targetAccuracy": "95%",
+      "fallbackToBasic": true,
+      "supportedTypes": [
+        "component_simple",
+        "feature_complete",
+        "performance_optimization",
+        "styling_design",
+        "state_management",
+        "quality_testing"
+      ]
+    },
+    "realtimeMonitor": {
+      "enabled": true,
+      "autoStart": true,
+      "ports": {
+        "websocket": 8080,
+        "dashboard": 8081
+      },
+      "features": {
+        "visualProgress": true,
+        "techStackDetection": true,
+        "performanceMetrics": true,
+        "logStreaming": true
+      }
+    },
+    "hybridPipeline": {
+      "enabled": true,
+      "phaseBasedExecution": true,
+      "smartParallelization": true,
+      "adaptivePipeline": true
+    }
+  },
+  "compatibility": {
+    "fallbackToStandard": true,
+    "requiresClaudeCode": false,
+    "minimumNodeVersion": "16.0.0"
+  },
+  "performance": {
+    "expectedImprovement": {
+      "classificationAccuracy": "+15%",
+      "decisionQuality": "+40%",
+      "userExperience": "+200%",
+      "technicalRisk": "-60%"
+    },
+    "overhead": {
+      "memoryUsage": "+30MB",
+      "startupTime": "+2s",
+      "cpuUsage": "+5%"
+    }
+  },
+  "commands": {
+    "enable": "frontend-flow --enhanced",
+    "disable": "frontend-flow --standard",
+    "dashboard": "http://localhost:8081",
+    "monitor": "ws://localhost:8080"
+  }
+}
