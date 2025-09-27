@@ -111,10 +111,11 @@ claude mcp list
 # Instalar globalmente
 npm install -g frontend-flow-agents
 
-# 🔗 NOVO: Integração Nativa com Claude!
+# 🔗 NOVO: Integração Nativa com Claude no Projeto!
+cd meu-projeto
 frontend-flow install-native
-# Agora o Claude reconhece todos os agentes nativamente!
-# Use no Claude: "execute agent_react_components para criar formulário"
+# Cria .claude/ no projeto com todos os agentes
+# O Claude reconhece os agentes ao abrir este projeto!
 
 # Em qualquer projeto React
 cd meu-projeto
@@ -207,16 +208,17 @@ frontend-flow "criar botão simples"
 
 ## 🔗 **Integração Nativa com Claude**
 
-### **✨ NOVO: Frontend Flow dentro do Claude!**
+### **✨ NOVO: Frontend Flow dentro do seu Projeto!**
 
-Instale o Frontend Flow diretamente no Claude para ter acesso nativo a todos os agentes:
+Instale o Frontend Flow diretamente no seu projeto para ter acesso nativo a todos os agentes:
 
 ```bash
-# Instalar nativamente no Claude
+# No seu projeto, instale nativamente
+cd meu-projeto
 frontend-flow install-native
 
-# Os agentes ficam disponíveis em ~/.claude/projects/frontend-flow-agents/
-# O Claude reconhece automaticamente todos os 29 agentes!
+# Cria .claude/ no projeto com todos os agentes
+# O Claude reconhece automaticamente os 29 agentes ao abrir o projeto!
 ```
 
 ### **Como usar no Claude após instalação nativa:**
@@ -231,11 +233,11 @@ frontend-flow install-native
 # Sem necessidade de configuração adicional
 ```
 
-### **Vantagens da Integração Nativa:**
-- ✅ **Reconhecimento automático**: Claude enxerga todos os agentes
-- ✅ **Sem configuração**: Funciona imediatamente após instalação
-- ✅ **Metadados preservados**: Toda documentação dos agentes disponível
-- ✅ **Mesa técnica integrada**: 13 especialistas sempre disponíveis
+### **Vantagens da Integração Nativa por Projeto:**
+- ✅ **Isolado por projeto**: Cada projeto tem seus agentes
+- ✅ **Reconhecimento automático**: Claude enxerga ao abrir o projeto
+- ✅ **CLAUDE.md atualizado**: Instruções específicas do projeto
+- ✅ **Mesa técnica integrada**: 13 especialistas no contexto
 - ✅ **Atualização simples**: `frontend-flow install-native --force`
 
 ### **Remover integração:**

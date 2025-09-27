@@ -83,20 +83,22 @@ program
     }
   });
 
-// Command: install-native - Install Frontend Flow natively in Claude
+// Command: install-native - Install Frontend Flow natively in project
 program
   .command('install-native')
-  .description('🔗 Instalar Frontend Flow nativamente no Claude (~/.claude)')
+  .description('🔗 Instalar Frontend Flow nativamente no projeto (.claude)')
   .option('--force', 'Forçar reinstalação mesmo se já existir')
   .action(async (options) => {
-    console.log(chalk.blue('🚀 Instalando Frontend Flow nativamente no Claude...'));
+    const projectPath = process.cwd();
+    console.log(chalk.blue(`🚀 Instalando Frontend Flow no projeto: ${projectPath}`));
+
     try {
       const NativeClaudeIntegration = require('../lib/native-claude-integration');
-      const nativeIntegration = new NativeClaudeIntegration();
+      const nativeIntegration = new NativeClaudeIntegration(projectPath);
 
       // Check if already installed
       if (!options.force && await nativeIntegration.checkNativeIntegration()) {
-        console.log(chalk.yellow('⚠ Frontend Flow já está instalado nativamente.'));
+        console.log(chalk.yellow('⚠ Frontend Flow já está instalado neste projeto.'));
         console.log(chalk.gray('  Use --force para reinstalar.'));
         return;
       }
@@ -109,15 +111,16 @@ program
     }
   });
 
-// Command: uninstall-native - Remove native Claude integration
+// Command: uninstall-native - Remove native Claude integration from project
 program
   .command('uninstall-native')
-  .description('🗑️ Remover integração nativa do Claude')
+  .description('🗑️ Remover integração nativa do projeto')
   .action(async () => {
-    console.log(chalk.blue('🗑️ Removendo integração nativa...'));
+    const projectPath = process.cwd();
+    console.log(chalk.blue(`🗑️ Removendo integração nativa de: ${projectPath}`));
     try {
       const NativeClaudeIntegration = require('../lib/native-claude-integration');
-      const nativeIntegration = new NativeClaudeIntegration();
+      const nativeIntegration = new NativeClaudeIntegration(projectPath);
       await nativeIntegration.removeNativeIntegration();
     } catch (error) {
       console.error(chalk.red('❌ Erro ao remover integração:'), error.message);
