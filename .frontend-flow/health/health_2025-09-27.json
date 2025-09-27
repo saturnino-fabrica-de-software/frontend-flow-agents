@@ -1,7 +1,7 @@
 {
   "agent_react_components": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.080Z",
+    "last_check": "2025-09-27T01:07:35.729Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -142,12 +142,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.285Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.265Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.792Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.829Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.830Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.587Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.586Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.907Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.445Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.984Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.024Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.027Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.675Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.726Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_tailwind_estilization": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.080Z",
+    "last_check": "2025-09-27T01:07:35.729Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -288,12 +504,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.289Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.285Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.265Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.303Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.792Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.830Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.830Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.587Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.587Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.910Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.907Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.445Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.984Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.024Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.027Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.676Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.726Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_redux_toolkit": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.080Z",
+    "last_check": "2025-09-27T01:07:35.729Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -434,12 +866,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.289Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.285Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.265Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.303Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.792Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.831Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.831Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.587Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.910Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.907Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.446Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.985Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.028Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.676Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.726Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_figma_extract": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.730Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -580,12 +1228,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.289Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.285Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.265Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.303Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.793Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.831Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.831Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.587Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.910Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.907Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.446Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.985Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.028Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.676Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.726Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.730Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_github_flow": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.730Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -726,12 +1590,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.289Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.285Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.266Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.303Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.793Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.831Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.587Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.907Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.446Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.985Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.028Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.676Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.726Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.730Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_code_quality": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.731Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -872,12 +1952,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.285Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.266Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.303Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.793Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.907Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.446Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.985Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.028Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.677Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.726Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.731Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_accessibility": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.731Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -1018,12 +2314,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.286Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.266Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.303Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.793Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.446Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.985Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.029Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.677Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.727Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.731Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_performance": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.731Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -1164,12 +2676,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.286Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.266Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.304Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.794Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.910Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.446Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.985Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.029Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.677Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.727Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.731Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_integration_tests": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.731Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -1310,12 +3038,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.289Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.286Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.266Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.304Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.794Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.910Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.446Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.986Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.029Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.677Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.727Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.731Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_animations": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.731Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -1456,12 +3400,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.289Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.286Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.267Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.304Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.794Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.910Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.446Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.986Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.029Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.678Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.727Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.731Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_i_18_n": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.731Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -1602,12 +3762,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.286Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.267Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.301Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.304Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.794Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.910Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.986Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.029Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.678Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.727Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.731Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_security": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.081Z",
+    "last_check": "2025-09-27T01:07:35.732Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -1748,12 +4124,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.286Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.268Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.304Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.795Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.588Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.910Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.986Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.030Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.678Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.727Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.732Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_responsiveness": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.732Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -1894,12 +4486,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.286Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.268Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.304Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.795Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.832Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.986Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.031Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.678Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.728Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.732Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_master_orchestrator": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.732Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -2040,12 +4848,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.292Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.286Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.268Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.304Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.795Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.449Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.986Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.031Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.678Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.732Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_nlp_classifier": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.732Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -2186,12 +5210,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.292Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.290Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.269Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.305Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.795Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.913Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.025Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.031Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.679Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.732Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_technical_roundtable": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.733Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -2332,12 +5572,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.292Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.269Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.305Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.795Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.913Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.908Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.911Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.026Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.031Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.679Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.733Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_state_manager": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.733Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -2478,12 +5934,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.292Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.269Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.305Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.796Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.834Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.913Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.026Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.032Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.679Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.733Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_pipeline_optimizer": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.733Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -2624,12 +6296,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.293Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.269Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.305Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.796Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.834Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.914Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.026Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.032Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.680Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.733Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_metrics_collector": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.733Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -2770,12 +6658,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.293Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.269Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.305Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.796Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.834Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.589Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.914Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.026Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.032Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.680Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.733Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_cleanup_manager": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.733Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -2916,12 +7020,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.294Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.287Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.270Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.306Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.796Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.834Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.914Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.447Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.451Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.026Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.032Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.680Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.733Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_github_pullrequest": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.733Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -3062,12 +7382,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.294Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.291Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.270Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.306Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.797Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.835Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.914Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.451Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.026Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.032Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.680Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.733Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_analytics": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.082Z",
+    "last_check": "2025-09-27T01:07:35.734Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -3208,12 +7744,228 @@
           "total_runs": null,
           "error_trend": "stable"
         }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.294Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.292Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.270Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.306Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.797Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.835Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.914Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.912Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.452Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.026Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.033Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.680Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.734Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
       }
     ]
   },
   "agent_e_2_e_cypress": {
     "health": "critical",
-    "last_check": "2025-09-27T00:39:09.083Z",
+    "last_check": "2025-09-27T01:07:35.734Z",
     "metrics": {
       "success_rate": null,
       "total_runs": null,
@@ -3348,6 +8100,222 @@
       },
       {
         "timestamp": "2025-09-27T00:39:09.083Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:44:40.294Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:10.292Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:45:40.288Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:46:47.270Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:17.302Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:47:47.306Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:51:37.797Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:07.833Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:52:37.835Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:55:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:15.590Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:56:45.591Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:04.914Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T00:59:34.909Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:00:04.913Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:01:36.450Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:06.448Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:02:36.452Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:03:56.987Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:27.026Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:04:57.033Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:06:35.680Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:05.729Z",
+        "health": "critical",
+        "metrics": {
+          "success_rate": null,
+          "total_runs": null,
+          "error_trend": "stable"
+        }
+      },
+      {
+        "timestamp": "2025-09-27T01:07:35.734Z",
         "health": "critical",
         "metrics": {
           "success_rate": null,
