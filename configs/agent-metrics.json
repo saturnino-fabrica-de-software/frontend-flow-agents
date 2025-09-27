@@ -1,4 +1,24 @@
 {
-  "metrics": {},
-  "last_session": "2025-09-27T01:26:43.347Z"
+  "metrics": {
+    "agent_master_orchestrator": {
+      "total_runs": 26,
+      "success_rate": 0.92,
+      "avg_duration": "1s",
+      "last_updated": "2025-09-27"
+    },
+    "technical_roundtable": {
+      "total_runs": 26,
+      "success_rate": 0.58,
+      "avg_duration": "1s",
+      "last_updated": "2025-09-27"
+    },
+    "nlp_classifier": {
+      "total_runs": 14,
+      "success_rate": 1,
+      "avg_duration": "1s",
+      "last_updated": "2025-09-27"
+    }
+  },
+  "badge_criteria": {},
+  "last_updated": "2025-09-27T02:11:48.441Z"
 }
