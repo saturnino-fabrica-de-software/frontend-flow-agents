@@ -54,7 +54,7 @@ Full-Stack Flow é uma ferramenta que orquestra **29 agentes IA especializados**
 ### **Novidades v2.0 Enhanced**
 
 #### **🧠 Mesa Técnica Obrigatória**
-- **8 especialistas virtuais** analisam TODA demanda antes da execução
+- **13 especialistas virtuais** analisam TODA demanda antes da execução
 - **Metodologia "3 hipóteses + 1 otimizada"** garante decisões técnicas superiores
 - **Gate obrigatório** que bloqueia pipeline se solução não for sólida
 - **Redução de 60% no risco técnico** através de validação prévia
@@ -121,10 +121,10 @@ frontend-flow "criar botão de login responsivo"
 # Exemplo 2: Com modo Enhanced
 frontend-flow "criar dashboard analytics responsivo"
 
-# 🔄 **Pipeline Enhanced v2.0 - TODOS os 25+ Agentes:**
+# 🔄 **Pipeline Enhanced v2.0 - TODOS os 29 Agentes:**
 
 # 📋 **FASE 1: ANÁLISE & PLANEJAMENTO ENHANCED**
-# → 1. agent_technical_roundtable - 🆕 Mesa técnica com 8 especialistas
+# → 1. agent_technical_roundtable - 🆕 Mesa técnica com 13 especialistas
 # → 2. agent_nlp_classifier - 🆕 95%+ precisão na classificação
 # → 3. agent_github_flow - Cria issue e branch feature/analytics-dashboard
 # → 4. agent_master_orchestrator - Orquestra pipeline híbrido otimizado
@@ -178,8 +178,8 @@ frontend-flow "criar dashboard analytics responsivo"
 
 ## 🧠 **Pipeline Universal com Decisão Inteligente**
 
-### **✨ Todos os 22 Agentes, Sempre!**
-- **🔄 Execução Universal**: Todos os 22 agentes são SEMPRE executados
+### **✨ Todos os 29 Agentes, Sempre!**
+- **🔄 Execução Universal**: Todos os 29 agentes são SEMPRE executados
 - **🧠 Decisão Inteligente**: Cada agente decide se deve agir ou pular baseado no contexto
 - **⚡ Otimização Automática**: Sem desperdício, mas com cobertura 100% completa
 
@@ -192,7 +192,7 @@ frontend-flow "criar dashboard analytics responsivo"
 ### **🤖 Como Funciona**
 ```bash
 frontend-flow "criar botão simples"
-# → Todos os 22 agentes são chamados
+# → Todos os 29 agentes são chamados
 # → agent_figma_extract: SKIP (sem menção ao Figma)
 # → agent_redux_toolkit: SKIP (componente simples)
 # → agent_security: APPLY (sempre valida segurança)
@@ -204,7 +204,7 @@ frontend-flow "criar botão simples"
 
 ### 🧠 **Processamento Inteligente**
 - **Classificação NLP**: Analisa solicitações em linguagem natural para orientar agentes
-- **Pipeline Universal**: TODOS os 22 agentes são executados sempre
+- **Pipeline Universal**: TODOS os 29 agentes são executados sempre
 - **Decisão Distribuída**: Cada agente decide internamente se deve agir ou pular
 - **Otimização automática**: Identifica oportunidades de paralelização
 - **Fallback inteligente**: Continua funcionando mesmo com falhas
@@ -221,7 +221,7 @@ frontend-flow "criar botão simples"
 - **Preservação de estado**: Mantém contexto durante toda execução
 - **Backup automático**: Pontos de recuperação em momentos críticos
 
-## 🤖 **22 Agentes Especializados**
+## 🤖 **29 Agentes Especializados**
 
 ### **Core Development**
 - `agent_react_components` - Componentes React com TypeScript
@@ -241,7 +241,14 @@ frontend-flow "criar botão simples"
 - `agent_auto_healing` - Recuperação automática
 - `agent_metrics_collector` - Observabilidade completa
 
-[Ver todos os 22 agentes →](./agents/)
+### **Backend & Full-Stack**
+- `agent_nestjs_backend` - APIs enterprise com NestJS
+- `agent_golang_backend` - Microserviços em Go
+- `agent_mcp_memory_manager` - Memória persistente MCP
+- `agent_pwa_progressive` - Progressive Web Apps
+- `agent_playwright_validation` - Testes E2E avançados
+
+[Ver todos os 29 agentes →](./agents/)
 
 ## 🚀 **Instalação e Uso**
 
@@ -364,7 +371,7 @@ frontend-flow "otimizar carregamento da página inicial reduzindo bundle size"
 ### **🆕 Benefícios Exclusivos v2.0 Enhanced**
 
 #### **Para Desenvolvedores**
-- 🧠 **Decisões Técnicas Superiores**: Mesa técnica com 8 especialistas virtuais
+- 🧠 **Decisões Técnicas Superiores**: Mesa técnica com 13 especialistas virtuais
 - 🎯 **Pipeline Inteligente**: Classificação 95%+ precisa automatiza seleção de agentes
 - 📊 **Visibilidade Total**: Dashboard tempo real mostra progresso detalhado
 - ⚡ **Experiência Premium**: Interface visual moderna com métricas
@@ -384,7 +391,7 @@ frontend-flow "otimizar carregamento da página inicial reduzindo bundle size"
 ## 📚 **Documentação**
 
 - 📖 [Documentação Completa em Português](./docs/README.md)
-- 🤖 [22 Agentes Disponíveis](./agents/) - Pasta com todos os agentes
+- 🤖 [29 Agentes Disponíveis](./agents/) - Pasta com todos os agentes
 - ⚙️ [Configurações do Sistema](./configs/) - Arquivos de configuração
 - 🔧 [Templates GitHub](./templates/) - Templates para issues e PRs
 
