@@ -66,6 +66,29 @@ program
     }
   });
 
+// Command: roundtable - Execute interactive technical roundtable
+program
+  .command('roundtable <demand>')
+  .description('🧠 Mesa técnica interativa com 13 especialistas')
+  .option('--fast', 'Modo rápido sem animações')
+  .action(async (demand, options) => {
+    console.log(chalk.blue('🎬 Iniciando Mesa Técnica Frontend Flow...'));
+    try {
+      const RealtimeTechnicalRoundtable = require('../lib/realtime-technical-roundtable');
+      const roundtable = new RealtimeTechnicalRoundtable();
+
+      if (options.fast) {
+        roundtable.typingSpeed = 0;
+        roundtable.thinkingDelay = 100;
+      }
+
+      await roundtable.execute(demand, options);
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na mesa técnica:'), error.message);
+      process.exit(1);
+    }
+  });
+
 // Command: clean - Clean temporary files
 program
   .command('clean')

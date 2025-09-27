@@ -105,6 +105,20 @@ claude mcp list
 # ✅ GitHub - Automação Git
 ```
 
+### 🆕 **Mesa Técnica Interativa em Tempo Real!**
+
+```bash
+# Mesa técnica com output em tempo real
+frontend-flow roundtable "fetch vs axios"
+
+# Os 13 especialistas discutem ao vivo no terminal!
+# Você vê cada especialista pensando e digitando em tempo real
+# Animações, delays realistas, experiência imersiva
+
+# Modo rápido sem animações
+frontend-flow roundtable "qual arquitetura usar" --fast
+```
+
 ### 🎯 **Uma solicitação → Código completo**
 
 ```bash
