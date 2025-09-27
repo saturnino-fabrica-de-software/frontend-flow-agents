@@ -1,6 +1,6 @@
 {
   "name": "frontend-flow-agents",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "description": "🚀 Orquestrador de agentes IA para desenvolvimento Full-Stack (React, NestJS, Go)",
   "main": "lib/index.js",
   "bin": {
