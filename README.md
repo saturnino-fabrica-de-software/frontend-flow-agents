@@ -280,7 +280,7 @@ frontend-flow uninstall-native
 - **Preservação de estado**: Mantém contexto durante toda execução
 - **Backup automático**: Pontos de recuperação em momentos críticos
 
-## 🤖 **29 Agentes Especializados**
+## 🤖 **35+ Agentes Especializados Full-Stack**
 
 ### **Core Development**
 - `agent_react_components` - Componentes React com TypeScript
@@ -300,12 +300,25 @@ frontend-flow uninstall-native
 - `agent_auto_healing` - Recuperação automática
 - `agent_metrics_collector` - Observabilidade completa
 
-### **Backend & Full-Stack**
+### **Backend Development** 🆕
+- `agent_api_designer` - Design de APIs REST/GraphQL com OpenAPI
+- `agent_database_architect` - Modelagem, migrations, otimização
+- `agent_microservices` - Arquitetura de microserviços
 - `agent_nestjs_backend` - APIs enterprise com NestJS
 - `agent_golang_backend` - Microserviços em Go
-- `agent_mcp_memory_manager` - Memória persistente MCP
-- `agent_pwa_progressive` - Progressive Web Apps
-- `agent_playwright_validation` - Testes E2E avançados
+
+### **DevOps & Infrastructure** 🆕
+- `agent_kubernetes_orchestrator` - Deploy e orquestração K8s
+- `agent_cicd_pipeline` - GitHub Actions, GitLab CI, Jenkins
+- `agent_terraform_infra` - Infrastructure as Code
+- `agent_monitoring_observability` - Prometheus, Grafana, ELK
+- `agent_docker_compose` - Containerização completa
+
+### **Security & Compliance** 🆕
+- `agent_penetration_tester` - Testes de penetração automatizados
+- `agent_secrets_vault` - Gestão segura de credenciais
+- `agent_compliance_auditor` - LGPD, GDPR, SOC2
+- `agent_security` - Análise OWASP e vulnerabilidades
 
 [Ver todos os 29 agentes →](./agents/)
 
