@@ -83,6 +83,48 @@ program
     }
   });
 
+// Command: install-native - Install Frontend Flow natively in Claude
+program
+  .command('install-native')
+  .description('🔗 Instalar Frontend Flow nativamente no Claude (~/.claude)')
+  .option('--force', 'Forçar reinstalação mesmo se já existir')
+  .action(async (options) => {
+    console.log(chalk.blue('🚀 Instalando Frontend Flow nativamente no Claude...'));
+    try {
+      const NativeClaudeIntegration = require('../lib/native-claude-integration');
+      const nativeIntegration = new NativeClaudeIntegration();
+
+      // Check if already installed
+      if (!options.force && await nativeIntegration.checkNativeIntegration()) {
+        console.log(chalk.yellow('⚠ Frontend Flow já está instalado nativamente.'));
+        console.log(chalk.gray('  Use --force para reinstalar.'));
+        return;
+      }
+
+      const sourcePath = path.join(__dirname, '..');
+      await nativeIntegration.setupNativeIntegration(sourcePath);
+    } catch (error) {
+      console.error(chalk.red('❌ Erro na instalação nativa:'), error.message);
+      process.exit(1);
+    }
+  });
+
+// Command: uninstall-native - Remove native Claude integration
+program
+  .command('uninstall-native')
+  .description('🗑️ Remover integração nativa do Claude')
+  .action(async () => {
+    console.log(chalk.blue('🗑️ Removendo integração nativa...'));
+    try {
+      const NativeClaudeIntegration = require('../lib/native-claude-integration');
+      const nativeIntegration = new NativeClaudeIntegration();
+      await nativeIntegration.removeNativeIntegration();
+    } catch (error) {
+      console.error(chalk.red('❌ Erro ao remover integração:'), error.message);
+      process.exit(1);
+    }
+  });
+
 // Command: marketplace - Agent marketplace management
 const marketplaceCmd = program
   .command('marketplace')

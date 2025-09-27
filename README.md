@@ -111,6 +111,11 @@ claude mcp list
 # Instalar globalmente
 npm install -g frontend-flow-agents
 
+# 🔗 NOVO: Integração Nativa com Claude!
+frontend-flow install-native
+# Agora o Claude reconhece todos os agentes nativamente!
+# Use no Claude: "execute agent_react_components para criar formulário"
+
 # Em qualquer projeto React
 cd meu-projeto
 frontend-flow init
@@ -198,6 +203,44 @@ frontend-flow "criar botão simples"
 # → agent_security: APPLY (sempre valida segurança)
 # → agent_react_components: APPLY (sempre cria componente)
 # → Resultado: Pipeline otimizado automaticamente!
+```
+
+## 🔗 **Integração Nativa com Claude**
+
+### **✨ NOVO: Frontend Flow dentro do Claude!**
+
+Instale o Frontend Flow diretamente no Claude para ter acesso nativo a todos os agentes:
+
+```bash
+# Instalar nativamente no Claude
+frontend-flow install-native
+
+# Os agentes ficam disponíveis em ~/.claude/projects/frontend-flow-agents/
+# O Claude reconhece automaticamente todos os 29 agentes!
+```
+
+### **Como usar no Claude após instalação nativa:**
+
+```bash
+# No Claude, use diretamente:
+"execute agent_react_components para criar formulário de contato"
+"use mesa técnica para analisar arquitetura do projeto"
+"execute agent_security para análise OWASP"
+
+# Os agentes são reconhecidos nativamente!
+# Sem necessidade de configuração adicional
+```
+
+### **Vantagens da Integração Nativa:**
+- ✅ **Reconhecimento automático**: Claude enxerga todos os agentes
+- ✅ **Sem configuração**: Funciona imediatamente após instalação
+- ✅ **Metadados preservados**: Toda documentação dos agentes disponível
+- ✅ **Mesa técnica integrada**: 13 especialistas sempre disponíveis
+- ✅ **Atualização simples**: `frontend-flow install-native --force`
+
+### **Remover integração:**
+```bash
+frontend-flow uninstall-native
 ```
 
 ## 🔧 **Recursos Principais**
