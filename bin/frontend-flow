@@ -301,6 +301,9 @@ program
         console.log(chalk.magenta(`   • Pull Request: ${result.pullRequest}`));
       }
 
+      // Exit cleanly after success
+      process.exit(0);
+
     } catch (error) {
       console.error('');
       console.error(chalk.red('❌ Erro na execução:'), error.message);
