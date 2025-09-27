@@ -53,7 +53,7 @@ Full-Stack Flow é uma ferramenta que orquestra **29 agentes IA especializados**
 
 ### **Novidades v2.0 Enhanced**
 
-#### **🧠 Mesa Técnica Obrigatória**
+#### **🧠 Mesa Técnica Obrigatória com 13 Especialistas**
 - **13 especialistas virtuais** analisam TODA demanda antes da execução
 - **Metodologia "3 hipóteses + 1 otimizada"** garante decisões técnicas superiores
 - **Gate obrigatório** que bloqueia pipeline se solução não for sólida
