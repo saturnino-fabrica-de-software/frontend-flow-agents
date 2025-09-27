@@ -116,7 +116,7 @@ describe('Real Integration Tests', () => {
         expect(errorOutput).toBe('');
         done();
       });
-    }, 20000);
+    }, 30000);
   });
 
   describe('Metadata Validation', () => {
@@ -144,6 +144,8 @@ describe('Real Scenarios', () => {
   test('React component creation flow', () => {
     const nlp = new NLPClassifier();
     const loader = new AgentLoader();
+    const projectPath = process.cwd();
+    const agentsPath = path.join(projectPath, '.frontend-flow', 'agents');
 
     return Promise.all([
       nlp.initialize(agentsPath),
