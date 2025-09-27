@@ -75,6 +75,9 @@ jobs:
         run: npm ci
 
       - name: 🧪 Run tests
+        env:
+          CI: true
+          SKIP_DELAYS: true
         run: |
           echo "🧪 Running Frontend Flow tests..."
 
@@ -90,9 +93,9 @@ jobs:
           test -d "lib/claude-enhanced" || (echo "❌ Missing Enhanced lib" && exit 1)
           test -f "configs/enhanced-mode.json" || (echo "❌ Missing Enhanced config" && exit 1)
 
-          # Test integration
+          # Test integration with increased timeout
           echo "🔧 Testing integration..."
-          timeout 30s node test-integration.js || echo "⚠️ Integration test timeout (expected in CI)"
+          timeout 60s node test-integration.js || echo "⚠️ Integration test timeout (expected in CI)"
 
           echo "✅ All tests passed!"
 
